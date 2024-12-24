@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 // import ThemeContext from "../../../Context/Theme/ThemeContext";
 import { Link } from "react-router-dom";
 
-import "./Navbar.css";
+import "./NavBar.css";
 
 import menuItems from "../../../Data/menuItems";
 import logo from "../../../assets/images/Logo/purple.png";

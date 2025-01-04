@@ -1,23 +1,17 @@
 import React from "react";
 import "./Home.css";
-import invertedImage from "../../../assets/images/Logo/planet.png"; 
-import asteroidImage from "../../../assets/images/Logo/asteroid.png"; 
-import astronautImage from "../../../assets/images/Logo/space.png";
-import header from "../../../assets/images/Logo/header.png"
 
 function Home() {
-  return (
-    <>
-      <div className="image-container">
-        {/* <img src={astronautImage} alt="Asteroid" className="astronaut-image" /> */}
-        <div className="inverted-image-container">
-          <img src={invertedImage} alt="Inverted Image" className="inverted-image" />
+    return (
+      <>
+        <div className="home-gif">
+          <img
+            src="https://kpvwxgeuyawddbcmaqxo.supabase.co/storage/v1/object/public/footprint/ff.gif?t=2023-01-26T11%3A05%3A55.288Z"
+                    alt=""
+                    id="home-header"
+          />
         </div>
-        <img src={header} alt="Header" className="header-image"/>
-        {/* <img src={asteroidImage} alt="Astronaut" className="asteroid-image" /> */}
-      </div>
-    </>
-  );
+      </>
+    );
 }
-
 export default Home;

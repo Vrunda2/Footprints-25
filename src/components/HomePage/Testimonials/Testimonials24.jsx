@@ -63,7 +63,7 @@ const Testimonials24 = () => {
       <Heading
               className="kaleido_heading"
               id="glheading"
-              title={"Testimonials"}
+              title={"TESTIMONIALS"}
             />
         <div className="slide-wrappers" ref={sliderWrapper} style={{transform:`translateX(-${position * 100}%)`}}>
           {testimonials.map((testimonial, i) => (

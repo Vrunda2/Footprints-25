@@ -125,8 +125,7 @@ function Kaleido() {
               </div>
             );
           })}
-          <div id="stars"></div>
-          <div id="stars2"></div>
+          
           <Heading className="kaleido_heading" id="glheading" title="PREVIOUS GUEST LECTURES" />
           {AboutGuestData.map((element) => {
             if (element.id % 2 == 0) {
@@ -267,8 +266,7 @@ function Kaleido() {
         {/* </div> */}
       </section>
       <Sponsors />
-      <div id="stars"></div>
-      <div id="stars2"></div>
+      
       <Footer />
     </>
   );

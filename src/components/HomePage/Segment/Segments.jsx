@@ -39,8 +39,7 @@ const Segments = () => {
       <div className="head">
         <Heading className="kaleido_heading" id="glheading" title="SEGMENTS" />
       </div>
-      <div id="stars"></div>
-      <div id="stars2"></div>
+      
       <div className="container-seg">
         <div id="slide" ref={slideRef}>
           {segementData.map((event, index) => {

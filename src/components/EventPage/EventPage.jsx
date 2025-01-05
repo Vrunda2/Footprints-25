@@ -67,7 +67,7 @@ const EventPage = ({ theParent }) => {
       <div className="events_main">
         <VideoBox url={theData["headingSource"]}/>
         <div className="text_info">
-        <div id="stars"></div>
+        
         {/* <div id="stars2"></div> */}
           <Heading
             className="kaleido_heading"
@@ -106,8 +106,7 @@ const EventPage = ({ theParent }) => {
             ))}
           </div>
         </div>
-        <div id="stars"></div>
-        <div id="stars2"></div>
+        
         <div className="main_section">
           {data.map(({ name, details }, index) => (
             <div
@@ -225,8 +224,7 @@ const EventPage = ({ theParent }) => {
       </div>
       <Sponsors />
       <Footer />
-      <div id="stars"></div>
-      <div id="stars2"></div>
+      
     </>
   );
 };

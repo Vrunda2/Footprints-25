@@ -25,7 +25,7 @@ function SubEvent() {
   useEffect(() => {
     document.title = `${
       subevent.slice(0, 1).toUpperCase() + subevent.slice(1)
-    } | FootPrints'23`;
+    } | FootPrints'25`;
   }, []);
 
   const getSubEvent = async () => {

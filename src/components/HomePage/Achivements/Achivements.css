@@ -91,11 +91,11 @@
   margin-top: 5px;
 }
 
-/* NEEDED ONLY IF POSTS ARE IN ODD NUMBER, UN-COMMENT IF POSTS ARE ODD
+/* NEEDED ONLY IF POSTS ARE IN ODD NUMBER, UN-COMMENT IF POSTS ARE ODD */
 .cardBlock:nth-last-child(1) {
   width: 50%;
   margin: 3rem auto;
-} */
+} 
 
 @media (max-width: 538px) {
   .img-bg {
@@ -123,10 +123,12 @@
   }
 }
 @media (max-width: 1199px) {
-  /* NEEDED ONLY IF POSTS ARE IN ODD NUMBER, UN-COMMENT IF POSTS ARE ODD 
+  /* NEEDED ONLY IF POSTS ARE IN ODD NUMBER, UN-COMMENT IF POSTS ARE ODD */
   .cardBlock:nth-last-child(1) {
-    width: 100%;
-  } */
+    width: 150%; /* Adjust as needed */
+    margin: 0 auto; /* Center the last element */
+    
+  }
 
   .descriptopic {
     text-align: right;

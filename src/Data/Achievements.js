@@ -70,6 +70,12 @@ const achivementsData = [
     alt: `Image8_Achievements`,
     description: `We have received the Limca Book of records certificate which states "Students of The Maharaja Sayajirao University's Faculty of Technology and Engineering, Vadodara, Gujarat conducted a Say NO to Plastic campaign by making the largest paper bag at their annual festival FootPrints 2014 on Jan 12,2014. The bag was 18.55 m deep, 11.33 m wide and 2.94 m breadth. The work started at 7:30 am with 95 students actively participating was completed by 4:30 pm."`,
   },
+  {
+    id: 9,
+    topic: "Appreciation From Home Minister",
+    imgSrc: "https://res.cloudinary.com/dg894hntd/image/upload/v1703257068/Ministry_home_affairs_je19ed.jpg",
+    description: "Success is the sum of small efforts repeated day in and day out and if it is being appreciated it encourages us to accomplish higher milestones specially by personalities like Shri Harsh Sanghavi, the Home minister of Gujarat who motivates us for setting further higher benchmarks. We , the Team Footprints are grateful for his acknowledgement and recognition which amplifies our efforts for our technical fiesta .",
+  },
 ];
 
 export default achivementsData;

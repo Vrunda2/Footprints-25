@@ -8,7 +8,7 @@ import imageSources from "../../Data/RollingSquaresImages";
 
 export default function RollingSquare() {
   useEffect(() => {
-    document.title = "Rolling Squares | FootPrints'24";
+    document.title = "Rolling Squares | FootPrints'25";
   }, []);
 
   return (
@@ -62,8 +62,7 @@ export default function RollingSquare() {
         title={"Rolling Squares"}
       />
       <ImageCarousel images={imageSources.concert} />
-      <div id="stars"></div>
-      <div id="stars2"></div>
+      
       <Heading className="kaleido_heading" id="glheading" title={"Informal"} />
       <ImageCarousel images={imageSources.informals} />
 
@@ -71,8 +70,7 @@ export default function RollingSquare() {
       <ImageCarousel images={imageSources.jampad} />
 
       <Sponsors />
-      <div id="stars"></div>
-      <div id="stars2"></div>
+      
       <Footer />
     </section>
   );

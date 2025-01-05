@@ -34,6 +34,7 @@ import LandingPage from "./components/LandingPage/Landingpage";
 import Error from "./components/Error";
 import Footer from "./components/Common/Footer/Footer";
 import Sponsors from "./components/Common/SponsorSlide/Sponsors";
+import { useMousePosition } from "./CustomHooks/useMousePosition";
 // import Countdown from "./components/CountDown/Countdown"
 
 AOS.init();
@@ -42,6 +43,8 @@ function App() {
   useEffect(() => {
     window.addEventListener("load", AOS.refresh);
   }, []);
+
+  const position = useMousePosition();
 
   const [theme, setTheme] = useLocalStorage("theme", "dark");
 

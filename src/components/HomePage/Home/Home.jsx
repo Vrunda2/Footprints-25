@@ -2,8 +2,10 @@ import React from "react";
 import "./Home.css";
 import mainHeader from "../../../assets/FP25PH.png";
 import altBG from "../../../assets/GridEle.png"
+import { useMousePosition } from "../../../CustomHooks/useMousePosition";
 
 function Home() {
+  const position = useMousePosition();
     return (
       <>
         <div className="home-gif">
@@ -17,6 +19,7 @@ function Home() {
           <img
             src={altBG}
             alt=""
+            id="hoverBg"
           />
         </div>
       </>

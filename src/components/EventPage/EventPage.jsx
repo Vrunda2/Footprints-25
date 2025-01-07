@@ -8,7 +8,7 @@ import "./EventPage.css";
 import Error from "../Error";
 import VideoBox from "./VideoBox";
 
-const EventCard = ({ name, details }) => {
+const EventCard = ({ name, details, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
@@ -49,66 +49,175 @@ const EventCard = ({ name, details }) => {
 
   const content = getContent();
 
+  const isOdd = index % 2 !== 0;
+
   return (
-    <div className="event-card">
-      <h2 className="event-card-title">{content.title}</h2>
-      
-      {!isExpanded ? (
-        <button
-          onClick={() => setIsExpanded(true)}
-          className="view-details-btn"
-        >
-          View Details
-        </button>
-      ) : (
-        <div>
-          <div className="options-container">
+    <div className={`event-card ${isOdd ? "reverse-layout" : ""}`}>
+      <div className="image-container">
+        <img src="https://media.istockphoto.com/id/1973365581/vector/sample-ink-rubber-stamp.jpg?s=612x612&w=0&k=20&c=_m6hNbFtLdulg3LK5LRjJiH6boCb_gcxPvRLytIz0Ws=" alt={name} className="event-image" />
+      </div>
+
+      <div className="content-container">
+        <h2 className="event-card-title">{content.title}</h2>
+        
+        {!isExpanded ? (
+          <button
+            onClick={() => setIsExpanded(true)}
+            className="view-details-btn"
+          >
+            View Details
+          </button>
+        ) : (
+          <div>
+            <div className="options-container">
+              <button
+                onClick={() => setActiveSection('problem')}
+                className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
+              >
+                Problem Statement
+              </button>
+              <button
+                onClick={() => setActiveSection('rules')}
+                className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
+              >
+                Rules
+              </button>
+              <button
+                onClick={() => setActiveSection('team')}
+                className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
+              >
+                Team Members
+              </button>
+              <button
+                onClick={() => setActiveSection('price')}
+                className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
+              >
+                Price
+              </button>
+            </div>
+            
+            {activeSection && content.content && (
+              <div className="content-area">
+                <ul>{content.content}</ul>
+              </div>
+            )}
+            
             <button
-              onClick={() => setActiveSection('problem')}
-              className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
+              onClick={() => {
+                setIsExpanded(false);
+                setActiveSection(null);
+              }}
+              className="collapse-btn"
             >
-              Problem Statement
-            </button>
-            <button
-              onClick={() => setActiveSection('rules')}
-              className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
-            >
-              Rules
-            </button>
-            <button
-              onClick={() => setActiveSection('team')}
-              className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
-            >
-              Team Members
-            </button>
-            <button
-              onClick={() => setActiveSection('price')}
-              className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
-            >
-              Price
+              Collapse
             </button>
           </div>
-          
-          {activeSection && content.content && (
-            <div className="content-area">
-              <ul>{content.content}</ul>
-            </div>
-          )}
-          
-          <button
-            onClick={() => {
-              setIsExpanded(false);
-              setActiveSection(null);
-            }}
-            className="collapse-btn"
-          >
-            Collapse
-          </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
+// const EventCard = ({ name, details }) => {
+//   const [isExpanded, setIsExpanded] = useState(false);
+//   const [activeSection, setActiveSection] = useState(null);
+
+//   const getContent = () => {
+//     switch (activeSection) {
+//       case 'problem':
+//         return {
+//           title: 'Problem Statement',
+//           content: details.info.map((info, index) => (
+//             <li key={index}>{info}</li>
+//           ))
+//         };
+//       case 'rules':
+//         return {
+//           title: 'Rules',
+//           content: details.rules?.map((rule, index) => (
+//             <li key={index}>{rule}</li>
+//           ))
+//         };
+//       case 'team':
+//         return {
+//           title: 'Team Members',
+//           content: details.team?.map((member, index) => (
+//             <li key={index}>{member}</li>
+//           ))
+//         };
+//       case 'price':
+//         return {
+//           title: 'Price Details',
+//           content: details.price?.map((price, index) => (
+//             <li key={index}>{price}</li>
+//           ))
+//         };
+//       default:
+//         return { title: name, content: null };
+//     }
+//   };
+
+//   const content = getContent();
+
+//   return (
+//     <div className="event-card">
+//       <h2 className="event-card-title">{content.title}</h2>
+      
+//       {!isExpanded ? (
+//         <button
+//           onClick={() => setIsExpanded(true)}
+//           className="view-details-btn"
+//         >
+//           View Details
+//         </button>
+//       ) : (
+//         <div>
+//           <div className="options-container">
+//             <button
+//               onClick={() => setActiveSection('problem')}
+//               className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
+//             >
+//               Problem Statement
+//             </button>
+//             <button
+//               onClick={() => setActiveSection('rules')}
+//               className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
+//             >
+//               Rules
+//             </button>
+//             <button
+//               onClick={() => setActiveSection('team')}
+//               className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
+//             >
+//               Team Members
+//             </button>
+//             <button
+//               onClick={() => setActiveSection('price')}
+//               className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
+//             >
+//               Price
+//             </button>
+//           </div>
+          
+//           {activeSection && content.content && (
+//             <div className="content-area">
+//               <ul>{content.content}</ul>
+//             </div>
+//           )}
+          
+//           <button
+//             onClick={() => {
+//               setIsExpanded(false);
+//               setActiveSection(null);
+//             }}
+//             className="collapse-btn"
+//           >
+//             Collapse
+//           </button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
 
 const EventPage = ({ theParent }) => {
   const { event } = useParams();
@@ -158,7 +267,7 @@ const EventPage = ({ theParent }) => {
       
       <div className="main_section">
         {data.map((item, index) => (
-          <EventCard key={index} name={item.name} details={item.details} />
+          <EventCard index={index} name={item.name} details={item.details} />
         ))}
       </div>
       <Sponsors />

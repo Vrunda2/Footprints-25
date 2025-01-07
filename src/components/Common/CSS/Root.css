@@ -141,7 +141,7 @@ body::-webkit-scrollbar-thumb {
 /* Stlyling In Body */
 html,
 body {
-  background-color: var(--background-color);
+  background-image: url(../../../assets/TrialBg.jpg);
   /* color: var(--font-color); */
   /* font-family: 'Outfit', sans-serif; */
   max-width: 100%;

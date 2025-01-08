@@ -4,7 +4,7 @@ const segementData = [
     title: "Technotron",
     link: "/technotron",
     imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639941/segments/dxxo6qup3tjckntgkflt.png",
+      "",
 
     subItems: [
       {
@@ -132,8 +132,7 @@ const segementData = [
   {
     Segment: 5,
     title: "Stock Exchange",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639940/segments/tihoc8phxiwacbl6wmcd.png",
+    imageSource:"../assets/images/temp/fse1.png",
     subItems: [
       {
         title: "Inversion",

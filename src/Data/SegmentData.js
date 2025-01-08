@@ -1,3 +1,5 @@
+import FSE from "../../../assets/images/temp/fse1.png";
+
 const segmentData = [
 
     {
@@ -147,7 +149,7 @@ const segmentData = [
     {
         name: "FSE",
 
-        imgSrc: "https://res.cloudinary.com/dwdln9iy2/image/upload/v1674628379/Segment-Fp23/FSE_vxqwcw.svg",
+        imgSrc : "../../assets/images/temp/fse1.png",
 
         description: "Stock exchange",
 

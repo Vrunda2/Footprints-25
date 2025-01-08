@@ -93,10 +93,10 @@ const EventPage = ({ theParent }) => {
             {data?.map(({ name, background, details }, index) => (
               <div className="moon-icon-block" key={index}>
                 <div
-                  className="moon-icon"
+                  className=""
                   data-name={name}
                   style={{
-                    backgroundImage: `url(${background})`,
+                    
                     ...details.styles,
                   }}
                   data-aos="zoom-in-up"

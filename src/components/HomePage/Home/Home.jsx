@@ -1,14 +1,15 @@
 import React from "react";
 import "./Home.css";
+import mainHeader from "../../../assets/FP25PH.png";
 
 function Home() {
     return (
       <>
         <div className="home-gif">
           <img
-            Imgsrc="/assets/images/FP25PH.png"
-                    alt=""
-                    id="home-header"
+            src={mainHeader}
+            alt=""
+            id="home-header"
           />
         </div>
       </>

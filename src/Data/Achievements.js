@@ -72,7 +72,7 @@ const achivementsData = [
   },
   {
     id: 9,
-    topic: "Appreciation From Home Minister",
+    topic: "APPRECIATION FROM HOME MINISTER",  
     imgSrc: "https://res.cloudinary.com/dg894hntd/image/upload/v1703257068/Ministry_home_affairs_je19ed.jpg",
     description: "Success is the sum of small efforts repeated day in and day out and if it is being appreciated it encourages us to accomplish higher milestones specially by personalities like Shri Harsh Sanghavi, the Home minister of Gujarat who motivates us for setting further higher benchmarks. We , the Team Footprints are grateful for his acknowledgement and recognition which amplifies our efforts for our technical fiesta .",
   },

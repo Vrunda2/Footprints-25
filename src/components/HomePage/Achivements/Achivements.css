@@ -1,6 +1,6 @@
 .img-bg {
   width: 160px;
-  height: 180px;
+  height: 160px;
   background: var(--white-not-change);
   border-radius: 6px;
   display: flex;
@@ -8,25 +8,19 @@
   align-items: center;
 }
 
-.cardBlock .heading_segment{
-  font-size: 1.30rem !important;
-  margin: 15px 5px !important;
-}
-
 .achievements-img {
   width: 100%;
-  border-radius: 20px;
 }
 
 .achievements-item {
   box-sizing: border-box;
-  background: rgba(184, 237, 255, 0.05);
-  border: solid 3px rgba(127, 222, 254, 0.2);
-  border-radius: 15px;
-  min-height: 27em;
+  background: var(--card-background);
+  border: 1px solid var(--home-card-border);
+
   /* border: 1px solid var(--black-to-white); */
   /* box-shadow: 7px 7px 5px var(--black); */
   /* box-shadow: var(--box-shadow); */
+  border-radius: 10px;
   /* justify-content: center; */
   justify-content: space-evenly;
   align-items: center;
@@ -41,7 +35,7 @@
 }
 
 .descriptopic {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 400;
   /* border-bottom: 2px solid var(--icon-color); */
   height: fit-content;
@@ -56,12 +50,12 @@
 
 .descrip p {
   overflow: hidden;
+  height: 6em;
   line-height: 1.2em;
-  height: 2.5em;
 
   /*added by abdeali (may be faulty) */
 
-  /* font-family: var(--text-family); */
+  font-family: var(--text-family);
   color: var(--white);
   font-size: 1.1rem;
   text-align: justify;
@@ -97,6 +91,12 @@
   margin-top: 5px;
 }
 
+/* NEEDED ONLY IF POSTS ARE IN ODD NUMBER, UN-COMMENT IF POSTS ARE ODD */
+.cardBlock:nth-last-child(1) {
+  width: 50%;
+  margin: 3rem auto;
+} 
+
 @media (max-width: 538px) {
   .img-bg {
     padding-top: 10px;
@@ -123,6 +123,13 @@
   }
 }
 @media (max-width: 1199px) {
+  /* NEEDED ONLY IF POSTS ARE IN ODD NUMBER, UN-COMMENT IF POSTS ARE ODD */
+  .cardBlock:nth-last-child(1) {
+    width: 150%; /* Adjust as needed */
+    margin: 0 auto; /* Center the last element */
+    
+  }
+
   .descriptopic {
     text-align: right;
   }
@@ -152,7 +159,7 @@
 
   .img-bg {
     width: 220px;
-    height: 240px;
+    height: 220px;
   }
 }
 

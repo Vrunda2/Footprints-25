@@ -76,6 +76,16 @@ To encourage young brains and introduce school students to the fascinating world
             </p>
           </div>
         </div>
+        <div className="robo-outside">
+          <Heading title="Lorem Ipsum" />
+          <div className="robo">
+            <p className="scitron-des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Id iure, similique obcaecati non ea facere delectus ratione culpa?
+              Quis, praesentium in sunt ex mollitia tempore commodi perspiciatis nesciunt voluptatibus at?
+            </p>
+          </div>
+        </div>
         <div className="glass-outside">
           <Heading
             title="Self

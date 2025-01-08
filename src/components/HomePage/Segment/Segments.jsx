@@ -5,8 +5,10 @@ import "./Segment.css"; // Replace with your CSS file
 import Heading from "../../Common/Headings/Heading";
 import segementData from "../../../Data/SegementsData";
 import { Link } from "react-router-dom";
+import { useMousePosition } from "../../../CustomHooks/useMousePosition";
 
 const Segments = () => {
+  const position = useMousePosition();
   const slideRef = useRef(null);
   const nextSlide = () => {
     const lists = slideRef.current.querySelectorAll(".item-seg");
@@ -72,6 +74,7 @@ const Segments = () => {
           </button>
         </div>
       </div>
+      <div className="alt-bg" style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}></div>
     </div>
   );
 };

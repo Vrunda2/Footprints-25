@@ -2,8 +2,12 @@ import React from "react";
 // import Img from "../../../assets/images/Insta-icon3.png";
 import Heading from "../../Common/Headings/Heading";
 import "./Glimpse.css";
+import { useMousePosition } from "../../../CustomHooks/useMousePosition";
 
 const Glimpse = () => {
+
+  const position = useMousePosition();
+
   return (
     <div className="glimpse-main">
       <Heading id="heading_glimpse" title="CATCH THE GLIMPSE" />
@@ -120,6 +124,7 @@ const Glimpse = () => {
           </a>
         </div>
       </div>
+      <div className="alt-bg" style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}></div>
       <img src="" alt="" />
     </div>
   );

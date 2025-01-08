@@ -8,7 +8,7 @@ import VideoBox from "./VideoBox";
 import Error from "../Error";
 import "./EventPage.css";
 
-const EventCard = ({ name, details, index }) => {
+const EventCard = ({ name, details,background, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
@@ -45,7 +45,7 @@ const EventCard = ({ name, details, index }) => {
     <div className={`event-card ${index % 2 ? "reverse-layout" : ""}`}>
       <div className="image-container">
         <img
-          src="https://media.istockphoto.com/id/1973365581/vector/sample-ink-rubber-stamp.jpg"
+          src={background}
           alt={name}
           className="event-image"
         />
@@ -71,7 +71,7 @@ const EventCard = ({ name, details, index }) => {
             </div>
             {renderSectionContent()}
             <button className="collapse-btn" onClick={toggleExpand}>
-              Collapse
+              Hide Details
             </button>
           </div>
         )}

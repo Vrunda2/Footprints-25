@@ -1,10 +1,10 @@
+import technotronimage from "../assets/images/temp/fse1.png"
 const segementData = [
   {
     Segment: 1,
     title: "Technotron",
     link: "/technotron",
-    imageSource:
-      "",
+    imageSource: technotronimage,
 
     subItems: [
       {

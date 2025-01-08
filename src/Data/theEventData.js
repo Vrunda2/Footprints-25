@@ -785,6 +785,7 @@ const questData = {
         ],
         price: ["- INR 100/-"],
         team: ["- Individual or Maximum 3"],
+        image: "https://www.istockphoto.com/photos/sample-image",
       },
     },
     {

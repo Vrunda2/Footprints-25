@@ -1,20 +1,228 @@
-// Technotron.js
-
-import React, { useState, useRef } from "react";
-import "./EventPage.css"; // Make sure this path is correct
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import theEventData from "../../Data/theEventData";
 import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
+import "./EventPage.css";
 import Error from "../Error";
 import VideoBox from "./VideoBox";
 
+const EventCard = ({ name, details, index }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
+  const getContent = () => {
+    switch (activeSection) {
+      case 'problem':
+        return {
+          title: 'Problem Statement',
+          content: details.info.map((info, index) => (
+            <li key={index}>{info}</li>
+          ))
+        };
+      case 'rules':
+        return {
+          title: 'Rules',
+          content: details.rules?.map((rule, index) => (
+            <li key={index}>{rule}</li>
+          ))
+        };
+      case 'team':
+        return {
+          title: 'Team Members',
+          content: details.team?.map((member, index) => (
+            <li key={index}>{member}</li>
+          ))
+        };
+      case 'price':
+        return {
+          title: 'Price Details',
+          content: details.price?.map((price, index) => (
+            <li key={index}>{price}</li>
+          ))
+        };
+      default:
+        return { title: name, content: null };
+    }
+  };
+
+  const content = getContent();
+
+  const isOdd = index % 2 !== 0;
+
+  return (
+    <div className={`event-card ${isOdd ? "reverse-layout" : ""}`}>
+      <div className="image-container">
+        <img src="https://media.istockphoto.com/id/1973365581/vector/sample-ink-rubber-stamp.jpg?s=612x612&w=0&k=20&c=_m6hNbFtLdulg3LK5LRjJiH6boCb_gcxPvRLytIz0Ws=" alt={name} className="event-image" />
+      </div>
+
+      <div className="content-container">
+        <h2 className="event-card-title">{content.title}</h2>
+        
+        {!isExpanded ? (
+          <button
+            onClick={() => setIsExpanded(true)}
+            className="view-details-btn"
+          >
+            View Details
+          </button>
+        ) : (
+          <div>
+            <div className="options-container">
+              <button
+                onClick={() => setActiveSection('problem')}
+                className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
+              >
+                Problem Statement
+              </button>
+              <button
+                onClick={() => setActiveSection('rules')}
+                className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
+              >
+                Rules
+              </button>
+              <button
+                onClick={() => setActiveSection('team')}
+                className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
+              >
+                Team Members
+              </button>
+              <button
+                onClick={() => setActiveSection('price')}
+                className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
+              >
+                Price
+              </button>
+            </div>
+            
+            {activeSection && content.content && (
+              <div className="content-area">
+                <ul>{content.content}</ul>
+              </div>
+            )}
+            
+            <button
+              onClick={() => {
+                setIsExpanded(false);
+                setActiveSection(null);
+              }}
+              className="collapse-btn"
+            >
+              Collapse
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+// const EventCard = ({ name, details }) => {
+//   const [isExpanded, setIsExpanded] = useState(false);
+//   const [activeSection, setActiveSection] = useState(null);
+
+//   const getContent = () => {
+//     switch (activeSection) {
+//       case 'problem':
+//         return {
+//           title: 'Problem Statement',
+//           content: details.info.map((info, index) => (
+//             <li key={index}>{info}</li>
+//           ))
+//         };
+//       case 'rules':
+//         return {
+//           title: 'Rules',
+//           content: details.rules?.map((rule, index) => (
+//             <li key={index}>{rule}</li>
+//           ))
+//         };
+//       case 'team':
+//         return {
+//           title: 'Team Members',
+//           content: details.team?.map((member, index) => (
+//             <li key={index}>{member}</li>
+//           ))
+//         };
+//       case 'price':
+//         return {
+//           title: 'Price Details',
+//           content: details.price?.map((price, index) => (
+//             <li key={index}>{price}</li>
+//           ))
+//         };
+//       default:
+//         return { title: name, content: null };
+//     }
+//   };
+
+//   const content = getContent();
+
+//   return (
+//     <div className="event-card">
+//       <h2 className="event-card-title">{content.title}</h2>
+      
+//       {!isExpanded ? (
+//         <button
+//           onClick={() => setIsExpanded(true)}
+//           className="view-details-btn"
+//         >
+//           View Details
+//         </button>
+//       ) : (
+//         <div>
+//           <div className="options-container">
+//             <button
+//               onClick={() => setActiveSection('problem')}
+//               className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
+//             >
+//               Problem Statement
+//             </button>
+//             <button
+//               onClick={() => setActiveSection('rules')}
+//               className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
+//             >
+//               Rules
+//             </button>
+//             <button
+//               onClick={() => setActiveSection('team')}
+//               className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
+//             >
+//               Team Members
+//             </button>
+//             <button
+//               onClick={() => setActiveSection('price')}
+//               className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
+//             >
+//               Price
+//             </button>
+//           </div>
+          
+//           {activeSection && content.content && (
+//             <div className="content-area">
+//               <ul>{content.content}</ul>
+//             </div>
+//           )}
+          
+//           <button
+//             onClick={() => {
+//               setIsExpanded(false);
+//               setActiveSection(null);
+//             }}
+//             className="collapse-btn"
+//           >
+//             Collapse
+//           </button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
 const EventPage = ({ theParent }) => {
   const { event } = useParams();
-  // console.log(theParent);
-  // console.log(event);
   let theData = [];
+  
   if (!event) {
     if(!theEventData[theParent]){
       return <Error/>;
@@ -27,42 +235,24 @@ const EventPage = ({ theParent }) => {
     theData = theEventData[theParent][event];
   }
 
-  const [isActive, setIsActive] = useState(false);
-  const [selectedTab, setSelectedTab] = useState(); // Set default tab
-  const [selectedMenu, setSelectedMenu] = useState(null);
-  const detailsRef = useRef(null);
-  // const sectionRef= useRef(null);
-
-  const toggleMenu = (menu) => {
-    if (selectedMenu === menu) {
-      // If clicking on the same tab and menu, toggle isActive only
-      setIsActive(!isActive);
-    } else {
-      // If clicking on a different tab or menu, update both selectedTab and selectedMenu
-      setIsActive(true);
-      // setSelectedTab(tab);
-      setSelectedMenu(menu);
-      // Scroll to details section
-      // detailsRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const toggle = (tabname) => {
-    setSelectedTab(tabname);
-
-    const sectionRef = document.getElementById(`${tabname.toLowerCase()}`);
-    if (sectionRef) {
-      const offset = 250; // You can adjust this value based on your layout
-      const offsetTop =
-        sectionRef.getBoundingClientRect().top + window.scrollY - offset;
-
-      window.scrollTo({ top: offsetTop, behavior: "smooth" });
-    }
-  };
-
   const data = theData["data"];
 
   return (
+
+    <div className="events_main">
+      <VideoBox url={theData["headingSource"]}/>
+      <div className="text_info">
+        <Heading
+          className="kaleido_heading"
+          id="glheading"
+          title={theData.title}
+        />
+      </div>
+      <div className="main-tech">
+        <div className={`tech ${data.length===6?" when-six":""} ${data.length===5?" when-five":""} ${data.length===7?" when-seven":""} ${data.length===1?" when-one":""}`}>
+          {data?.map(({ name, background, details }, index) => (
+            <div className="moon-icon-block" key={index}>
+
     <>
       <div className="events_main">
         <VideoBox url={theData["headingSource"]}/>
@@ -180,52 +370,29 @@ const EventPage = ({ theParent }) => {
               </div>
 
               {/* Additional Details */}
+
               <div
-                ref={detailsRef}
-                className={`additional-details ${isActive ? "visible" : ""}`}
-              >
-                {details && (
-                  <div className="details-content">
-                    <h1>{selectedMenu}</h1>
-                    {selectedMenu === "rules" && (
-                      <ul>
-                        {details.rules?.map((rule, index) => (
-                          <li key={index}>{rule}</li>
-                        ))}
-                      </ul>
-                    )}
-                    {selectedMenu === "specs" && (
-                      <ul>
-                        {details.specs?.map((spec, index) => (
-                          <li key={index}>{spec}</li>
-                        ))}
-                      </ul>
-                    )}
-                    {selectedMenu === "price" && (
-                      <ul>
-                        {details.price?.map((price, index) => (
-                          <li key={index}>{price}</li>
-                        ))}
-                      </ul>
-                    )}
-                    {selectedMenu === "team" && (
-                      <ul>
-                        {details.team?.map((team, index) => (
-                          <li key={index}>{team}</li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                )}
-              </div>
+                className="moon-icon"
+                data-name={name}
+                style={{
+                  backgroundImage: `url(${background})`,
+                  ...details.styles,
+                }}
+                data-aos="zoom-in-up"
+              />
             </div>
           ))}
         </div>
       </div>
+      
+      <div className="main_section">
+        {data.map((item, index) => (
+          <EventCard index={index} name={item.name} details={item.details} />
+        ))}
+      </div>
       <Sponsors />
       <Footer />
-      
-    </>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@
 }
 
 .Revealing-text p {
-    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, var(--yellow), transparent, transparent);
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, var(--blue), transparent, transparent);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -28,7 +28,7 @@
 
 @keyframes glow {
     40% {
-        text-shadow: 0 0 8px yellow;
+        text-shadow: 0 0 8px #45a29e;
     }
 }
 
@@ -68,7 +68,7 @@
 
     @keyframes glow {
         40% {
-            text-shadow: 0 0 8px yellow;
+            text-shadow: 0 0 8px #45a29e;
         }
     }
 }
@@ -105,7 +105,7 @@
 
     @keyframes glow {
         40% {
-            text-shadow: 0 0 8px yellow;
+            text-shadow: 0 0 8px #45a29e;
         }
     }
 }

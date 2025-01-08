@@ -12,7 +12,7 @@ import Segments from "./Segment/Segments";
 
 function Homepage() {
   useEffect(() => {
-    document.title = "Home | FootPrints'24";
+    document.title = "Home | FootPrints'25";
   }, []);
 
   return (

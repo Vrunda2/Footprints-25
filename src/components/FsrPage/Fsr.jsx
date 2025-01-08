@@ -11,10 +11,10 @@ function Fsr() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      offset: 150,
-      once: true,
+      offset: 100,
+      once: false,
     });
-    document.title = "FSR | FootPrints'24";
+    document.title = "FSR | FootPrints'25";
   }, []);
 
   return (

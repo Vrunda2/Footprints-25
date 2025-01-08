@@ -3,7 +3,7 @@ const segmentData = [
     {
         name: "Technotron",
 
-        imgSrc: "https://res.cloudinary.com/dwdln9iy2/image/upload/v1674628379/Segment-Fp23/Technotron_p96irm.svg",
+        imgSrc: "https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405217/starwars/item-1.webp",
 
         description: "Technical Events",
 

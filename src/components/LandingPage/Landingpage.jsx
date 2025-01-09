@@ -1,36 +1,31 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./landingpage.css"; // Import the CSS file
-import { FaLocationArrow } from "react-icons/fa";
+import "./landingpage.css";
 
 const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleSubtitleClick = () => {
-    // Navigate to the "/home" route
     navigate("/home");
   };
 
   return (
-    <>
-      <div className="main-star">
-        
-        <div id="horizon">
-          <div className="glow"></div>
-        </div>
-        <div id="earth"></div>
-        <div id="title">FOOTPRINTS 24</div>
-        <div id="subtitle">
-          <span onClick={handleSubtitleClick}>
-            Explore Now
-            {/* <FaLocationArrow /> */}
-            <FaLocationArrow className="icon" />
-          </span>
-          {/* <span onClick={handleSubtitleClick}>LET</span> */}
-          {/* <span onClick={handleSubtitleClick}>GO</span> */}
-        </div>
+    <div className="main-star">
+      <div className="overlay"></div>
+      <div className="logo-container">
+        <img 
+          src="src\components\LandingPage\Footprints25Silver.png"
+          alt="Footprints 25 Logo" 
+          className="center-logo"
+          
+        />
       </div>
-    </>
+      <div id="subtitle">
+        <span onClick={handleSubtitleClick}>
+          Explore More
+        </span>
+      </div>
+    </div>
   );
 };
 

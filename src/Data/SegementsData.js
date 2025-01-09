@@ -1,4 +1,4 @@
-import technotron from "../assets/images/segmentimage/technotron.png";
+import technotron from "../assets/images/segmentimage/TT1.png";
 import Kaleidoscope from "../assets/images/segmentimage/KALEIDOO.png";
 import RS from "../assets/images/segmentimage/RSS.png";
 import FSE from "../assets/images/segmentimage/FSE.png";

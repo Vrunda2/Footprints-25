@@ -157,7 +157,7 @@ body::-webkit-scrollbar-thumb {
 html,
 body {
   /* background-color: var(--background-color); */
-  background: url(../../../../bggg.jpg) fixed no-repeat;
+  background: url(../../../assets/BGBase.jpg) fixed no-repeat;
   background-size: cover;
   /* color: var(--font-color); */
   /* font-family: 'Outfit', sans-serif; */

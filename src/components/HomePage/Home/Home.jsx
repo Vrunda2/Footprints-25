@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import mainHeader from "../../../assets/FP25PH.png";
+import mainHeader from "../../../assets/FP25HeaderWhite.png";
 import { useMousePosition } from "../../../CustomHooks/useMousePosition";
 
 function Home() {

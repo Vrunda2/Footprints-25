@@ -124,7 +124,6 @@ const Glimpse = () => {
           </a>
         </div>
       </div>
-      <div className="alt-bg" style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}></div>
       <img src="" alt="" />
     </div>
   );

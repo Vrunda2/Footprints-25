@@ -144,7 +144,13 @@ body::-webkit-scrollbar-thumb {
 /* Stlyling In Body */
 html,
 body {
-  background-color: var(--background-color);
+
+  /* background-color: var(--background-color); */
+  background: url(../../../assets/BGBase.jpg) fixed no-repeat;
+  background-size: cover;
+
+/*   background-color: var(--background-color); */
+
   /* color: var(--font-color); */
   /* font-family: 'Outfit', sans-serif; */
   max-width: 100%;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 import menuItems from "../../../Data/menuItems";
-import logo from "../../../assets/images/Logo/purple.png";
+import logo from "../../../assets/images/Logo/fp25.png";
 
 export default function NavBar(props) {
   /* array of technical event */
@@ -56,7 +56,7 @@ export default function NavBar(props) {
   return (
     <header className="nav-header">
       <Link to={"./home"} className="navbar-logo">
-        <img src={logo} alt="Footprints'24" />
+        <img src={logo} alt="Footprints'25" />
       </Link>
 
       <input type="checkbox" name="" id="menu-bar" />

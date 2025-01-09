@@ -1,10 +1,13 @@
+import exampleImage from "../assets/example.jpg";
+
+
 const technotronData = {
   cybernetics: {
     title : "Event Related to Computer And IT Department",
     data: [
       {
         name: "Runtime",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: exampleImage,
         details: {
           info: [
             "This event tests your programming skills. The challenge is to code the real-life problems in the computer world using any programming language interviewing different stages of coding and scoring the most among them.",
@@ -22,7 +25,7 @@ const technotronData = {
       },
       {
         name: "WebTech",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: exampleImage,
         details: {
           info: [
             "Participants will have to build a web/mobile application and incorporate the feature asked based on iOS/Windows or Android platform or any web technologies. Theme and design essentials for the website will be provided to them beforehand.",
@@ -42,7 +45,7 @@ const technotronData = {
       },
       {
         name: "HackPrints 3.0",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: exampleImage,
         details: {
           info: [
             "It is a 3-day online Hackathon based event wherein the participants have to submit a developed project i.e., a mobile/web application based on a given theme provided on the website of HackPrints 3.0",
@@ -62,7 +65,7 @@ const technotronData = {
       },
       {
         name: "AlgoSync",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: exampleImage,
         details: {
           info: [
             "Exploring supervised and unsupervised realms, a pivotal machine learning event.",
@@ -785,6 +788,7 @@ const questData = {
         ],
         price: ["- INR 100/-"],
         team: ["- Individual or Maximum 3"],
+        image: "https://www.istockphoto.com/photos/sample-image",
       },
     },
     {

@@ -1,90 +1,35 @@
-.image-container {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
+#home-header{
+  object-fit: contain;
+  /* width: 100%; */
+  width: 100%;
   align-items: center;
+  height: 650px;
+  padding: 60px;
+  /* align-self: center; */
 }
 
-.asteroid-image {
-  width: 10%; /* Adjust the size as needed */
-  height: 0 auto;
-
-  filter: drop-shadow(
-    0 0 20px rgba(255, 232, 253, 0.217)
-  ); /* Adjust the color and size of the glow as needed */
+@media screen and (max-width: 800px) {
+  #home-header{
+  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+}
+}
+/* Apply animation to the image */
+.zoom-animation {
+  animation: zoom-in-out 3s ease-in-out forwards; /* Runs once and stops at the last frame */
 }
 
-.astronaut-image {
-  width: 35%; /* Adjust the size as needed */
-  height: auto;
-  filter: drop-shadow(0 0 20px rgba(255, 232, 253, 0.21));
-}
-
-.asteroid-image,
-.astronaut-image {
-  transform: scaleX(-1); /* This will invert the image horizontally */
-  animation: moveUpDown 4s infinite alternate; /* Adjust the animation duration as needed */
-}
-
-@keyframes moveUpDown {
+/* Keyframes for zoom-in and zoom-out */
+@keyframes zoom-in-out {
   0% {
-    transform: translateY(-5%);
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in slightly */
   }
   100% {
-    transform: translateY(5%);
+    transform: scale(1); /* Return to original size */
   }
 }
 
-.inverted-image-container {
-  /* left: -2%; */
-  transform: translateY(-25%);
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.inverted-image {
-  width: 100%;
-  /* height:0 auto; */
-  margin: 0 auto;
-  /* margin-left: -3rem; */
-  position: relative;
-  /* transform: scaleY(-1);  */
-}
-.header-image {
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
-  position: absolute;
-  justify-content: center;
-  margin-top: 8%;
-  margin-left: 5%;
-}
-
-@media screen and (min-width:462px) and (max-width: 500px) {
-  .inverted-image-container {
-    transform: translateY(-25%);
-  }
-
-  .inverted-image {
-  }
-}
-
-@media screen and (min-width:294px) and (max-width:461px) {
-    .inverted-image-container{
-      transform: translateY(-40%);
-    }
-}
-
-@media screen and (min-width:265px) and (max-width:294px) {
-    .inverted-image-container{
-      transform: translateY(-45%);
-    }
-}
-
-@media screen and (max-width:265px) {
-    .inverted-image-container{
-      transform: translateY(-50%);
-    }
-}

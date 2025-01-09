@@ -3,10 +3,13 @@ import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Gallery.css";
+import RS from "../../assets/images/gallary/concert.jpg";
+import MECH from "../../assets/images/gallary/mech.jpg";
+import SANGA from "../../assets/images/gallary/sanga.jpg";
 
 const Gallery = () => {
   useEffect(() => {
-    document.title = "Gallery | FootPrints'24";
+    document.title = "Gallery | FootPrints'25";
   }, []);
 
   // var [numLoaded, setLoaded] = useState(0);
@@ -59,14 +62,14 @@ const Gallery = () => {
   let data = [
     {
       id: 1,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862194/main%20website%20gallery/djvxr3kmtnof3oa1lajd.png",
+      imgSrc: RS,
       title: "Rolling Squares",
       subtitle: "Concert",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 2,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862194/main%20website%20gallery/ugcyy8qjpmcn90rvtnyh.png",
+      imgSrc: MECH,
       title: "Macheanema",
       subtitle: "Burnout",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -74,14 +77,14 @@ const Gallery = () => {
     
     {
       id: 3,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862197/main%20website%20gallery/utbm8smdp5m8nhdgochm.png",
+      imgSrc: SANGA,
       title: "Sanganikee",
       subtitle: "Smackbots",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 4,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862195/main%20website%20gallery/q3e72ohtvdwqzg8aqebf.png",
+      imgSrc: RS,
       title: "Kaleidoscope",
       subtitle: "Guest Lecture",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -89,7 +92,7 @@ const Gallery = () => {
 
     {
       id: 5,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862196/main%20website%20gallery/c40pxspvvuqgzxmtiklj.png",
+      imgSrc: RS,
       title: "FSR",
       subtitle: "FootPrints Social Responsibility",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -97,7 +100,7 @@ const Gallery = () => {
 
     {
       id: 6,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862852/main%20website%20gallery/xth7bl49bpfvscymcqar.png",
+      imgSrc: RS,
       title: "College Decoration",
       subtitle: "During the Fest",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -111,21 +114,21 @@ const Gallery = () => {
     // },
     {
       id: 7,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862195/main%20website%20gallery/ps3nzq0ujzkg0fb9l95w.png",
+      imgSrc: RS,
       title: "Rolling squares",
       subtitle: "Concert",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 8,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862196/main%20website%20gallery/tjxcjkfmelmdgbfquclr.png",
+      imgSrc: RS,
       title: "Citadel",
       subtitle: "Tremors Apsida",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 9,
-      imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705862195/main%20website%20gallery/osiny7pyjxqrhermoxam.png",
+      imgSrc: RS,
       title: "Kaleidoscope",
       subtitle: "Podcast",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",

@@ -1,7 +1,11 @@
 #home-header{
-  object-fit: cover;
+  object-fit: contain;
+  /* width: 100%; */
   width: 100%;
+  align-items: center;
   height: 650px;
+  padding: 60px;
+  /* align-self: center; */
 }
 
 @media screen and (max-width: 800px) {
@@ -11,3 +15,21 @@
   height: 100%;
 }
 }
+/* Apply animation to the image */
+.zoom-animation {
+  animation: zoom-in-out 3s ease-in-out forwards; /* Runs once and stops at the last frame */
+}
+
+/* Keyframes for zoom-in and zoom-out */
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in slightly */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
+}
+

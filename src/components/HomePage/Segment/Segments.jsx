@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Heading from "../../Common/Headings/Heading";
 import "./Segment.css";
@@ -10,28 +10,37 @@ const Segments = () => {
   const navigate = useNavigate();
 
   const handleNext = () => {
-    if (currentProduct < segementData.length - 1) {
-      setAnimationClass("exit-left");
-      setTimeout(() => {
-        setCurrentProduct((prev) => prev + 1);
-        setAnimationClass("");
-      }, 500);
-    }
+    setAnimationClass("exit-left");
+    setTimeout(() => {
+      setCurrentProduct((prev) =>
+        prev < segementData.length - 1 ? prev + 1 : 0 
+      );
+      setAnimationClass("fade-up");
+    }, 50);
   };
 
   const handlePrev = () => {
-    if (currentProduct > 0) {
-      setAnimationClass("exit-right");
-      setTimeout(() => {
-        setCurrentProduct((prev) => prev - 1);
-        setAnimationClass("");
-      }, 500);
-    }
+    setAnimationClass("exit-right");
+    setTimeout(() => {
+      setCurrentProduct((prev) =>
+        prev > 0 ? prev - 1 : segementData.length - 1 
+      );
+      setAnimationClass("fade-up");
+    }, 50);
   };
 
   const handleEventClick = (link) => {
-    navigate(link); // Redirect to the URL
+    navigate(link);
   };
+
+  // Autoplay functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 4000);
+
+    return () => clearInterval(interval); 
+  }, []);
 
   return (
     <div className="main-segment">
@@ -45,38 +54,35 @@ const Segments = () => {
             <img
               key={index}
               src={product.imageSource}
-            
               alt={product.title}
               className={`product-img ${
-                index === currentProduct ? "active" : animationClass
+                index === currentProduct ? `active ${animationClass}` : ""
               }`}
             />
           ))}
         </div>
 
         <div className="product-slider">
-          <button
-            className={`prev ${currentProduct === 0 ? "disabled" : ""}`}
-            onClick={handlePrev}
-            disabled={currentProduct === 0}
-          >
+          <button className="prev" onClick={handlePrev}>
             <span>←</span>
           </button>
 
-          <button
-            className={`next ${
-              currentProduct === segementData.length - 1 ? "disabled" : ""
-            }`}
-            onClick={handleNext}
-            disabled={currentProduct === segementData.length - 1}
-          >
+          <button className="next" onClick={handleNext}>
             <span>→</span>
           </button>
 
-          <div className="product-card">
-            <div className="product-content">
+          <div className={`product-card ${animationClass}`}>
+            <div className="product-content"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="4000"
+                  >
               <h1>{segementData[currentProduct].title}</h1>
-              <div className="product-events">
+              <div className="product-events"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="4000"
+                    >
                 {segementData[currentProduct].subItems.map((event, index) => (
                   <button
                     key={index}

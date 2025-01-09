@@ -4,112 +4,74 @@ import theEventData from "../../Data/theEventData";
 import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
-import "./EventPage.css";
-import Error from "../Error";
 import VideoBox from "./VideoBox";
+import Error from "../Error";
+import "./EventPage.css";
 
-const EventCard = ({ name, details, index }) => {
+const EventCard = ({ name, details,background, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
-  const getContent = () => {
-    switch (activeSection) {
-      case 'problem':
-        return {
-          title: 'Problem Statement',
-          content: details.info.map((info, index) => (
-            <li key={index}>{info}</li>
-          ))
-        };
-      case 'rules':
-        return {
-          title: 'Rules',
-          content: details.rules?.map((rule, index) => (
-            <li key={index}>{rule}</li>
-          ))
-        };
-      case 'team':
-        return {
-          title: 'Team Members',
-          content: details.team?.map((member, index) => (
-            <li key={index}>{member}</li>
-          ))
-        };
-      case 'price':
-        return {
-          title: 'Price Details',
-          content: details.price?.map((price, index) => (
-            <li key={index}>{price}</li>
-          ))
-        };
-      default:
-        return { title: name, content: null };
-    }
+  const sections = {
+    problem: { title: "Problem Statement", content: details.info },
+    rules: { title: "Rules", content: details.rules },
+    team: { title: "Team Members", content: details.team },
+    price: { title: "Price Details", content: details.price },
   };
 
-  const content = getContent();
+  const renderSectionContent = () => {
+    const section = sections[activeSection];
+    if (section && section.content) {
+      return (
+        <div className="content-area">
+          <h3>{section.title}</h3>
+          <ul>
+            {section.content.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
+    return null;
+  };
 
-  const isOdd = index % 2 !== 0;
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+    if (!isExpanded) setActiveSection(null);
+  };
 
   return (
-    <div className={`event-card ${isOdd ? "reverse-layout" : ""}`}>
+    <div className={`event-card ${index % 2 ? "reverse-layout" : ""}`}>
       <div className="image-container">
-        <img src="https://media.istockphoto.com/id/1973365581/vector/sample-ink-rubber-stamp.jpg?s=612x612&w=0&k=20&c=_m6hNbFtLdulg3LK5LRjJiH6boCb_gcxPvRLytIz0Ws=" alt={name} className="event-image" />
+        <img
+          src={background}
+          alt={name}
+          className="event-image"
+        />
       </div>
-
       <div className="content-container">
-        <h2 className="event-card-title">{content.title}</h2>
-        
+        <h2 className="event-card-title">{name}</h2>
         {!isExpanded ? (
-          <button
-            onClick={() => setIsExpanded(true)}
-            className="view-details-btn"
-          >
+          <button className="view-details-btn" onClick={toggleExpand}>
             View Details
           </button>
         ) : (
           <div>
             <div className="options-container">
-              <button
-                onClick={() => setActiveSection('problem')}
-                className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
-              >
-                Problem Statement
-              </button>
-              <button
-                onClick={() => setActiveSection('rules')}
-                className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
-              >
-                Rules
-              </button>
-              <button
-                onClick={() => setActiveSection('team')}
-                className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
-              >
-                Team Members
-              </button>
-              <button
-                onClick={() => setActiveSection('price')}
-                className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
-              >
-                Price
-              </button>
+              {Object.keys(sections).map((key) => (
+                <button
+                  key={key}
+                  className={`option-btn ${activeSection === key ? "active" : ""}`}
+                  onClick={() => setActiveSection(key)}
+                >
+                  {sections[key].title}
+                </button>
+              ))}
             </div>
-            
-            {activeSection && content.content && (
-              <div className="content-area">
-                <ul>{content.content}</ul>
-              </div>
-            )}
-            
-            <button
-              onClick={() => {
-                setIsExpanded(false);
-                setActiveSection(null);
-              }}
-              className="collapse-btn"
-            >
-              Collapse
+            {renderSectionContent()}
+            <button className="collapse-btn" onClick={toggleExpand}>
+              Hide Details
             </button>
           </div>
         )}
@@ -117,161 +79,24 @@ const EventCard = ({ name, details, index }) => {
     </div>
   );
 };
-// const EventCard = ({ name, details }) => {
-//   const [isExpanded, setIsExpanded] = useState(false);
-//   const [activeSection, setActiveSection] = useState(null);
-
-//   const getContent = () => {
-//     switch (activeSection) {
-//       case 'problem':
-//         return {
-//           title: 'Problem Statement',
-//           content: details.info.map((info, index) => (
-//             <li key={index}>{info}</li>
-//           ))
-//         };
-//       case 'rules':
-//         return {
-//           title: 'Rules',
-//           content: details.rules?.map((rule, index) => (
-//             <li key={index}>{rule}</li>
-//           ))
-//         };
-//       case 'team':
-//         return {
-//           title: 'Team Members',
-//           content: details.team?.map((member, index) => (
-//             <li key={index}>{member}</li>
-//           ))
-//         };
-//       case 'price':
-//         return {
-//           title: 'Price Details',
-//           content: details.price?.map((price, index) => (
-//             <li key={index}>{price}</li>
-//           ))
-//         };
-//       default:
-//         return { title: name, content: null };
-//     }
-//   };
-
-//   const content = getContent();
-
-//   return (
-//     <div className="event-card">
-//       <h2 className="event-card-title">{content.title}</h2>
-      
-//       {!isExpanded ? (
-//         <button
-//           onClick={() => setIsExpanded(true)}
-//           className="view-details-btn"
-//         >
-//           View Details
-//         </button>
-//       ) : (
-//         <div>
-//           <div className="options-container">
-//             <button
-//               onClick={() => setActiveSection('problem')}
-//               className={`option-btn ${activeSection === 'problem' ? 'active' : ''}`}
-//             >
-//               Problem Statement
-//             </button>
-//             <button
-//               onClick={() => setActiveSection('rules')}
-//               className={`option-btn ${activeSection === 'rules' ? 'active' : ''}`}
-//             >
-//               Rules
-//             </button>
-//             <button
-//               onClick={() => setActiveSection('team')}
-//               className={`option-btn ${activeSection === 'team' ? 'active' : ''}`}
-//             >
-//               Team Members
-//             </button>
-//             <button
-//               onClick={() => setActiveSection('price')}
-//               className={`option-btn ${activeSection === 'price' ? 'active' : ''}`}
-//             >
-//               Price
-//             </button>
-//           </div>
-          
-//           {activeSection && content.content && (
-//             <div className="content-area">
-//               <ul>{content.content}</ul>
-//             </div>
-//           )}
-          
-//           <button
-//             onClick={() => {
-//               setIsExpanded(false);
-//               setActiveSection(null);
-//             }}
-//             className="collapse-btn"
-//           >
-//             Collapse
-//           </button>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
 
 const EventPage = ({ theParent }) => {
   const { event } = useParams();
-  let theData = [];
-  
-  if (!event) {
-    if(!theEventData[theParent]){
-      return <Error/>;
-    }
-    theData = theEventData[theParent];
-  } else {
-    if(!theEventData[theParent][event]){
-      return <Error />;
-    }
-    theData = theEventData[theParent][event];
-  }
+  if (!theEventData[theParent]) return <Error />;
+  const theData = event ? theEventData[theParent][event] : theEventData[theParent];
 
-  const data = theData["data"];
+  if (!theData) return <Error />;
+  const { title, headingSource, data } = theData;
 
   return (
     <div className="events_main">
-      <VideoBox url={theData["headingSource"]}/>
-      <div className="text_info">
-        <Heading
-          className="kaleido_heading"
-          id="glheading"
-          title={theData.title}
-        />
-      </div>
-      <div className="main-tech">
-        <div className={`tech ${data.length===6?" when-six":""} ${data.length===5?" when-five":""} ${data.length===7?" when-seven":""} ${data.length===1?" when-one":""}`}>
-          {data?.map(({ name, background, details }, index) => (
-            <div className="moon-icon-block" key={index}>
-              <div
-                className="moon-icon"
-                data-name={name}
-                style={{
-                  backgroundImage: `url(${background})`,
-                  ...details.styles,
-                }}
-                data-aos="zoom-in-up"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      
-      <div className="main_section">
-        {data.map((item, index) => (
-          <EventCard index={index} name={item.name} details={item.details} />
+      <VideoBox url={headingSource} />
+      <Heading className="kaleido_heading" id="glheading" title={title} />
+      <div className={`main-tech tech-${data.length}`}>
+        {data.map((item, idx) => (
+          <EventCard key={idx} {...item} index={idx} />
         ))}
       </div>
-      <Sponsors />
-      <Footer />
     </div>
   );
 };

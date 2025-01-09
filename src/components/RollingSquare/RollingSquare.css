@@ -1,185 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-
-.rs_images-container{
+.rs_images-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .gallery {
-  --size: 150px;
   display: grid;
-  grid-template-columns: repeat(6,var(--size));
-  grid-auto-rows: var(--size);
-  margin-bottom: var(--size);
-  place-items: start center;
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  max-width: 70%;
 }
 
 .gallery img {
   object-fit: cover;
-  width: calc(var(--size) * 2);
-  height: calc(var(--size) * 2);
-  clip-path:  polygon(50% 0, 100% 50%, 50% 100%, 0 50%);;
-  transition: clip-path 0.25s ease;
-  grid-column: auto / span 2;
-  border-radius: 5px;
-  border: 2px solid purple;
-}
-
-.gallery img:nth-child(5n - 1) {
-  grid-column: 2/ span 2;
-}
-
-.gallery img:hover, .gallery img:focus {
-  clip-path:  polygon(0 0, 100% 0, 100% 100%, 0% 100%);;
-  z-index: 10;
-  /* transition: clip-path 0.25s ease; */
-}
-
-.img-transition{
-  clip-path:  polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
-  /* background-color: white; */
-  /* opacity: 0.5; */
-}
-
-.concert-24{
-  /* width: 100%; */
-  height: 80%;  
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.concert-24 > img{
   width: 100%;
-  height: 600px;
-  object-fit: cover;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
 }
 
-.concert-24 > .info{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(255, 0, 247, 0.176);
-  box-shadow: inset 20px 64px 168px 26px black; 
-  color: white;
-  /* opacity: 0; */
-  /* transition: all 0.5s ease; */
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 4px rgba(102, 252, 241, 0.8);
+  border: 2px solid #66fcf1; 
+  z-index: 1;
+  filter: grayscale(0%);
 }
 
-.info > .name{
-  width: 100%;
-  position: absolute;
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 7rem;
-  font-family: "Playball", cursive;
-  font-weight: 400;
-  font-style: normal;
+.img-transition {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 4px rgba(102, 252, 241, 0.8); 
+  border: 2px solid #66fcf1;
 }
 
-.info > .meta-info{
-  position: absolute;
-  left: 10px;
-  bottom:20px;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-
-/* .gallery img:focus {
-  outline: 1px dashed black;
-  outline-offset: -5px;
-} */
-
-@media screen and (max-width:500px) {
-  .concert-24 > img{
-    height: 250px;
+@media screen and (max-width: 500px) {
+  .gallery img {
+    border-radius: 5px;
   }
-
-  .info > .name{
-    font-size: 2rem;
-  }
-
-  .info > .meta-info{
-    font-size: 0.6rem;
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width:500px) and (max-width:619px) {
-    .gallery{
-      --size:200px;
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-    }
-
-    .gallery img{
-      box-shadow: 2px 2px 2px 1px rgb(161, 21, 255); ;
-    }
-    .concert-24 > img{
-      height: 300px;
-    }
-    .info > .name{
-      font-size: 3rem;
-    }
-    .info > .meta-info{
-      font-size: 1rem;
-    }
+@media screen and (min-width: 500px) and (max-width: 619px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media screen and (min-width:620px) and (max-width:759px) {
-    .gallery{
-      --size:100px;
-    }
-
-    .concert-24 > img{
-      height: 450px;
-    }
-
-    .info > .name{
-      font-size: 5rem;
-    }
-
-    .info > .meta-info{
-      font-size: 1.2rem;
-    }
+@media screen and (min-width: 620px) and (max-width: 759px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-@media screen and (min-width:760px) and (max-width:999px){
-    .gallery{
-      --size:120px;
-    }
-
-    .concert-24 > img{
-      height: 450px;
-    }
-
-    .info > .name{
-      font-size: 6rem;
-    }
-
-    .info > .meta-info{
-      font-size: 1.5rem;
-    }
-}
-
-@media (min-width:1000px) {
-    .gallery{
-      --size:150px;
-    }
-}
-
-@media screen and (min-width:300px) and (max-width:619px) {
-  .gallery{
-    --size:180px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+@media screen and (min-width: 760px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

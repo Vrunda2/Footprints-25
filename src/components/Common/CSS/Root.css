@@ -145,8 +145,8 @@ body::-webkit-scrollbar-thumb {
 html,
 body {
 
-  /* background-color: var(--background-color); */
-  background: url(../../../assets/BGBase.jpg) fixed no-repeat;
+  background-color: var(--background-color);
+  /* background: url(../../../assets/BGBase.jpg) fixed no-repeat; */
   background-size: cover;
 
 /*   background-color: var(--background-color); */

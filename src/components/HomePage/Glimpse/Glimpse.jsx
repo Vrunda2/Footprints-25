@@ -2,6 +2,9 @@ import React from "react";
 // import Img from "../../../assets/images/Insta-icon3.png";
 import Heading from "../../Common/Headings/Heading";
 import "./Glimpse.css";
+import FSRR from "../../../assets/images/temp/fsr11.jpg";
+import RSS from "../../../assets/images/temp/aditya.jpg";
+import Info from "../../../assets/images/temp/informal.jpg";
 
 const Glimpse = () => {
   return (
@@ -69,10 +72,11 @@ const Glimpse = () => {
         >
           <a target="_blank" href="https://www.instagram.com/reel/CvmwsvAgR2U/?igshid=NTc4MTIwNjQ2YQ==">
             <img
-              src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705426901/reel/veozcwrvwumlxv794d5x.jpg"
+              src= {FSRR}
               className="imagef"
               alt=""
               width="300px"
+              height="200px"
             />
             <div className="ig-overlay">
               <img src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705427552/reel/ncbl5lrsub6rybpi1zpa.png" alt="" />
@@ -88,10 +92,12 @@ const Glimpse = () => {
         >
           <a target="_blank" href="https://www.instagram.com/reel/Ct0h_36At9K/?igshid=NTc4MTIwNjQ2YQ==">
             <img
-              src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705426791/reel/y3nh8xyomrreujzpqpxh.jpg"
+              src={RSS}
               className="imagef"
               alt=""
               width="300px"
+              height="200px"
+
             />
             <div className="ig-overlay">
               <img src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705427552/reel/ncbl5lrsub6rybpi1zpa.png" alt="" />
@@ -109,10 +115,11 @@ const Glimpse = () => {
         >
           <a target="_blank" href="https://www.instagram.com/reel/CvhA84wARr2/?igshid=NTc4MTIwNjQ2YQ==">
             <img
-              src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705426823/reel/tzwpochuotli4yjurkdy.jpg"
+              src={Info}
               className="imagef"
               alt=""
               width="300px"
+              height="200px"
             />
             <div className="ig-overlay">
               <img src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705427552/reel/ncbl5lrsub6rybpi1zpa.png" alt="" />

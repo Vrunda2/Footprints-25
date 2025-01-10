@@ -1,4 +1,11 @@
 import exampleImage from "../assets/example.jpg";
+import runtime from "../assets/images/eventimage/runtime1.jpg";
+import brokenfloats from "../assets/images/eventimage/borkenfloats.jpg";
+import count from "../assets/images/eventimage/10count3.jpg";
+import texlycra from "../assets/images/eventimage/synopsis2.jpg";
+import vouge from "../assets/images/eventimage/vouge.jpg";
+import imprints from "../assets/images/eventimage/imprints2.jpg";
+
 
 
 const technotronData = {
@@ -7,7 +14,7 @@ const technotronData = {
     data: [
       {
         name: "Runtime",
-        background: exampleImage,
+        background: runtime,
         details: {
           info: [
             "This event tests your programming skills. The challenge is to code the real-life problems in the computer world using any programming language interviewing different stages of coding and scoring the most among them.",
@@ -89,7 +96,7 @@ const technotronData = {
     data: [
       {
         name: "The Vogue",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: vouge,
         details: {
           info: [
             "Make an innovative product based on theme using given material and decorate it.",
@@ -105,7 +112,7 @@ const technotronData = {
       },
       {
         name: "Broken Floats",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: brokenfloats,
         details: {
           info: [
             "Weave a fabric on a handloom with maximum speed and accuracy in given interval of time.",
@@ -122,7 +129,7 @@ const technotronData = {
       },
       {
         name: "The 10s Count",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: count,
         details: {
           info: [
             "It is a paper presentation event related to Textile Department.",
@@ -148,7 +155,7 @@ const technotronData = {
       },
       {
         name: "Quiz-O-Tex",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: texlycra,
         details: {
           info: ["A quiz event pertaining to Textile Department."],
           rules: [
@@ -161,7 +168,7 @@ const technotronData = {
       },
       {
         name: "Imprints",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: imprints,
         details: {
           info: [
             "Dye and print the given fabric using creativity and maximum accuracy.",

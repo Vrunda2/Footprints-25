@@ -144,18 +144,18 @@ body::-webkit-scrollbar-thumb {
 /* Stlyling In Body */
 html,
 body {
-
-  background-color: var(--background-color);
-  /* background: url(../../../assets/BGBase.jpg) fixed no-repeat; */
-  background-size: cover;
-
-/*   background-color: var(--background-color); */
-
-  /* color: var(--font-color); */
-  /* font-family: 'Outfit', sans-serif; */
-  max-width: 100%;
+  background-color: #161616;
+  background-image: url("../../../assets/BGBase.jpg");
+  background-size: 100vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This prevents the background from scrolling */
+  min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  /* color: var(--font-color); */
+  /* font-family: 'Outfit', sans-serif; */
 }
 
 /* Styling In Common(Tags) */

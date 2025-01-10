@@ -7,6 +7,7 @@ import Footer from "../Common/Footer/Footer";
 import VideoBox from "./VideoBox";
 import Error from "../Error";
 import "./EventPage.css";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 const EventCard = ({ name, details,background, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -35,6 +36,8 @@ const EventCard = ({ name, details,background, index }) => {
     }
     return null;
   };
+
+  const position = useMousePosition();
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
@@ -89,15 +92,17 @@ const EventPage = ({ theParent }) => {
   const { title, headingSource, data } = theData;
 
   return (
-    <div className="events_main">
-      <VideoBox url={headingSource} />
-      <Heading className="kaleido_heading" id="glheading" title={title} />
-      <div className={`main-tech tech-${data.length}`}>
-        {data.map((item, idx) => (
-          <EventCard key={idx} {...item} index={idx} />
-        ))}
+    <>
+      <div className="events_main">
+        <VideoBox url={headingSource} />
+        <Heading className="kaleido_heading" id="glheading" title={title} />
+        <div className={`main-tech tech-${data.length}`}>
+          {data.map((item, idx) => (
+            <EventCard key={idx} {...item} index={idx} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -30,11 +30,12 @@
 }
 
 .center-logo {
-  max-width: 1000px;  /* Increased from 400px */
+  max-width: 900px;  /* Increased from 400px */
   width: 90%;
   height: auto;
   filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
   transition: transform 0.3s ease;
+  transform: translateY(-20px); /* Push up by 20px on smaller screens */
 }
 
 .center-logo:hover {
@@ -120,5 +121,15 @@
   #subtitle span {
     padding: 10px 20px;
     font-size: 14px;
+  }
+ 
+  
+  .center-logo {
+    max-width: 300px;
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+    transition: transform 0.3s ease;
+    transform: translateY(-20px); /* Push up by 20px on smaller screens */
   }
 }

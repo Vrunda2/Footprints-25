@@ -1,5 +1,5 @@
 import exampleImage from "../assets/example.jpg";
-
+import fs from "./temp4.mp4";
 
 const technotronData = {
   cybernetics: {
@@ -82,7 +82,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597489/vdos/avcm5iaaztsgrjnevfym.mp4",
+      fs,
   },
   lycra: {
     title : "Event Related to Textile Department",
@@ -944,7 +944,7 @@ const fseData = {
     },
   ],
   headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597483/vdos/ruammnkjmu1hxfyofx9s.mp4",
+    "./temp3.mp4",
 };
 
 const theEventData = {

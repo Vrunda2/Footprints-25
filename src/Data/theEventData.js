@@ -1,10 +1,26 @@
+import exampleImage from "../assets/example.jpg";
+import runtime from "../assets/images/eventimage/runtime1.jpg";
+import brokenfloats from "../assets/images/eventimage/brokenfloatss.jpg";
+import count from "../assets/images/eventimage/10count33.jpg";
+import texlycra from "../assets/images/eventimage/synopsis.jpg";
+import vouge from "../assets/images/eventimage/vogue2.jpg";
+import imprints from "../assets/images/eventimage/imprints.jpg";
+import Hackathon from "../assets/images/eventimage/hackathonn.jpg";
+import webtech from "../assets/images/eventimage/webtechhh.jpg";
+import interfaze from "../assets/images/eventimage/interfazee.jpg";
+import Hydrex from "../assets/images/eventimage/hydrexx.jpg";
+
+
+
+
+
 const technotronData = {
   cybernetics: {
     title : "Event Related to Computer And IT Department",
     data: [
       {
         name: "Runtime",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: runtime,
         details: {
           info: [
             "This event tests your programming skills. The challenge is to code the real-life problems in the computer world using any programming language interviewing different stages of coding and scoring the most among them.",
@@ -22,7 +38,7 @@ const technotronData = {
       },
       {
         name: "WebTech",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: webtech,
         details: {
           info: [
             "Participants will have to build a web/mobile application and incorporate the feature asked based on iOS/Windows or Android platform or any web technologies. Theme and design essentials for the website will be provided to them beforehand.",
@@ -42,7 +58,7 @@ const technotronData = {
       },
       {
         name: "HackPrints 3.0",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Hackathon,
         details: {
           info: [
             "It is a 3-day online Hackathon based event wherein the participants have to submit a developed project i.e., a mobile/web application based on a given theme provided on the website of HackPrints 3.0",
@@ -62,7 +78,7 @@ const technotronData = {
       },
       {
         name: "AlgoSync",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: interfaze,
         details: {
           info: [
             "Exploring supervised and unsupervised realms, a pivotal machine learning event.",
@@ -86,7 +102,7 @@ const technotronData = {
     data: [
       {
         name: "The Vogue",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: vouge,
         details: {
           info: [
             "Make an innovative product based on theme using given material and decorate it.",
@@ -102,7 +118,7 @@ const technotronData = {
       },
       {
         name: "Broken Floats",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: brokenfloats,
         details: {
           info: [
             "Weave a fabric on a handloom with maximum speed and accuracy in given interval of time.",
@@ -119,7 +135,7 @@ const technotronData = {
       },
       {
         name: "The 10s Count",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: count,
         details: {
           info: [
             "It is a paper presentation event related to Textile Department.",
@@ -145,7 +161,7 @@ const technotronData = {
       },
       {
         name: "Quiz-O-Tex",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: texlycra,
         details: {
           info: ["A quiz event pertaining to Textile Department."],
           rules: [
@@ -158,7 +174,7 @@ const technotronData = {
       },
       {
         name: "Imprints",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: imprints,
         details: {
           info: [
             "Dye and print the given fabric using creativity and maximum accuracy.",
@@ -262,7 +278,7 @@ const technotronData = {
       },
       {
         name: "Hydrex",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Hydrex,
         details: {
           info: [
             "Participants have to build hydraulic crane capable of scooping and placing the given load.",

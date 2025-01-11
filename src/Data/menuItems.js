@@ -2,90 +2,64 @@ const menuItems = [
   {
     Segment: 1,
     title: "Technotron",
-    link:"/technotron",
-
+    link: "/technotron",
     subItems: [
       {
         Department: 1,
-
         title: "Cybernetics",
         link: "/technotron/cybernetics",
       },
-
       {
         Department: 2,
-
         title: "Macheanema",
         link: "/technotron/macheanema",
-     
       },
-
       {
         Department: 3,
-
         title: "Sanganikee",
         link: "/technotron/sanganikee",
-
-       
       },
-
       {
         Department: 4,
-
         title: "Citadel",
         link: "/technotron/citadel",
-       
       },
-
       {
         Department: 5,
-
         title: "Rasayanam",
         link: "/technotron/rasayanam",
-       
       },
-
       {
         Department: 6,
-
         title: "Lycra",
         link: "/technotron/lycra",
-        
       },
-
       {
         Department: 7,
-
         title: "TechX",
         link: "/technotron/techx",
       },
     ],
   },
-
   {
     Segment: 2,
-
     title: "Kaleidoscope",
-
     subItems: [
       {
         Department: 1,
         title: "Guest Lectures",
         link: "/guest-lecture",
       },
-
       {
         Department: 2,
         title: "Workshops",
         link: "/workshop",
       },
-
       {
         Department: 3,
         title: "Techzibition",
         link: "/techzibition",
       },
-
       {
         Department: 4,
         title: "Teleidoscope",
@@ -93,11 +67,9 @@ const menuItems = [
       },
     ],
   },
-
   {
     Segment: 3,
     title: "Rolling squares",
-
     subItems: [
       {
         Department: 1,
@@ -106,7 +78,6 @@ const menuItems = [
       },
     ],
   },
-
   {
     Segment: 4,
     title: "Quest",
@@ -117,9 +88,7 @@ const menuItems = [
         link: "/quest",
       },
     ]
-   
   },
-
   {
     Segment: 5,
     title: "Stock Exchange",
@@ -131,7 +100,6 @@ const menuItems = [
       },
     ]
   },
-
   {
     Segment: 6,
     title: "Virtuosity",
@@ -143,66 +111,46 @@ const menuItems = [
       },
     ]
   },
-
   {
     Segment: 7,
-    title: "Accomodation",
-    subItems: [
-      {
-        Department: 1,
-        title: "Details",
-        link: "/accomodation",
-      },
-    ]
+    title: "Web Team",
+    link: "/webTeamPage"
   },
-
   {
     Segment: 8,
     title: "More",
-
     subItems: [
       {
         Department: 1,
         title: "Sponsors",
         link: "/sponsor",
       },
-
       {
         Department: 2,
-        title: "Gallery",
-        link: "/gallery",
+        title: "Team FP'25",
+        link: "/teamfp",
+        
       },
-
       {
         Department: 3,
         title: "History",
         link: "/history",
       },
-
       {
         Department: 4,
         title: "FSR Drives",
         link: "/fsr",
       },
-
       {
         Department: 5,
         title: "Contact Us",
         link: "/contact",
       },
-
       {
         Department: 6,
         title: "Schitron",
         link: "/schitron",
       },
-
-      {
-        Department: 10,
-        title: "Media",
-        link: "/media",
-      },
-
       {
         Department: 7,
         title: "Blog",
@@ -210,13 +158,19 @@ const menuItems = [
       },
       {
         Department: 8,
-        title: "Team FP'24",
-        link: "/teamfp",
+        title: "Media",
+        link: "/media",
       },
       {
         Department: 9,
-        title: "Web Team",
-        link: "/webTeamPage",
+        title: "Accomodation",
+        link: "/accomodation",
+      },
+      {
+        Department: 10,
+        title: "Gallery",
+        link: "/gallery",
+       
       },
     ],
   },

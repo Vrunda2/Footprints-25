@@ -1,21 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900|Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900");
+
 .slider-wrapper {
   position: relative;
   height: 70vh;
   min-height: 500px;
-  max-width: 90%;
-  background: #000;
+  max-width: 70%;
+  /* background: #0b0c10; */
   display: flex;
   align-items: center;
   padding: 90px;
   margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 5%;
+
 }
 
 .bg-shape {
   position: absolute;
   height: 100%;
-  background: linear-gradient(-45deg, #cc3843, #cb193f);
-  box-shadow: 0 30px 139px 0 rgba(10, 22, 31, 0.26);
+  /* background: radial-gradient(circle, #45a29e, #1f2833); */
+  background-color: #161616 ;
+  box-shadow: 0 30px 80px 0 rgba(51, 62, 70, 0.26);
   border-radius: 30px;
+  /* border: 1px solid #f8f8f8; */
   padding: 45px 40px;
   width: 50%;
   top: 0;
@@ -26,16 +33,17 @@
 
 .product-img {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  right: 0;
+  width: 200px;
+  height: 200px;
+  right: 0.5;
   z-index: 1;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-100%);
+  transform: translateX(-70%);
   transition: transform 0.5s ease, opacity 0.5s ease;
   object-fit: contain;
+  border: #f8f8f8;
 }
 
 .product-img.active {
@@ -68,23 +76,27 @@
 .product-card {
   position: relative;
   height: 100%;
-  background: rgba(20, 20, 20, 0.9);
+  /* background: rgba(20, 20, 20, 0.9); */
+  background-color: var(--card-background);
   border-radius: 30px;
   overflow: hidden;
 }
 
 .product-content {
+  
   position: relative;
   z-index: 2;
   padding: 40px 40px 40px 400px;
-  color: white;
+  color: #66fcf1;
 }
 
 .product-content h1 {
   font-size: 42px;
+  font-family: "Gantari", sans-serif;
   font-weight: 900;
   margin-bottom: 20px;
   line-height: 1.2;
+  margin-left: 10px;
 }
 
 .product-actions {
@@ -94,25 +106,45 @@
 }
 
 .event-button {
-  background: linear-gradient(-45deg, #cc3843, #cb193f);
-  border: none;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
+  /* Set uniform width and height */
+  width: 150px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background-color: #0b0c10;
+  
+  color: aliceblue;
+  font-family: "Gantari", sans-serif;
+  
+
+  border: 2px solid #66fcf1;
+  padding: 10px; /* Adjust padding to fit text inside the button */
+  border-radius: 10px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 7px 25px rgba(203, 34, 64, 0.3);
+  display: inline-flex;
+  
+  /* box-shadow: 0 5px 25px rgba(34, 110, 203, 0.3); */
+  margin: 10px;
+
+  
+ 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+.event-button:hover{
+  color: #66fcf1;
+}
+
 
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 100%;
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: white;
+  background: #0b0c10;
   border: none;
   cursor: pointer;
   z-index: 5;
@@ -120,22 +152,26 @@
   align-items: center;
   justify-content: center;
   font-size: 24px;
+  border: 1px solid #66fcf1;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  color: #f8f8f8;
+  
 }
 
 .prev:hover,
 .next:hover {
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+  background-color: #1f2129;
 }
 
 .prev {
-  left: -30%;
+  left: 40%;
 }
 
 .next {
-  right: -30px;
+  right: 35%;
 }
 
 .prev.disabled,
@@ -248,6 +284,7 @@
   .event-button {
     padding: 12px 24px;
     font-size: 14px;
+    gap: 20px;
   }
   
   .prev,
@@ -262,5 +299,181 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+  }
+}
+
+/* responsive buttons  */
+
+@media (max-width: 1400px) {
+  .slider-wrapper {
+    padding: 80px;
+  }
+
+  .bg-shape {
+    width: 55%;
+  }
+
+  .product-content {
+    padding: 40px 40px 40px 350px;
+  }
+}
+
+/* Max-width: 1200px */
+@media (max-width: 1200px) {
+  .bg-shape {
+    width: 50%;
+  }
+
+  .product-content {
+    padding: 40px 40px 40px 300px;
+  }
+}
+
+/* Max-width: 1199px */
+@media (max-width: 1199px) {
+  .product-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .product-content h1 {
+    font-size: 36px;
+  }
+}
+
+/* Max-width: 991px (Tablet) */
+@media (max-width: 991px) {
+  .slider-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bg-shape {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .product-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .product-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+}
+
+/* Max-width: 767px (Mobile) */
+@media (max-width: 767px) {
+  .slider-wrapper {
+    padding: 20px;
+  }
+
+  .bg-shape {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .product-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .event-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .prev,
+  .next {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+/* Max-width: 538px (Small Screens) */
+@media (max-width: 538px) {
+  .product-content h1 {
+    font-size: 24px;
+  }
+
+  .event-button {
+    width: 120px;
+    height: 40px;
+  }
+
+  .prev,
+  .next {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .prev,
+  .next {
+    display: none;
+  }
+}
+.product-content {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  color: #66fcf1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.product-content h1 {
+  font-size: 42px;
+  font-family: "Gantari", sans-serif;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.product-events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Update media queries to maintain centering */
+@media (max-width: 991px) {
+  .product-content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-content {
+    padding: 20px;
+  }
+  
+  .product-content h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
   }
 }

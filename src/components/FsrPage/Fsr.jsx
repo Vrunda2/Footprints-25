@@ -11,10 +11,12 @@ function Fsr() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
+
       offset: 150,
+
       once: false,
     });
-    document.title = "FSR | FootPrints'24";
+    document.title = "FSR | FootPrints'25";
   }, []);
 
   return (
@@ -48,7 +50,7 @@ function Fsr() {
                   <div className="fsr_lec content">
                     <div
                       className="about_fsr about_fsr_para1"
-                      /* data-aos="fade-up-right" */
+                      data-aos="fade-right" 
                     >
                       <div className="fsr_heading">
                         <h3 className="fsr_name">
@@ -60,8 +62,7 @@ function Fsr() {
 
                     <div
                       className="fsr_img fsr_img_style"
-                      data-aos="flip-right"
-                      data-aos-easing="ease-out-cubic"
+                      data-aos="zoom-in"
                     >
                       <img
                         src={element.imgSrc}
@@ -72,7 +73,7 @@ function Fsr() {
 
                     <div
                       className="about_fsr about_fsr_para2"
-                      /* data-aos="fade-up-left" */
+                      data-aos="fade-left" 
                     >
                       <div className="fsr_heading">
                         <h3 className="fsr_name">
@@ -91,8 +92,7 @@ function Fsr() {
                 <div className="fsr_lec">
                   <div
                     className="fsr_img fsr_img_style"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos="zoom-in"
                   >
                     <img
                       src={element.imgSrc}
@@ -102,7 +102,7 @@ function Fsr() {
                   </div>
 
                   <div
-                    className="about_fsr para1" /* data-aos="fade-up-left" */
+                    className="about_fsr para1"  data-aos="fade-left" 
                   >
                     <div className="fsr_heading">
                       <h3 className="fsr_name">

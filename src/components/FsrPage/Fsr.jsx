@@ -12,7 +12,7 @@ function Fsr() {
       duration: 1000,
       easing: "ease-in-out",
       offset: 150,
-      once: true,
+      once: false,
     });
     document.title = "FSR | FootPrints'24";
   }, []);

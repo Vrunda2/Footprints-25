@@ -1,278 +1,96 @@
-.W_header_img img {
-    width: 100%;
-}
-#kaleido-header{
-    padding: 0;
-}
-#reveling-heading{
-    border-bottom: none;
-    font-family: var(--heading-family) !important;
-    font-size: 2.25rem;
-    letter-spacing: 3px;
-    text-align: center;
-    font-weight: 400;
-    margin: 1rem 1rem;
-    color: var(--icon-color);
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.workshop_heading {
-    text-align: center;
-    margin: 1rem 0rem;
-}
+/* General Animation and Transition Styles */
 
-.workshop_lec {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 3rem 2rem;
-}
-
-/* .clock-icon::before {
-    font: var(--fa-font-regular);
-    content: "\f017";
-    padding-right: 9px;
-}
-
-.location-icon::before {
-    font: var(--fa-font-solid);
-    content: "\f3c5";
-    padding-right: 9px;
-} */
-
-.workshop_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 50px; */
-}
-
-.workshop_img > img {
-    position: relative;
-  }
-  
-  /* Initial state */
-  [data-aos="GuestAnimLeft"] > img {
-    left: 50%;
-    transition-property: left;
-    transition-duration: 1800ms;
-    transition-delay: 100ms;
-  }
-  
-  /* Final state */
-  [data-aos="GuestAnimLeft"].aos-animate > img {
-    left: 0;
-  }
-  [data-aos="GuestAnimRight"] > img {
-    right: 50%;
-    transition-property: right;
-    transition-duration: 1800ms;
-    transition-delay: 100ms;
-  }
-  [data-aos="GuestAnimRight"].aos-animate > img {
-    right: 0;
-  }
-
+/* Hover effects for the images */
 .workshop_img img {
-    width: 75%;
-    /* height: 80%; */
-    background: #A8A8A80A;
-    padding: 14px;
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out; /* Smooth zoom and glow transition */
 }
 
-.workshop_img_style {
-    justify-content: flex-end;
+/* Hover Effect for Image */
+.workshop_img img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6); /* Equal cyan glowing effect */
+
 }
 
-.workshop_img1 {
-    padding-left: 85px;
+/* Content Fade-In Effect */
+.about_workshop {
+    animation: fadeInContent 0.8s ease-in-out; /* Smooth fade-in for content */
 }
 
+/* Keyframes for content fade-in */
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slide up from the bottom */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading Styles */
 .workshop_heading {
-    display: flex;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #fff; /* Heading color */
+    animation: fadeIn 1.5s ease-out;
 }
 
+/* Guest Workshop Name Styling */
 .workshop_name {
-    border-bottom: 2px solid var(--icon-color);
+    border-bottom: 2px solid #fff; /* White border */
     padding-bottom: 6px;
-    color: var(--white);
+    color: #fff; /* Solid white text color */
     text-align: left;
+    transition: color 0.3s ease-in-out;
 }
 
-.about_workshop_para2 {
-    display: none;
+/* Hover effect for workshop name */
+.workshop_name:hover {
+    color: cyan; /* On hover, color changes to cyan */
 }
 
-.about_workshop_para1{
-    margin-left: 15%;
-}
-.workshop_img_style{
-    position: relative;
-    right: 15%;
-}
-.para1 {
-    margin-right: 15%;
-}
-@media screen and (min-width: 999px) {
-    .about_workshop {
-        text-align: justify;
-    }
-
-    .workshop_name {
-        font-size: 1.6rem;
-    }
-    
-}
-
-@media screen and (max-width: 767px) {
-    .workshop_heading {
-        justify-content: center;
-    }
-
-    .workshop_name {
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .about_workshop {
-        text-align: center;
-    }
-
-    .workshop_lec {
-        display: block;
-        width: 100%;
-        padding: 1rem 2rem;
-    }
-
-    .about_workshop_para1 {
-        display: none;
-    }
-
-    .about_workshop_para2 {
-        display: block;
-    }
-
-    .workshop_img {
-        margin-bottom: 1rem;
-    }
-
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
     .workshop_img img {
         width: 100%;
+        
     }
 
-    .header_img img {
-        padding-bottom: 20px;
-    }
-
-    .workshop_header {
-        padding-top: 20px;
-        padding-bottom: 0;
-    }
-    .about_workshop{
-    margin-left: 0;
-}
-.workshop_img_style{
-    position: relative;
-    right: 0%;
-}
-.para1 {
-    margin-right: 0%;
-}
-}
-
-@media screen and (max-width: 996px) and (min-width:768px) {
-    .workshop_img {
-        justify-content: center;
+    .about_workshop {
+        text-align: center;
         margin-bottom: 2rem;
     }
 
-    .workshop_lec {
-        display: block;
-        width: 100%;
-        text-align: center;
+    .workshop_name {
+        font-size: 1.8rem;
     }
+}
 
-    .about_workshop_para1 {
-        display: none;
-    }
-
-    .about_workshop_para2 {
-        display: block;
+@media screen and (max-width: 996px) and (min-width: 768px) {
+    .workshop_img {
+        margin-bottom: 2rem;
     }
 
     .workshop_heading {
         justify-content: center;
     }
 
-    .workshop_lec {
-        padding: 2rem;
-    }
-
-    .workshop_name {
-        font-size: 1.9rem;
+    .workshop_heading h3 {
         text-align: center;
     }
-        .about_workshop{
-    margin-left: 10%;
-    width: 90%;
-}
-.workshop_img_style{
-    position: relative;
-    right: 0%;
-}
 }
 
-@media screen and (max-width: 1199px) and (min-width: 999px) {
-
-    /* .workshop_name{font-size: 1.4rem;} */
-    .workshop_lec {
-        padding: 3rem 0rem;
-    }
-.workshop_img img {
-    width: 90%;
-    background: #A8A8A80A;
-    padding: 14px;
-
-}
-.about_workshop{
-    margin-left: 5%;
-}
-.workshop_img_style{
-    position: relative;
-    right: 0%;
-}
-.para1 {
-    margin-right: 0%;
+/* Global Style Adjustments */
+.text-without-icon {
+    margin-top: 20px;
+    font-size: 1.1rem;
 }
 
-}
-
-@media screen and (max-width: 518px) and (min-width: 410px) {
-    .workshop_name {
-        font-size: 1.4rem;
-        letter-spacing: 0px;
-    }
-        .about_workshop{
-    margin-left: 0;
-}
-.workshop_img_style{
-    position: relative;
-    right: 0%;
-}
-
-}
-
-@media screen and (max-width: 480px) and (min-width: 447px) {
-    .prev_workshop_name {
-        letter-spacing: 2px;
-    }
-}
-
-@media screen and (max-width: 409px) and (min-width: 380px) {
-    .workshop_heading {
-        margin: 1rem;
-    }
-}
-
+/* Responsive Tweaks for Small Screen Sizes */
 @media screen and (max-width: 338px) {
     .workshop_name {
         font-size: 1.2rem;
@@ -280,18 +98,83 @@
     }
 }
 
-.workshop_lec p {
-    text-align: justify;
-    color: var(--white);
-    text-transform: none;
+/* Styling for workshop_lec (Content Layout) */
+.workshop_lec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    padding: 3rem 2rem;
 }
 
-/* added by Abdeali */
+/* Responsive Design for Workshop Lec */
+@media screen and (max-width: 996px) {
+    .workshop_lec {
+        display: block;
+        color: #fff;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}
 
-#Workshop .fa{
-    color: var(--white) !important;
+/* Styling the Image and Content Layout */
+.workshop_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.text-without-icon-workshop{
-    margin-top: 10px;
-    font-size: 1.05rem;
+
+.workshop_img img {
+    width: 75%;
+    background: rgba(168, 168, 168, 0.04);
+    padding: 14px;
 }
+
+.about_workshop_para1,
+.about_workshop_para2 {
+    margin: 15%;
+}
+
+@media screen and (max-width: 480px) {
+    .workshop_name {
+        font-size: 1.2rem;
+    }
+
+    .about_workshop {
+        margin: 0;
+    }
+}
+  
+/* AOS Animations */
+[data-aos="fade-up"] {
+  transition: opacity 1s ease-in-out; /* Faster fade effect for content */
+}
+
+[data-aos="GuestAnimLeft"] {
+  transition: transform 2s ease-in-out; /* Slower transition for image */
+  transform: translateX(-100%);
+}
+
+[data-aos="GuestAnimRight"] {
+  transition: transform 2s ease-in-out; /* Slower transition for image */
+  transform: translateX(100%);
+}
+
+[data-aos="GuestAnimLeft"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="GuestAnimRight"].aos-animate {
+  transform: translateX(0);
+}
+
+
+
+/* Footer and Sponsor Slide Styling */
+.sponsor-slide {
+  margin-top: 40px;
+}
+
+footer {
+  margin-top: 50px;
+}
+

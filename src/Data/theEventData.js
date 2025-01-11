@@ -9,6 +9,24 @@ import Hackathon from "../assets/images/eventimage/hackathonn.jpg";
 import webtech from "../assets/images/eventimage/webtechhh.jpg";
 import interfaze from "../assets/images/eventimage/interfazee.jpg";
 import Hydrex from "../assets/images/eventimage/hydrexx.jpg";
+import Burnout from "../assets/images/eventimage/burnoutt.jpeg";
+import Ballista from "../assets/images/eventimage/ballista.jpeg";
+import Gizmo from "../assets/images/eventimage/gizmo.jpg";
+import poweredepoch from "../assets/images/eventimage/pepoch.jpg";
+import rocket from "../assets/images/eventimage/rocket.jpg";
+
+import Wrestlemania from "../assets/images/eventimage/wrestle.jpg";
+import technokick from "../assets/images/eventimage/technokick.jpg";
+import smackbot from "../assets/images/eventimage/smack.jpg";
+import monochrome from "../assets/images/eventimage/monochrom.jpg";
+import dfa from "../assets/images/eventimage/dfa.jpg";
+import Insight from "../assets/images/eventimage/insight.jpg";
+import Renaissance from "../assets/images/eventimage/renaisance.jpeg";
+
+import cad from "../assets/images/eventimage/cad.jpg";
+import wwe from "../assets/images/eventimage/wwe.jpg";
+import tremors from "../assets/images/eventimage/tremors.jpg";
+import civiq from "../assets/images/eventimage/civiq.jpg";
 
 
 
@@ -196,7 +214,7 @@ const technotronData = {
     data: [
       {
         name: "Burnout",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Burnout,
         details: {
           info: [
             "The participants have to design a vehicle powered by an internal combustion engine which can complete the given track in least possible time along with certain obstacles on the way.",
@@ -220,7 +238,7 @@ const technotronData = {
       },
       {
         name: "Ballista",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Ballista,
         details: {
           info: [
             "It is an event in which participants will have to design an X-bow using elastic, torsional or any other mechanism capable of hitting a given target with variable height and distance.",
@@ -240,7 +258,7 @@ const technotronData = {
 
       {
         name: "Powered Epoch",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: poweredepoch,
         details: {
           info: [
             "It is a paper presentation event related to Mechanical and Metallurgy Engineering department.",
@@ -266,7 +284,7 @@ const technotronData = {
       },
       {
         name: "Gizmo",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Gizmo,
         details: {
           info: [
             "It is a knowledge based event related to Mechanical engineering department consisting of quiz, puzzles, crosswords, treasure hunt and industry defined problems.",
@@ -279,6 +297,25 @@ const technotronData = {
       {
         name: "Hydrex",
         background: Hydrex,
+        details: {
+          info: [
+            "Participants have to build hydraulic crane capable of scooping and placing the given load.",
+          ],
+          rules: [
+            "- The dimensions of the base plate should be 60 x 30 with no restriction on height.",
+            "- The arm’s reach should be a minimum of 40cm and maximum 80cm.",
+            "- The minimum movement of the arm should be 90 degrees.",
+            "- The scoop volume should be at maximum of 100 ml.",
+            "- Only commercial syringes (20ml) can be used with no restriction on number of syringes.",
+            "- Any fluid such as water or oil can be used.",
+          ],
+          price: ["-INR 200/-"],
+          team: ["- Maximum 4"],
+        },
+      },
+      {
+        name: "Rocketlaunch",
+        background: rocket,
         details: {
           info: [
             "Participants have to build hydraulic crane capable of scooping and placing the given load.",
@@ -362,7 +399,7 @@ const technotronData = {
     data: [
       {
         name: "Wrestlemania",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Wrestlemania,
         details: {
           info: [
             "Participants have to design a robot, which are capable of wrestling in a head-to-head bout based on the fundamental principle of conventional human wrestling matches.",
@@ -413,7 +450,7 @@ const technotronData = {
       },
       {
         name: "Technokick",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: technokick,
         details: {
           info: [
             "This event provides participants platform to show their robotic skill by developing wired/wireless bot which can play soccer in specially designed Arena.",
@@ -478,7 +515,7 @@ const technotronData = {
       },
       {
         name: "Smackbotz",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: smackbot,
         details: {
           info: [
             "Participants have to design and construct a remote-controlled robot capable of fighting against another robot in a one-on-one combat.",
@@ -526,7 +563,7 @@ const technotronData = {
       },
       {
         name: "D.F.A 7.0",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: dfa,
         details: {
           info: [
             "Teams have to build an all-terrain robust RC vehicle that can work on dual frequency and has to complete the given track from starting point to the ending point in the minimum possible time",
@@ -587,7 +624,7 @@ const technotronData = {
       },
       {
         name: "Monochrome",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: monochrome,
         details: {
           info: [
             "Participants have to design autonomous robot which can solve given line network.",
@@ -639,7 +676,7 @@ const technotronData = {
       },
       {
         name: "Insight",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Insight,
         details: {
           info: [
             "Knowledge based event for Electrical & Electronics Engineering Dept.",
@@ -651,7 +688,7 @@ const technotronData = {
       },
       {
         name: "Renaissance",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Renaissance,
         details: {
           info: ["Paper presentation event for Electrical & Electronics Engineering Dept."],
           rules: ["- Rules",
@@ -682,7 +719,7 @@ const technotronData = {
     data: [
       {
         name: "CivIQ",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: civiq,
         details: {
           info: [
             "Its Treasure hunt event based on immense consept and knowledge of  civil engineering.",
@@ -694,7 +731,7 @@ const technotronData = {
       },
       {
         name: "CAD",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: cad,
         details: {
           info: [
             "In this Participants have to design a multipurpose building based on a given detailed problem statement.",
@@ -718,7 +755,7 @@ const technotronData = {
       },
       {
         name: "WWE",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: wwe,
         details: {
           info: [
             "It is a paper presentation event along with case study with a solution based approach.",
@@ -730,7 +767,7 @@ const technotronData = {
       },
       {
         name: "Tremors Setu",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: tremors,
         details: {
           info: ["Participants have to make a model using popsicle sticks."],
           rules: ["- Dimensions of the Warren Truss",

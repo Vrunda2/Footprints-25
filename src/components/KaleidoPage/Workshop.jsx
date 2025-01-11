@@ -11,216 +11,86 @@ function Workshop() {
   }, []);
 
   return (
-    <>
-      <section id="Workshop">
+    <section id="Workshop">
       <div className="video_main">
-        <video
-          autoPlay
-          loop
-          muted
-          className="w-full h-full object-cover"
-          width="100%"
-        >
-          <source src={'https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597470/vdos/mwwq0k4owswdxmab3a3e.mp4'} type="video/mp4" />
+        <video autoPlay loop muted className="w-full h-full object-cover">
+          <source
+            src="https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597470/vdos/mwwq0k4owswdxmab3a3e.mp4"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
       </div>
 
-        <div className="container">
-          {/* <p id="reveling-heading"> REVEALING SOON! </p> */}
-          <Heading
-            className="workshop_heading"
-            id="glheading"
-            title="WORKSHOPS"
-          />
+      <div className="container">
+        <Heading title="WORKSHOPS" className="workshop_heading" />
 
-          {CurrentWorkshopData.map((element) => {
-            if (element.id % 2 == 0) {
-              return (
-                <div key={element.id}>
-                  <div className="workshop_lec content">
-                    <div className="about_workshop about_workshop_para1"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    // data-aos-delay="100"
-                    data-aos-offset="400"
-                    data-aos-easing="ease-in-sine">
-                      <div className="workshop_heading">
-                        <h3 className="workshop_name">
-                          {element.name} <br /> {element.details}
-                        </h3>
-                      </div>
-                      <p className="text-without-icon-workshop">
-                        {" "}
-                        {element.content}
-                      </p>
-                      <p className="clock-icon">
-                        <i className="fa fa-light fa-calendar"></i> &nbsp;
-                        {element.date}
-                      </p>
-                    </div>
-
-                    <div
-                      className="workshop_img workshop_img_style"
-                      data-aos="GuestAnimRight"
-                    >
-                      <img
-                        src={element.imgSrc}
-                        className="Workshop-img"
-                        alt={element.name}
-                      />
-                    </div>
-
-                    <div className="about_workshop about_workshop_para2">
-                      <div className="workshop_heading">
-                        <h3 className="workshop_name">
-                          {element.name} <br /> {element.details}
-                        </h3>
-                      </div>
-                      <p className="text-without-icon-workshop">
-                        {" "}
-                        {element.content}
-                      </p>
-                      <p className="clock-icon">
-                        <i className="fa fa-light fa-calendar"></i> &nbsp;
-                        {element.date}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
-
-            return (
-              <div key={element.id}>
-                <div className="workshop_lec">
-                  <div
-                    className="workshop_img"
-                    data-aos="GuestAnimLeft"
-                  >
-                    <img
-                      src={element.imgSrc}
-                      className="Workshop-img"
-                      alt={element.name}
-                    />
-                  </div>
-
-                  <div className="about_workshop para1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  // data-aos-delay="100"
-                  data-aos-offset="400"
-                  data-aos-easing="ease-in-sine">
-                    <div className="workshop_heading">
-                      <h3 className="workshop_name">
-                        {element.name} <br /> {element.details}
-                      </h3>
-                    </div>
-                    <p className="text-without-icon-workshop">
-                      {element.content}
-                    </p>
-                    <p className="clock-icon">
-                      <i className="fa fa-light fa-calendar"></i> &nbsp;
-                      {element.date}
-                    </p>
-                  </div>
-                </div>
+        {CurrentWorkshopData.map((element) => (
+          <div
+            key={element.id}
+            className={`workshop_lec ${element.id % 2 === 0 ? "content" : ""}`}
+          >
+            {element.id % 2 !== 0 && (
+              <div className="workshop_img" data-aos="fade-right">
+                <img src={element.imgSrc} alt={element.name} />
               </div>
-            );
-          })}
-          <Heading
-            className="workshop_heading"
-            id="glheading"
-            title="PREVIOUS WORKSHOPS"
-          />
-
-          {PrevWorkshopData.map((element) => {
-            if (element.id % 2 == 0) {
-              return (
-                <div key={element.id}>
-                  <div className="workshop_lec content">
-                    <div className="about_workshop about_workshop_para1"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    // data-aos-delay="100"
-                    data-aos-offset="400"
-                    data-aos-easing="ease-in-sine">
-                      <div className="workshop_heading">
-                        <h3 className="workshop_name">
-                          {element.name} <br /> {element.details}
-                        </h3>
-                      </div>
-                      <p className="text-without-icon-workshop">
-                        {" "}
-                        {element.content}
-                      </p>
-                    </div>
-
-                    <div
-                      className="workshop_img workshop_img_style"
-                      data-aos="GuestAnimRight"
-                    >
-                      <img
-                        src={element.imgSrc}
-                        className="Workshop-img"
-                        alt={element.name}
-                      />
-                    </div>
-
-                    <div className="about_workshop about_workshop_para2">
-                      <div className="workshop_heading">
-                        <h3 className="workshop_name">
-                          {element.name} <br /> {element.details}
-                        </h3>
-                      </div>
-                      <p className="text-without-icon-workshop">
-                        {" "}
-                        {element.content}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
-
-            return (
-              <div key={element.id}>
-                <div className="workshop_lec">
-                  <div
-                    className="workshop_img"
-                    data-aos="GuestAnimLeft"
-                  >
-                    <img
-                      src={element.imgSrc}
-                      className="Workshop-img"
-                      alt={element.name}
-                    />
-                  </div>
-
-                  <div className="about_workshop para1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  // data-aos-delay="100"
-                  data-aos-offset="400"
-                  data-aos-easing="ease-in-sine">
-                    <div className="workshop_heading">
-                      <h3 className="workshop_name">
-                        {element.name} <br /> {element.details}
-                      </h3>
-                    </div>
-                    <p className="text-without-icon-workshop">
-                      {element.content}
-                    </p>
-                  </div>
-                </div>
+            )}
+            <div
+              className="about_workshop"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="400"
+                      data-aos-easing="ease-in-sine"
+            >
+              <h3 className="workshop_name">{element.name}</h3>
+              <p>{element.content}</p>
+              <p className="clock-icon">
+                <i className="fa fa-calendar"></i> {element.date}
+              </p>
+            </div>
+            {element.id % 2 === 0 && (
+              <div className="workshop_img" data-aos="fade-left">
+                <img src={element.imgSrc} alt={element.name} />
               </div>
-            );
-          })}
-        </div>
-      </section>
+            )}
+          </div>
+        ))}
+
+        <Heading title="PREVIOUS WORKSHOPS" className="workshop_heading" />
+
+        {PrevWorkshopData.map((element) => (
+          <div
+            key={element.id}
+            className={`workshop_lec ${element.id % 2 === 0 ? "content" : ""}`}
+          >
+            {element.id % 2 !== 0 && (
+              <div className="workshop_img" data-aos="fade-right">
+                <img src={element.imgSrc} alt={element.name} />
+              </div>
+            )}
+            <div
+              className="about_workshop"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <h3 className="workshop_name">{element.name}</h3>
+              <p>{element.content}</p>
+              <p className="clock-icon">
+                <i className="fa fa-calendar"></i> {element.date}
+              </p>
+            </div>
+            {element.id % 2 === 0 && (
+              <div className="workshop_img" data-aos="fade-left">
+                <img src={element.imgSrc} alt={element.name} />
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
       <Sponsors />
       <Footer />
-    </>
+    </section>
   );
 }
 

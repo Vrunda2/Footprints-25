@@ -11,7 +11,9 @@ function Fsr() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      offset: 200,
+
+      offset: 150,
+
       once: false,
     });
     document.title = "FSR | FootPrints'25";

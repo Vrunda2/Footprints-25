@@ -1,6 +1,6 @@
 import exampleImage from "../assets/example.jpg";
 
-import fs from "./temp4.mp4";
+import fs from "./cybernetics.mp4";
 
 import runtime from "../assets/images/eventimage/runtime1.jpg";
 import brokenfloats from "../assets/images/eventimage/borkenfloats.jpg";

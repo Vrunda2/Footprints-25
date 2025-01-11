@@ -1,13 +1,16 @@
 import exampleImage from "../assets/example.jpg";
-
-import fs from "./cybernetics.mp4";
-
 import runtime from "../assets/images/eventimage/runtime1.jpg";
-import brokenfloats from "../assets/images/eventimage/borkenfloats.jpg";
-import count from "../assets/images/eventimage/10count3.jpg";
-import texlycra from "../assets/images/eventimage/synopsis2.jpg";
-import vouge from "../assets/images/eventimage/vouge.jpg";
-import imprints from "../assets/images/eventimage/imprints2.jpg";
+import brokenfloats from "../assets/images/eventimage/brokenfloatss.jpg";
+import count from "../assets/images/eventimage/10count33.jpg";
+import texlycra from "../assets/images/eventimage/synopsis.jpg";
+import vouge from "../assets/images/eventimage/vogue2.jpg";
+import imprints from "../assets/images/eventimage/imprints.jpg";
+import Hackathon from "../assets/images/eventimage/hackathonn.jpg";
+import webtech from "../assets/images/eventimage/webtechhh.jpg";
+import interfaze from "../assets/images/eventimage/interfazee.jpg";
+import Hydrex from "../assets/images/eventimage/hydrexx.jpg";
+
+
 
 
 
@@ -35,7 +38,7 @@ const technotronData = {
       },
       {
         name: "WebTech",
-        background: exampleImage,
+        background: webtech,
         details: {
           info: [
             "Participants will have to build a web/mobile application and incorporate the feature asked based on iOS/Windows or Android platform or any web technologies. Theme and design essentials for the website will be provided to them beforehand.",
@@ -55,7 +58,7 @@ const technotronData = {
       },
       {
         name: "HackPrints 3.0",
-        background: exampleImage,
+        background: Hackathon,
         details: {
           info: [
             "It is a 3-day online Hackathon based event wherein the participants have to submit a developed project i.e., a mobile/web application based on a given theme provided on the website of HackPrints 3.0",
@@ -75,7 +78,7 @@ const technotronData = {
       },
       {
         name: "AlgoSync",
-        background: exampleImage,
+        background: interfaze,
         details: {
           info: [
             "Exploring supervised and unsupervised realms, a pivotal machine learning event.",
@@ -92,7 +95,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      fs,
+      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597489/vdos/avcm5iaaztsgrjnevfym.mp4",
   },
   lycra: {
     title : "Event Related to Textile Department",
@@ -275,7 +278,7 @@ const technotronData = {
       },
       {
         name: "Hydrex",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Hydrex,
         details: {
           info: [
             "Participants have to build hydraulic crane capable of scooping and placing the given load.",
@@ -954,7 +957,7 @@ const fseData = {
     },
   ],
   headingSource:
-    "./temp3.mp4",
+    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597483/vdos/ruammnkjmu1hxfyofx9s.mp4",
 };
 
 const theEventData = {

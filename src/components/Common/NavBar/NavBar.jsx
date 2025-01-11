@@ -95,16 +95,29 @@ export default function NavBar(props) {
 
         <ul>
           {menuItems.map((item, idx) => (
-            <li key={idx} onMouseEnter={openMenu} onMouseLeave={closeMenuNext}>
-              <a style={{ cursor: "pointer" }}>
-                {item.title}
-                &nbsp; &nbsp;
-                {item.title == "More" ? (
-                  <i id="dots" className="fa-solid fa-ellipsis-vertical"></i>
-                ) : (
-                  ""
-                )}
-              </a>
+           <li key={idx} onMouseEnter={openMenu} onMouseLeave={closeMenuNext}>
+           {item.link ? (
+             <Link to={item.link} style={{ cursor: "pointer" }}>
+               {item.title}
+               &nbsp; &nbsp;
+               {item.title == "More" ? (
+                 <i id="dots" className="fa-solid fa-ellipsis-vertical"></i>
+               ) : (
+                 ""
+               )}
+             </Link>
+           ) : (
+             <a style={{ cursor: "pointer" }}>
+               {item.title}
+               &nbsp; &nbsp;
+               {item.title == "More" ? (
+                 <i id="dots" className="fa-solid fa-ellipsis-vertical"></i>
+               ) : (
+                 ""
+               )}
+             </a>
+           )}
+             
 
               {/* Major Events => Which is a Events of Segments  :  Cybernatics Mechenema Citadel Sanganikee Rasyanam Lycra OpenX Enviorosavy */}
 

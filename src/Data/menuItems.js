@@ -127,8 +127,9 @@ const menuItems = [
       },
       {
         Department: 2,
-        title: "Gallery",
-        link: "/gallery",
+        title: "Team FP'25",
+        link: "/teamfp",
+        
       },
       {
         Department: 3,
@@ -167,8 +168,9 @@ const menuItems = [
       },
       {
         Department: 10,
-        title: "Team FP'25",
-        link: "/teamfp",
+        title: "Gallery",
+        link: "/gallery",
+       
       },
     ],
   },

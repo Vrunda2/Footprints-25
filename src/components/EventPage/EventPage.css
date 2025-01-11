@@ -156,9 +156,9 @@
 
 .event-card:hover {
   transform: translateY(-4px);
-  border-color: #45a29e;
+ 
   /* box-shadow: 0 3px 10px #66fcf1;  */
-  border: 1px solid #008CBA;
+
 }
 
 /* Card title */
@@ -241,7 +241,7 @@
   border-radius: 12px;
   padding: 1.5rem;
   margin-top: 1.5rem;
-  border: 1px solid #008CBA
+  
 }
 
 .content-area ul {
@@ -460,5 +460,202 @@ responsive */
 
   .option-btn {
     width: 100%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900|Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900");
+
+.main_section {
+  margin: 2rem;
+  background-color: #0b0c10;
+  margin-top: 10rem;
+}
+
+.alt-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/BGGlow.jpg');
+  background-size: 100vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(22, 22, 22, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.event-card {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  background: rgba(11, 12, 16, 0.8);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    0 8px 12px rgba(255, 255, 255, 0.1);
+}
+
+.event-card:hover {
+  transform: translateY(-8px) scale(1.02) rotateX(2deg);
+  box-shadow: 
+    0 20px 25px rgba(0, 0, 0, 0.3),
+    0 12px 20px rgba(255, 255, 255, 0.1),
+    0 -2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.event-card.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+/* Button Styles */
+.view-details-btn,
+.option-btn,
+.collapse-btn {
+  background-color: rgba(11, 12, 16, 0.9);
+  color: white;
+  padding: 0.75rem 2rem;
+  font-family: "Gantari", sans-serif;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transform-style: preserve-3d;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.view-details-btn:hover,
+.option-btn:hover,
+.collapse-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  background-color: #1f2833;
+  box-shadow: 
+    0 8px 12px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.option-btn.active {
+  background: #1f2833;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 
+    0 6px 10px rgba(0, 0, 0, 0.2),
+    0 3px 6px rgba(255, 255, 255, 0.1);
+}
+
+.content-area {
+  background-color: rgba(11, 12, 16, 0.6);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.image-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.event-card-title {
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-family: "Gantari", sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .event-card.reverse-layout {
+    flex-direction: column;
+  }
+
+  .image-container {
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .content-container {
+    order: 2;
+    padding: 1rem;
+  }
+
+  .options-container {
+    order: 3;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .option-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-card {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .event-card-title {
+    font-size: 1rem;
+  }
+
+  .content-container {
+    padding: 0.5rem;
+  }
+
+  .options-container {
+    gap: 0.5rem;
+  }
+
+  .option-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .content-area li {
+    font-size: 0.85rem;
   }
 }

@@ -22,7 +22,7 @@ const LandingPage = () => {
       </div>
       <div id="subtitle">
         <span onClick={handleSubtitleClick}>
-          Explore More
+        Discover More
         </span>
       </div>
     </div>

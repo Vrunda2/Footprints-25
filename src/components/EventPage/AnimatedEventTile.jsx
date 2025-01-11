@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 
-const VideoBox = ({ url }) => {
+const AnimatedEventTitle = ({ title }) => {
   const containerRef = useRef(null);
-  const eventName = url.split('/').pop().split('.')[0].toUpperCase();
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -11,7 +10,7 @@ const VideoBox = ({ url }) => {
     container.innerHTML = ''; // Clear previous content
     
     // Create letter elements
-    eventName.split('').forEach((letter) => {
+    title.split('').forEach((letter) => {
       const letterContainer = document.createElement('div');
       letterContainer.className = 'letter-container';
       
@@ -40,10 +39,12 @@ const VideoBox = ({ url }) => {
       container.appendChild(letterContainer);
     });
 
+    // Animation function
     function animateText() {
       const letterContainers = container.querySelectorAll('.letter-container');
       let currentIndex = 0;
 
+      // Reset all letters
       letterContainers.forEach(container => {
         container.style.opacity = '1';
         const base = container.querySelector('.text-base');
@@ -95,32 +96,29 @@ const VideoBox = ({ url }) => {
       animateNextLetter();
     }
 
+    // Start animation
     setTimeout(animateText, 500);
-
-    // Cleanup function
-    return () => {
-      container.innerHTML = '';
-    };
-  }, [eventName]);
+  }, [title]);
 
   return (
     <div className="video_main" style={{
+      background: '#111',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       minHeight: '50vh',
-      fontFamily: "'Orbitron', 'Courier New', 'monospace'",
-      background: 'transparent'
+      margin: 0,
+      fontFamily: "'Orbitron', sans-serif"
     }}>
-      <div ref={containerRef} className="text-container" />
+      <div 
+        ref={containerRef} 
+        className="text-container" 
+        style={{
+          position: 'relative',
+          display: 'flex'
+        }}
+      />
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-        .text-container {
-          position: relative;
-          display: flex;
-        }
-
         .letter-container {
           position: relative;
           margin: 0 4px;
@@ -143,20 +141,19 @@ const VideoBox = ({ url }) => {
         }
 
         .text-base {
-          font-size: 8rem;
+          font-size: 5rem;
           font-weight: 700;
           color: #fff;
           opacity: 0.3;
           position: relative;
           z-index: 1;
-          font-family: 'Orbitron', 'Courier New', monospace;
         }
 
         .text-glow {
           position: absolute;
           top: 0;
           left: 0;
-          font-size: 8rem;
+          font-size: 5rem;
           font-weight: 700;
           color: transparent;
           background: linear-gradient(45deg, #00ffff, #00ccff, #0099ff);
@@ -167,7 +164,6 @@ const VideoBox = ({ url }) => {
           animation: gradientMove 3s ease infinite;
           opacity: 0;
           letter-spacing: 2px;
-          font-family: 'Orbitron', 'Courier New', monospace;
         }
 
         @keyframes gradientMove {
@@ -198,4 +194,4 @@ const VideoBox = ({ url }) => {
   );
 };
 
-export default VideoBox;
+export default AnimatedEventTitle;

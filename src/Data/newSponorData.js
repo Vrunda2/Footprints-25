@@ -7,25 +7,25 @@ const newSponsorData = [
 
     {
         id: 1.1,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Title Sponsor`,
+        imgSrc: `../../src/assets/SponsorLogos/MatrixWeb.png`,
+        alt: `TITLE SPONSOR`,
         href: `https://www.matrixcomsec.com/`,
         type: "TITLE SPONSOR"
     },
 
     {
         id: 1.2,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Co-Sponsor`,
-        href: `https://pratham.com/`,
+        imgSrc: `../../src/assets/SponsorLogos/VinroxWeb.png`,
+        alt: `CO-SPONSOR`,
+        href: `https://vinrox.com/`,
         type: "CO-SPONSOR"
     },
 
 
     {
         id: 1.3,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Associate Sponsor`,
+        imgSrc: `../../src/assets/SponsorLogos/KYBWeb.png`,
+        alt: `ASSOCIATE SPONSOR`,
         href: `https://conmatindia.com/`,
         type: "ASSOCIATE SPONSOR"
     },
@@ -49,65 +49,65 @@ const newSponsorData = [
 
     {
         id: 3,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Macheanema Sponsor`,
-        href: `https://www.axtelindia.com/`
+        imgSrc: `../../src/assets/SponsorLogos/DeepakWeb.png`,
+        alt: `KALEIDOSCOPE SPONSOR`,
+        href: `https://www.godeepak.com/`
     },
 
     {
         id: 4,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Sanganikee Sponsor`,
-        href: `https://www.cosmos.in/`
+        imgSrc: `../../src/assets/SponsorLogos/AxtelWeb.png`,
+        alt: `MACHEANEMA SPONSOR`,
+        href: `https://www.axtelindia.com/`
     },
     {
         id: 4,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Cybernetics Sponsor`,
-        href: `https://www.odysseussolutions.com/`
+        imgSrc: `../../src/assets/SponsorLogos/IMSWeb.png`,
+        alt: `CAT PARTNER`,
+        href: `https://imsindia.com/center/vadodara/`
     },
     {
         id: 4,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Hydrex and Ballista Sponsor`,
-        href: `https://www.seelinkages.in/`
+        imgSrc: `../../src/assets/SponsorLogos/DeepakWeb.png`,
+        alt: `GATE PARTNER`,
+        href: `https://acumenhr.in/`
     },
 
 
     {
         id: 5,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Gate Sponsor`,
-        href: `https://acumenhr.in/`
+        imgSrc: `../../src/assets/SponsorLogos/AsgardWeb.png`,
+        alt: `SOCIAL MEDIA PARTNER`,
+        href: ``
     },
     {
         id: 6,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `FSE Sponsor`,
-        href: `https://www.varnidigital.in/`
+        imgSrc: `../../src/assets/SponsorLogos/YBWeb.png`,
+        alt: `SOCIAL MEDIA PARTNER`,
+        href: ``
     },
 
     {
         id: 6,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Schitron Sponsor`,
-        href: `https://robowala.com/`
+        imgSrc: `../../src/assets/SponsorLogos/VadodaraMirrorWeb.png`,
+        alt: `SOCIAL MEDIA PARTNER`,
+        href: ``
     },
 
 
     {
         id: 7,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Rasayanam Sponsor`,
+        imgSrc: `../../src/assets/SponsorLogos/YellowWeb.png`,
+        alt: `YOUTH PARTNER`,
         href: ``
     },
 
-    {
-        id: 8,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Mascot Sponsor`,
-        href: ``
-    },
+    // {
+    //     id: 8,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Mascot Sponsor`,
+    //     href: ``
+    // },
 
     // {
     //     id: 9,
@@ -117,26 +117,26 @@ const newSponsorData = [
     // },
 
 
-    {
-        id: 9,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `CAT Sponsor`,
-        href: ``,
-    },
+    // {
+    //     id: 9,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `CAT Sponsor`,
+    //     href: ``,
+    // },
 
-    {
-        id: 10,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Supported By`,
-        href: `https://www.arkel.co.in/`,
-    },
+    // {
+    //     id: 10,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Supported By`,
+    //     href: `https://www.arkel.co.in/`,
+    // },
 
-    {
-        id: 11,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Energy Sponsor`,
-        href: ``,
-    },
+    // {
+    //     id: 11,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Energy Sponsor`,
+    //     href: ``,
+    // },
 
     // {
     //     id: 12,
@@ -188,19 +188,19 @@ const newSponsorData = [
 
     /* Partner Images */
 
-    {
-        id: 13,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Paint Partner`,
-        href: `https://www.omkarpaints.com/`
-    },
+    // {
+    //     id: 13,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Paint Partner`,
+    //     href: `https://www.omkarpaints.com/`
+    // },
 
-    {
-        id: 14,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Printing Partner`,
-        href: ``
-    },
+    // {
+    //     id: 14,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Printing Partner`,
+    //     href: ``
+    // },
 
     // {
     //     id: 15,
@@ -209,26 +209,26 @@ const newSponsorData = [
     //     href: `http://www.tulsihotel.in/`
     // },
 
-   {
-        id: 16,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Watch Partner`,
-        href: ``
-    }, 
+//    {
+//         id: 16,
+//         imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+//         alt: `Watch Partner`,
+//         href: ``
+//     }, 
 
-    {
-        id: 17,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Drone Partner`,
-        href: ``
-    },
+//     {
+//         id: 17,
+//         imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+//         alt: `Drone Partner`,
+//         href: ``
+//     },
 
-    {
-        id: 17.1,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Hackprints Partner`,
-        href: `https://devfolio.co/`
-    },
+//     {
+//         id: 17.1,
+//         imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+//         alt: `Hackprints Partner`,
+//         href: `https://devfolio.co/`
+//     },
 
         
     // {
@@ -238,61 +238,61 @@ const newSponsorData = [
     //     href: `https://www.realme.com/in/`
     // },
 
-    {
-        id: 18,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Cake Partner`,
-        href: `https://www.goodiescafe.in/`
-    },
+    // {
+    //     id: 18,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Cake Partner`,
+    //     href: `https://www.goodiescafe.in/`
+    // },
 
-    {
-        id: 19,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Youth Partner`,
-        href: ``
-    },
+    // {
+    //     id: 19,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Youth Partner`,
+    //     href: ``
+    // },
 
-    {
-        id: 20,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Youth Partner`,
-        href: ``
-    },
+    // {
+    //     id: 20,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Youth Partner`,
+    //     href: ``
+    // },
 
-    {
-        id: 21,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Online Media Partner`,
-        href: ``
-    },
+    // {
+    //     id: 21,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Online Media Partner`,
+    //     href: ``
+    // },
 
-    {
-        id: 22,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Online Media Partner`,
-        href: ``
-    },
+    // {
+    //     id: 22,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Online Media Partner`,
+    //     href: ``
+    // },
 
 
-    {
-        id: 23,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Online Media Partner`,
-        href: ``
-    },
-    {
-        id: 24,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Online Media Partner`,
-        href: ``
-    },
+    // {
+    //     id: 23,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Online Media Partner`,
+    //     href: ``
+    // },
+    // {
+    //     id: 24,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Online Media Partner`,
+    //     href: ``
+    // },
 
-    {
-        id: 25,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Official Whatsapp Assistant Partner`,
-        href: ``
-    },
+    // {
+    //     id: 25,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Official Whatsapp Assistant Partner`,
+    //     href: ``
+    // },
 
     
     // {
@@ -312,12 +312,12 @@ const newSponsorData = [
     // },
     
 
-    {
-        id: 25,
-        imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
-        alt: `Travel Partner`,
-        href: `https://www.tripwell.in/`
-    },
+    // {
+    //     id: 25,
+    //     imgSrc: `https://conmatindia.com/assets/img/logo_KYB_Conmat.jpg`,
+    //     alt: `Travel Partner`,
+    //     href: `https://www.tripwell.in/`
+    // },
     
 
     // {

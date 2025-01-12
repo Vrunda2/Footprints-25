@@ -78,6 +78,9 @@ function Sponsor() {
                           </div>
                         </div>
                       </div>
+                      <div className='sponsorName'>
+                          <a target='_blank' href={element.href}><h5><center>{element.alt}</center></h5></a>
+                        </div>
                     </div>
                   );
                 })}
@@ -85,7 +88,7 @@ function Sponsor() {
 
               {/*  Partner Grid */}
 
-              <Heading id="heading_partner_grid" title="OUR PARTNERES" />
+              {/* <Heading id="heading_partner_grid" title="OUR PARTNERES" />
 
               <div
                 id="PartnersGrid"
@@ -106,7 +109,7 @@ function Sponsor() {
                     </div>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

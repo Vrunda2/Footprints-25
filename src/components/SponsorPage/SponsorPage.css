@@ -34,6 +34,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.sponsorName {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-family: var(--heading-family) !important;
+    padding-top: 15px;
+}
+.sponsorName a {
+    text-decoration: none;
+}
+.sponsorName a:active {
+    text-decoration: none;
+    color: #66fcf1;
+}
+.sponsorName a:link {
+    text-decoration: none;
+    color: #fff;
+}
+.sponsorName a:visited {
+    text-decoration: none;
+    color: #fff;
+}
 @media screen and (max-width: 500px) {
     .sponsor_header_img{
         height: 300px;

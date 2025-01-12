@@ -11,9 +11,6 @@
     /* transition: all 300ms; */
 }
 
-#sponsors img:hover {
-    /* border: 3px solid var(--icon-color); */
-}
 
 .div_header_sponsor {
     display: flex;
@@ -30,9 +27,6 @@
     margin: 1rem 1rem;
 }
 
-#head_sponsors {
-    /* margin-bottom: 2rem; */
-}
 
 .sponsor-div{
     background-color: white;
@@ -41,6 +35,14 @@
     border-radius: 10px;
     box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.3);
     transition: all 300ms;
+}
+
+.sponsor-title {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 2vh;
 }
 
 .sponsor-div a{
@@ -179,11 +181,6 @@
     /* margin-right: 20px; */
     border-radius: 10px;
     transition: all 0.5s;
-}
-
-#sponsors .slick-current .sponsor-div:hover {
-    /* transform: scale(1.1); */
-    /* border: 2px solid var(--icon-color); */
 }
 
 

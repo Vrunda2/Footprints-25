@@ -3,16 +3,18 @@ import "./Schitron.css";
 import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
 
 const Schitron = () => {
 
   
   useEffect(() => {
   
-    document.title="Schitron | FootPrints'24"
+    document.title="Schitron | FootPrints'25"
 
   }, [])
   
+  const position = useMousePosition();
 
   return (
     <>
@@ -111,6 +113,11 @@ To encourage young brains and introduce school students to the fascinating world
           </div>
         </div>
       </div>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
       <Footer />
     </>

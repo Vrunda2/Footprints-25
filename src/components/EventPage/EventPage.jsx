@@ -91,16 +91,24 @@ const EventPage = ({ theParent }) => {
   if (!theData) return <Error />;
   const { title, headingSource, data } = theData;
 
+  const position = useMousePosition();
+
   return (
     <>
       <div className="events_main">
         <VideoBox url={headingSource} />
-        <Heading className="kaleido_heading" id="glheading" title={title} />
+        <div className="headingOffset">
+          <Heading className="kaleido_heading" id="glheading" title={title} />
+        </div>
         <div className={`main-tech tech-${data.length}`}>
           {data.map((item, idx) => (
             <EventCard key={idx} {...item} index={idx} />
           ))}
         </div>
+        <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+        />
       </div>
     </>
   );

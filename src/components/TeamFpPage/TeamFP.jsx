@@ -9,6 +9,7 @@ import {
   orgcData,
   headsData,
 } from "../../Data/TeamFP";
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
 
 function TeamFP() {
   
@@ -17,6 +18,8 @@ function TeamFP() {
     document.title="Team FP | FootPrints'25"
 
   }, [])
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -277,6 +280,10 @@ function TeamFP() {
           </div>
         </div>
       </div>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
       {/* </section> */}
       <Sponsors />
       <Footer />

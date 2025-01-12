@@ -4,11 +4,14 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Techzi.css";
 import Heading from "../Common/Headings/Heading";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 function Techzi() {
   useEffect(() => {
-    document.title = "Techzibition | FootPrints'24";
+    document.title = "Techzibition | FootPrints'25";
   }, []);
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -111,6 +114,11 @@ function Techzi() {
           })}
         </div>
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
       <Footer />
     </>

@@ -6,20 +6,14 @@ import "./Gallery.css";
 import RS from "../../assets/images/gallary/concert.jpg";
 import MECH from "../../assets/images/gallary/mech.jpg";
 import SANGA from "../../assets/images/gallary/sanga.jpg";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 const Gallery = () => {
   useEffect(() => {
     document.title = "Gallery | FootPrints'25";
   }, []);
 
-  // var [numLoaded, setLoaded] = useState(0);
-
-  // function inrLoaded() {
-  //   console.log(numLoaded);
-  //   setLoaded((prevNum) => {
-  //     return prevNum + 1;
-  //   });
-  // }
+  const position = useMousePosition();
 
   useEffect(()=>{
     const observer = new IntersectionObserver(
@@ -45,19 +39,6 @@ const Gallery = () => {
     });
   },[]);
   
-
-  // function animate() {
-  //   // document.getElementById("img-loader").style.animation = "fadeLoader 2s";
-  //   setTimeout(() => {
-  //     data.forEach((item, idx) => {
-  //       setTimeout(() => {
-  //         document.querySelector(`#ImgCard${item.id} > .front`).style.animation = "frontAnim 2s";
-  //         document.querySelector(`#ImgCard${item.id} > .back`).style.animation = "backAnim 2s";
-  //         document.querySelector(`#ImgCard${item.id} > .back`).classList.add("SheenAnimate");
-  //       }, 350 * idx);
-  //     });
-  //   }, 1000);
-  // }
 
   let data = [
     {
@@ -171,6 +152,11 @@ const Gallery = () => {
           })}
         </div>
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+      
       <Sponsors />
       <Footer />
     </>

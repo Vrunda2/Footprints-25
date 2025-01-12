@@ -1,9 +1,11 @@
 /* *************   Styling in Footer(Contact) *************** */
 
 #footer {
-  background-color: var(--footer-background);
+  background-color: #101010;
   border-top: 1px solid #3a343461;
   margin-top: 2rem;
+  position: relative;
+  z-index: 2;
   /* color: var(--footer-text-color) !important; */
 }
 
@@ -12,10 +14,10 @@
   --bs-gutter-y: 0;
 }
 
-#footer p,
+/* #footer p,
 a {
-  /* font-family: var(--text-family) !important; */
-}
+  font-family: var(--text-family) !important; 
+} */
 
 /*  ---------- Styling in Newslwtter ---------- */
 

@@ -4,15 +4,18 @@ import newSponsorData from '../../Data/newSponorData'
 import Footer from '../Common/Footer/Footer';
 import Heading from '../Common/Headings/Heading';
 import './SponsorPage.css';
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
 
 function Sponsor() {
 
     
   useEffect(() => {
   
-    document.title="Sponsors and Partners | FootPrints'23"
+    document.title="Sponsors and Partners | FootPrints'25"
 
   }, []);
+
+  const position = useMousePosition();
 
     return (
       <>
@@ -56,6 +59,8 @@ function Sponsor() {
               </div>
 
               {/*  Sponsor Grid */}
+              
+              <Heading id="heading_partner_grid" title="OUR SPONSORS" />
 
               <div
                 id="sponsorsGrid"
@@ -105,6 +110,10 @@ function Sponsor() {
             </div>
           </div>
         </section>
+        <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+        />
 
         <Footer />
       </>

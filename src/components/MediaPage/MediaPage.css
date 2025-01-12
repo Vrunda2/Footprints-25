@@ -25,11 +25,9 @@
 }
 .media-container{
         padding: 50px 25px;
+        position: relative;
+        z-index: 2;
         /* background-color: white !important; */
-}
-
-#heading_media{
-    /* color: black !important; */
 }
 
 .header_media{

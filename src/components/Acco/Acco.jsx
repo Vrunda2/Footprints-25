@@ -4,6 +4,7 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import Heading from "../Common/Headings/Heading";
 import Revealing from '../Common/RevealingText/Revealing';
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 function Acco() {
 
@@ -12,6 +13,8 @@ function Acco() {
     document.title="Accomodation | FootPrints'25"
 
   }, [])
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -27,10 +30,12 @@ function Acco() {
         <p className="reveal-soon-text">REVEALING SOON!</p>
       </div> */}
       <Revealing />
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
 
       <Sponsors />
-      <div id="stars"></div>
-      <div id="stars2"></div>
       <Footer />
     </>
   );

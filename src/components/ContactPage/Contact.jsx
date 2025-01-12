@@ -4,7 +4,7 @@ import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import './Contact.css'
-// import img1 from "../../assets/images/contact-header.png"
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
 
 
 
@@ -12,9 +12,11 @@ function Contact() {
 
   useEffect(() => {
   
-    document.title="Contact us | FootPrints'24"
+    document.title="Contact us | FootPrints'25"
 
   }, [])
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -190,6 +192,11 @@ function Contact() {
           </div>
         </div>
       </div>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
       <Footer />
     </>

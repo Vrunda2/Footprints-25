@@ -4,6 +4,7 @@ import Footer from "../Common/Footer/Footer";
 import Heading from "../Common/Headings/Heading";
 import "./Webteam.css";
 import WebteamData from "../../Data/Webteam";
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
 
 function WebTeam() {
 
@@ -12,6 +13,8 @@ function WebTeam() {
     document.title="Website Team | FootPrints'25"
 
   }, [])
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -157,6 +160,10 @@ function WebTeam() {
           </div>
         </div>
       </div>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
       <Sponsors />
       <Footer />
     </>

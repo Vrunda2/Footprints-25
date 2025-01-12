@@ -5,6 +5,7 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Fsr.css";
 import Heading from "../Common/Headings/Heading";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 function Fsr() {
   useEffect(() => {
@@ -18,6 +19,8 @@ function Fsr() {
     });
     document.title = "FSR | FootPrints'25";
   }, []);
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -118,8 +121,12 @@ function Fsr() {
         </div>
         
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
-      
       <Footer />
     </>
   );

@@ -6,7 +6,8 @@ import "./Kaleido.css";
 import Heading from "../Common/Headings/Heading";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos"; // Import AOS library
-import imageSrc from "../../assets/image.jpg"; // Import the new image
+import imageSrc from "../../assets/image.jpg";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 // Reusable GuestLecture Component
 const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
@@ -73,6 +74,8 @@ function Kaleido() {
     AOS.init(); // Initialize AOS for animations
   }, []);
 
+  const position = useMousePosition();
+
   return (
     <>
       <section id="Kaleido">
@@ -118,6 +121,10 @@ function Kaleido() {
           ))}
         </div>
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
 
       <Sponsors />
       <Footer />

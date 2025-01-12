@@ -63,19 +63,19 @@ section {
     border-radius: 5px;
   }
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 619px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (min-width: 620px) and (max-width: 759px) {
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

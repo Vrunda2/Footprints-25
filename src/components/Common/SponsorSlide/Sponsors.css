@@ -201,3 +201,103 @@
 .sponsors{
         padding-bottom: 2rem;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #sponsors img {
+        width: 70%;
+        object-fit: contain;
+    }
+
+    .div_header_sponsor {
+        flex-direction: column;
+    }
+
+    .sponsor_header {
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+        margin: 0.5rem 1rem;
+    }
+
+    .sponsor-div {
+        width: 70%;
+        margin: 20px auto;
+        box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.2);
+        padding: 3rem;
+    }
+
+    .sponsor-title {
+        font-size: 1.5vh;
+    }
+
+    .sponsor-div a {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .slick-slide {
+        padding: 0.5rem;
+    }
+
+    #sponsors .slick-current.sponsor-div {
+        transform: scale(1.05);
+    }
+
+    .slider__item > img {
+        width: 100%;
+    }
+
+    .sponsors {
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #sponsors img {
+        width: 60%; /* Reduce width for smaller screens */
+        object-fit: contain;
+    }
+
+    .div_header_sponsor {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .sponsor_header {
+        font-size: 1.5rem; /* Reduce font size */
+        letter-spacing: 1.5px;
+        margin: 0.5rem 0.5rem; /* Adjust margin for smaller space */
+    }
+
+    .sponsor-div {
+        width: 85%; /* Narrow width for better fit */
+        margin: 15px auto; /* Center align */
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15); /* Softer shadow */
+        padding: 2rem; /* Reduced padding */
+    }
+
+    .sponsor-title {
+        font-size: 1.25vh; /* Smaller font size */
+    }
+
+    .sponsor-div a {
+        gap: 5px; /* Reduce gap */
+        font-size: 0.8rem; /* Smaller font */
+    }
+
+    .slick-slide {
+        padding: 0.25rem; /* Reduce padding */
+    }
+
+    #sponsors .slick-current.sponsor-div {
+        transform: scale(1.03); /* Slightly less scaling for compact screens */
+    }
+
+    .slider__item > img {
+        width: 100%; /* Full width for images */
+    }
+
+    .sponsors {
+        padding-bottom: 0.5rem; /* Smaller bottom padding */
+    }
+}
+

@@ -5,7 +5,7 @@ import Footer from "../Common/Footer/Footer";
 import "./Gallery.css";
 import RS from "../../assets/images/gallary/concert.jpg";
 import MECH from "../../assets/images/gallary/mech.jpg";
-import SANGA from "../../assets/images/gallary/sanga.jpg";
+import SANGA from "../../assets/images/gallary/smack.jpg";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 const Gallery = () => {
@@ -61,7 +61,7 @@ const Gallery = () => {
       imgSrc: SANGA,
       title: "Sanganikee",
       subtitle: "Smackbots",
-      cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
+      
     },
     {
       id: 4,

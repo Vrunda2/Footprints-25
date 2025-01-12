@@ -28,6 +28,28 @@ import wwe from "../assets/images/eventimage/wwe.jpg";
 import tremors from "../assets/images/eventimage/tremors.jpg";
 import civiq from "../assets/images/eventimage/civiq.jpg";
 
+import Chemaze from "../assets/images/eventimage/chemaze.jpg";
+import ChemX from "../assets/images/eventimage/chemxx.jpg";
+import chemohustle from "../assets/images/eventimage/chemohustle.jpg";
+import Synopsis from "../assets/images/eventimage/synopsiss.jpg";
+
+import TechX from "../assets/images/eventimage/techxx.jpg";
+
+import Batallian from "../assets/images/eventimage/12b.jpg";
+import frameit from "../assets/images/eventimage/cameraa.jpg";
+import lost from "../assets/images/eventimage/lost.jpg";
+import Squidgame from "../assets/images/eventimage/squidgamee.jpg";
+import wow from "../assets/images/eventimage/wow.jpg";
+import subsoccer from "../assets/images/eventimage/subsoccer.jpg";
+
+import inversion from "../assets/images/eventimage/fse111.jpg";
+import sharktank from "../assets/images/eventimage/sharktank.jpg";
+
+import BGMI from "../assets/images/eventimage/bgmi.jpg";
+import Valorant from "../assets/images/eventimage/valo.jpg";
+import freefire from "../assets/images/eventimage/freefire.jpg";
+import chess from "../assets/images/eventimage/chess.jpg";
+
 
 
 
@@ -341,7 +363,7 @@ const technotronData = {
     data: [
       {
         name: "Chem-o-Hustle",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: chemohustle,
         details: {
           info: [
             "You have to design a Car which should be powered by a chemical reaction. ",
@@ -357,7 +379,7 @@ const technotronData = {
       },
       {
         name: "Synopsis",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Synopsis,
         details: {
           info: [
             "It is a paper presentation event in which you have to select a topic based on Chemical Engineering or Pharmacy field.",
@@ -369,7 +391,7 @@ const technotronData = {
       },
       {
         name: "Chemaze",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Chemaze,
         details: {
           info: ["It is a knowledge based event."],
           rules: ["- Rules will be disclosed on the day of event. "],
@@ -380,7 +402,7 @@ const technotronData = {
 
       {
         name: "ChemX",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: ChemX,
         details: {
           info: [
             "Participant has to make a working or non working model based on the chemical field.",
@@ -804,7 +826,7 @@ const technotronData = {
     data: [
       {
         name: "TechX",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: TechX,
         details: {
           info: [
             "Step into the forefront of tech evolution at our Open Hardware and Software Project Exhibition! Explore both working and non-working models, showcasing the latest innovations. Don't miss this chance to witness groundbreaking projects and be part of the technological revolution!",
@@ -828,7 +850,7 @@ const questData = {
   data: [
     {
       name: "12th Battalion",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: Batallian,
       details: {
         info: [
           "It is an event which checks your physical strength with games such as tug of war, wall climbing and much more.",
@@ -843,7 +865,7 @@ const questData = {
     },
     {
       name: "War Of Words",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: wow,
       details: {
         info: [
           "It is a debate based event. This event would provide you a platform to exchange your views regarding a certain topic.",
@@ -857,7 +879,7 @@ const questData = {
     },
     {
       name: "Squid Game",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: Squidgame,
       details: {
         info: [
           "It is a event based on web series with fun and exciting games.",
@@ -870,8 +892,8 @@ const questData = {
       },
     },
     {
-      name: "Shooting Arcade",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      name: "Sub Soccer",
+      background: subsoccer,
       details: {
         info: [
           "In this participants will be able to experience 4 different games. i.e. Axe throw, Paintball shooting, Shuriken and archery.",
@@ -886,7 +908,7 @@ const questData = {
     },
     {
       name: "Lost",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: lost,
       details: {
         info: [
           "It is a treasure hunt based event.Here the participants would have to decode a plot based on clues which would be hidden at various locations in the college.",
@@ -899,8 +921,8 @@ const questData = {
       },
     },
     {
-      name: "Air Ball",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      name: "Frameit",
+      background: frameit,
       details: {
         info: [
           "Fasten  your seatbelts and get ready to participate in a very exciting and never witnessed game ever. A game named after football , also can be called as a unique version of football. Team up and participate in the AirBall. Rules will remain same as football but with a twist as it will be played in the air.",
@@ -922,7 +944,7 @@ const virtuosityData = {
   data: [
     {
       name: "BGMI",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: BGMI,
       details: {
         info: [
           "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
@@ -936,7 +958,7 @@ const virtuosityData = {
     },
     {
       name: "Valorant",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: Valorant,
       details: {
         info: [
           " Where precise aim meets tactical prowess in a high-stakes, team-based shooter.",
@@ -945,6 +967,34 @@ const virtuosityData = {
           ],
         price: ["- INR 250/-"],
         team: ["- Compulsary 5"],
+      },
+    },
+    {
+      name: "Free Fire",
+      background: freefire,
+      details: {
+        info: [
+          "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
+        ],
+        rules: [
+          "- Same as of BGMI. It will be held in FOTE MSU Campus"
+          ],
+        price: ["- INR 50/- , INR /250- "],
+        team: ["- Individual/Squad"],
+      },
+    },
+    {
+      name: "Chess",
+      background: chess,
+      details: {
+        info: [
+          "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
+        ],
+        rules: [
+          "- Same as of BGMI. It will be held in FOTE MSU Campus"
+          ],
+        price: ["- INR 50/- , INR /250- "],
+        team: ["- Individual/Squad"],
       },
     },
   ],
@@ -957,7 +1007,7 @@ const fseData = {
   data: [
     {
       name: "Inversion",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: inversion,
       details: {
         info: [
           "In this event participants have to use their financial knowledge and get the maximum return for their money in different rounds and scenarios.",
@@ -976,7 +1026,7 @@ const fseData = {
     },
     {
       name: "Pitchers Project",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: sharktank,
       details: {
         info: [
           `\"Pitchers Project\" is an entrepreneurship event tailored for FootPrints'24, designed to

@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 
 const VideoBox = ({ url }) => {
   const containerRef = useRef(null);
-  const eventName = url.split('/').pop().split('.')[0].toUpperCase();
+  const eventName = url.toUpperCase();
+  const animationRef = useRef(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
     
     const container = containerRef.current;
-    container.innerHTML = ''; // Clear previous content
+    container.innerHTML = '';
     
-    // Create letter elements
     eventName.split('').forEach((letter) => {
       const letterContainer = document.createElement('div');
       letterContainer.className = 'letter-container';
@@ -40,20 +40,32 @@ const VideoBox = ({ url }) => {
       container.appendChild(letterContainer);
     });
 
-    function animateText() {
+    function resetLetters() {
       const letterContainers = container.querySelectorAll('.letter-container');
-      let currentIndex = 0;
-
       letterContainers.forEach(container => {
         container.style.opacity = '1';
+        container.style.transform = 'translateY(20px)';
         const base = container.querySelector('.text-base');
         const glow = container.querySelector('.text-glow');
         const outline = container.querySelector('.letter-outline');
         
-        base.style.opacity = '0.3';
+        base.style.opacity = '0';
         glow.style.opacity = '0';
         outline.style.strokeDashoffset = '1000';
+        
+        base.style.animation = 'none';
+        glow.style.animation = 'none';
+        outline.style.animation = 'none';
+        
+        void container.offsetWidth;
       });
+    }
+
+    function animateText() {
+      const letterContainers = container.querySelectorAll('.letter-container');
+      let currentIndex = 0;
+
+      resetLetters();
 
       function animateNextLetter() {
         if (currentIndex < letterContainers.length) {
@@ -61,6 +73,9 @@ const VideoBox = ({ url }) => {
           const base = container.querySelector('.text-base');
           const glow = container.querySelector('.text-glow');
           const outline = container.querySelector('.letter-outline');
+          
+          container.style.transform = 'translateY(0)';
+          container.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
           
           const bbox = base.getBoundingClientRect();
           const path = `M ${bbox.left} ${bbox.top} 
@@ -70,35 +85,29 @@ const VideoBox = ({ url }) => {
                        L ${bbox.left} ${bbox.top}`;
           
           outline.setAttribute('d', path);
-          outline.style.animation = 'tracePath 0.5s forwards';
-          base.style.animation = 'fadeInText 0.5s forwards';
-          glow.style.animation = 'fadeInGlow 0.5s forwards';
+          outline.style.animation = 'tracePath 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+          base.style.animation = 'fadeInText 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+          glow.style.animation = 'fadeInGlow 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards, pulseGlow 2s infinite';
           
           currentIndex++;
-          setTimeout(animateNextLetter, 500);
+          animationRef.current = setTimeout(animateNextLetter, 300);
         } else {
-          setTimeout(() => {
-            letterContainers.forEach(container => {
-              const base = container.querySelector('.text-base');
-              const glow = container.querySelector('.text-glow');
-              const outline = container.querySelector('.letter-outline');
-              
-              base.style.animation = '';
-              glow.style.animation = '';
-              outline.style.animation = '';
-            });
-            setTimeout(animateText, 1000);
-          }, 2000);
+          animationRef.current = setTimeout(() => {
+            resetLetters();
+            animationRef.current = setTimeout(animateText, 2000);
+          }, 4000);
         }
       }
 
       animateNextLetter();
     }
 
-    setTimeout(animateText, 500);
+    animationRef.current = setTimeout(animateText, 500);
 
-    // Cleanup function
     return () => {
+      if (animationRef.current) {
+        clearTimeout(animationRef.current);
+      }
       container.innerHTML = '';
     };
   }, [eventName]);
@@ -110,7 +119,8 @@ const VideoBox = ({ url }) => {
       alignItems: 'center',
       minHeight: '50vh',
       fontFamily: "'Orbitron', 'Courier New', 'monospace'",
-      background: 'transparent'
+      background: 'transparent',
+      perspective: '1000px'
     }}>
       <div ref={containerRef} className="text-container" />
       <style>{`
@@ -119,13 +129,14 @@ const VideoBox = ({ url }) => {
         .text-container {
           position: relative;
           display: flex;
+          transform-style: preserve-3d;
         }
 
         .letter-container {
           position: relative;
           margin: 0 4px;
           opacity: 0;
-          transition: opacity 0.3s;
+          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .letter-outline {
@@ -140,16 +151,18 @@ const VideoBox = ({ url }) => {
           stroke-dasharray: 1000;
           stroke-dashoffset: 1000;
           z-index: 2;
+          filter: drop-shadow(0 0 5px #0ff);
         }
 
         .text-base {
           font-size: 8rem;
           font-weight: 700;
           color: #fff;
-          opacity: 0.3;
+          opacity: 0;
           position: relative;
           z-index: 1;
           font-family: 'Orbitron', 'Courier New', monospace;
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         .text-glow {
@@ -159,12 +172,11 @@ const VideoBox = ({ url }) => {
           font-size: 8rem;
           font-weight: 700;
           color: transparent;
-          background: linear-gradient(45deg, #00ffff, #00ccff, #0099ff);
-          background-size: 200% 200%;
+          background: linear-gradient(45deg, #00ffff, #00ccff, #0099ff, #00ffff);
+          background-size: 300% 300%;
           -webkit-background-clip: text;
           background-clip: text;
           filter: blur(15px) brightness(1.5);
-          animation: gradientMove 3s ease infinite;
           opacity: 0;
           letter-spacing: 2px;
           font-family: 'Orbitron', 'Courier New', monospace;
@@ -183,14 +195,36 @@ const VideoBox = ({ url }) => {
         }
 
         @keyframes fadeInGlow {
-          to {
-            opacity: 0.5;
+          0% {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          100% {
+            opacity: 0.7;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes pulseGlow {
+          0% {
+            filter: blur(15px) brightness(1.5);
+          }
+          50% {
+            filter: blur(20px) brightness(2);
+          }
+          100% {
+            filter: blur(15px) brightness(1.5);
           }
         }
 
         @keyframes fadeInText {
-          to {
+          0% {
+            opacity: 0;
+            transform: scale(0.95) translateZ(-10px);
+          }
+          100% {
             opacity: 1;
+            transform: scale(1) translateZ(0);
           }
         }
       `}</style>

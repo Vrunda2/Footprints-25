@@ -134,8 +134,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597489/vdos/avcm5iaaztsgrjnevfym.mp4",
+   headingSource: "CYBERNETICS"
   },
   lycra: {
     title : "Event Related to Textile Department",
@@ -229,7 +228,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597497/vdos/bzwnuwlp0ynmhvdzonlw.mp4",
+      "LYCRA",
   },
   macheanema: {
     title : "Event Related to Mechanical And Metallurgy Department.",
@@ -356,7 +355,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597482/vdos/lgxbaguxqaytbc5hdmms.mp4",
+      "MACHEANEMA",
   },
   rasayanam: {
     title : "Event Related to Chemical Department",
@@ -414,7 +413,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597503/vdos/dtcd0klnsxhtybh13uw2.mp4",
+      "RASAYANAM",
   },
   sanganikee: {
     title : "Event Related to Electrical And Electronics Department",
@@ -734,7 +733,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597488/vdos/ovmwks27oc6mqrldvfl4.mp4",
+      "SANGANIKEE",
   },
   citadel: {
     title : "Event Related to Civil And IWM Department",
@@ -819,7 +818,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597496/vdos/pkniafcpxrsayqrzmqml.mp4",
+      "CITADEL",
   },
   techx: {
     title : "Event Related to Projects",
@@ -841,7 +840,7 @@ const technotronData = {
       },
     ],
     headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597468/vdos/npu2xbnc1blymot30z2r.mp4 ",
+      "TECHX ",
   },
 };
 
@@ -936,7 +935,7 @@ const questData = {
     },
   ],
   headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597495/vdos/ps1vj1shmdsjzzwbykiw.mp4",
+    "QUEST",
 };
 
 const virtuosityData = {
@@ -999,7 +998,7 @@ const virtuosityData = {
     },
   ],
   headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597484/vdos/c73gac8okynpy2d9adqs.mp4",
+    "VIRTUOSITY",
 };
 
 const fseData = {
@@ -1044,7 +1043,7 @@ const fseData = {
     },
   ],
   headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597483/vdos/ruammnkjmu1hxfyofx9s.mp4",
+    "FSE",
 };
 
 const theEventData = {

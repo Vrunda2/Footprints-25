@@ -8,6 +8,7 @@ import VideoBox from "./VideoBox";
 import Error from "../Error";
 import "./EventPage.css";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import { useEffect } from "react";
 
 const EventCard = ({ name, details,background, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -89,14 +90,20 @@ const EventPage = ({ theParent }) => {
   const theData = event ? theEventData[theParent][event] : theEventData[theParent];
 
   if (!theData) return <Error />;
-  const { title, headingSource, data } = theData;
+  const { title, headingSource, data, eventTitle } = theData;
+
+  useEffect(() => {
+    document.title = `${eventTitle}`;
+  }, [title]);
 
   const position = useMousePosition();
 
   return (
     <>
       <div className="events_main">
-        <VideoBox url={headingSource} />
+        <div className="headingOffset">
+          <VideoBox url={headingSource} />
+        </div>
         <div className="headingOffset">
           <Heading className="kaleido_heading" id="glheading" title={title} />
         </div>
@@ -110,6 +117,8 @@ const EventPage = ({ theParent }) => {
         style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
         />
       </div>
+      <Sponsors/>
+      <Footer/>
     </>
   );
 };

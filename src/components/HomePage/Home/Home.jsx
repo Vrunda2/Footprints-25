@@ -8,16 +8,12 @@ function Home() {
   
   return (
     <>
-      <div className="header-container">
-        <div className="home-gif">
-          <img
-            src={mainHeader}
-            alt="Main Header"
-            id="home-header"
-            className="zoom-animation"
-          />
-        </div>
-      </div>
+      <img
+        src={mainHeader}
+        alt="Main Header"
+        id="home-header"
+        className="zoom-animation"
+      />
       <div 
         className="alt-bg" 
         style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}

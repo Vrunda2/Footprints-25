@@ -29,7 +29,7 @@
   max-height: 500px;
   object-fit: contain;
   padding: 20px;
-  
+  position: relative;
   z-index: 2;
 }
 

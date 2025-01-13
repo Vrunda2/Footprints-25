@@ -56,6 +56,7 @@ import chess from "../assets/images/eventimage/chess.jpg";
 
 const technotronData = {
   cybernetics: {
+    eventTitle: "Cybernetics | FootPrints'25",
     title : "Event Related to Computer And IT Department",
     data: [
       {
@@ -137,6 +138,7 @@ const technotronData = {
    headingSource: "CYBERNETICS"
   },
   lycra: {
+    eventTitle: "Lycra | FootPrints'25",
     title : "Event Related to Textile Department",
     data: [
       {
@@ -231,6 +233,7 @@ const technotronData = {
       "LYCRA",
   },
   macheanema: {
+    eventTitle: "Macheanema | FootPrints'25",
     title : "Event Related to Mechanical And Metallurgy Department.",
     data: [
       {
@@ -358,6 +361,7 @@ const technotronData = {
       "MACHEANEMA",
   },
   rasayanam: {
+    eventTitle: "Rasayanam | FootPrints'25",
     title : "Event Related to Chemical Department",
     data: [
       {
@@ -416,6 +420,7 @@ const technotronData = {
       "RASAYANAM",
   },
   sanganikee: {
+    eventTitle: "Sanganikee | FootPrints'25",
     title : "Event Related to Electrical And Electronics Department",
     data: [
       {
@@ -736,6 +741,7 @@ const technotronData = {
       "SANGANIKEE",
   },
   citadel: {
+    eventTitle: "Citadel | FootPrints'25",
     title : "Event Related to Civil And IWM Department",
     data: [
       {
@@ -821,6 +827,7 @@ const technotronData = {
       "CITADEL",
   },
   techx: {
+    eventTitle: "TechX | FootPrints'25",
     title : "Event Related to Projects",
     data: [
       {
@@ -845,6 +852,7 @@ const technotronData = {
 };
 
 const questData = {
+  eventTitle: "Quest | FootPrints'25",
   title : "Fun Based Non-Technical Events",
   data: [
     {
@@ -939,6 +947,7 @@ const questData = {
 };
 
 const virtuosityData = {
+  eventTitle: "Virtuosity | FootPrints'25",
   title : "Gaming Events",
   data: [
     {
@@ -1002,6 +1011,7 @@ const virtuosityData = {
 };
 
 const fseData = {
+  eventTitle: "FSE | FootPrints'25",
   title : "Event Related to Stock Market",
   data: [
     {

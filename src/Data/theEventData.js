@@ -118,20 +118,31 @@ const technotronData = {
         },
       },
       {
-        name: "AlgoSync",
+        name: "Interfaze",
         background: interfaze,
         details: {
           info: [
-            "Exploring supervised and unsupervised realms, a pivotal machine learning event.",
+            "UI designing and devlopment based competition. It challenges participatiing teams to devlop an user friendly and intuitive UI within given constraints",
           ],
           rules: [
-            "- Python Language Compulsary",
-            "- Find the solution using Algorithms.",
-            "- Participants need to bring their own Laptop.",
-            "- Judging will be based on fastest optimum output."
+            "TO BE DECLARED",
             ],
-          price : ["- INR 150/-"],
-          team: ["- Individual "],
+          price : ["TO BE DECLARED"],
+          team: ["TO BE DECLARED"],
+        },
+      },
+      {
+        name: "Protocol",
+        background: interfaze,
+        details: {
+          info: [
+            "It is a paper presentation event based on Computer Science and IT Department",
+          ],
+          rules: [
+            "TO BE DECLARED",
+            ],
+          price : ["TO BE DECLARED"],
+          team: ["TO BE DECLARED"],
         },
       },
     ],
@@ -793,31 +804,34 @@ const technotronData = {
         },
       },
       {
-        name: "Tremors Setu",
+        name: "Tremors Nuevo",
         background: tremors,
         details: {
           info: ["Participants have to make a model using popsicle sticks."],
-          rules: ["- Dimensions of the Warren Truss",
- 
-          "- Clear Span of Truss = 65-70cm",
-          "- Height of truss: 8 to 10cm",
-          "- Base span should be max 2stick and other members should be 1 stick thick.",
-           
-          "- Rules:",
-         "- Each team should be of maximum 4 members.",
-         "- Materials to be used: Popsticle sticks and Fevicol of SH grade.",
-         "- Use of any other adhesive, etc is prohibited and participants using it will be disqualified from the event.",
-         "- Strings cannot be used to tie popsicle sticks.",
-         "- All the models must be taken for the dimension checking during the specified period of time (any entry after that won’t be accepted and would be disqualified).",
-         "- No changes in the model after the dimension checking would be allowed and any team doing so without the permission of the Core Committee member would be disqualified.",
-         "- The decision of the judges and Core Committee will be final regarding any discrepancy on the spot or before the event.",
-           
-          "- Structure Specification:",
-          "- Whole structure should be open-web (no bracings allowed)",
-          "- No grooves allowed.",
-          "- Only SH grade Fevicol can be used as Glue.",
-          "- No type of coatings or paint are allowed on the popsicle structure Popsicle Stick:.",
-          "- The Popsicle sticks can be cut or trimmed to any shape or size."],
+          rules: [
+            "TO BE DECLARED"
+          ],
+//           rules: ["- Dimensions of the Warren Truss",
+//  
+//           "- Clear Span of Truss = 65-70cm",
+//           "- Height of truss: 8 to 10cm",
+//           "- Base span should be max 2stick and other members should be 1 stick thick.",
+//            
+//           "- Rules:",
+//          "- Each team should be of maximum 4 members.",
+//          "- Materials to be used: Popsticle sticks and Fevicol of SH grade.",
+//          "- Use of any other adhesive, etc is prohibited and participants using it will be disqualified from the event.",
+//          "- Strings cannot be used to tie popsicle sticks.",
+//          "- All the models must be taken for the dimension checking during the specified period of time (any entry after that won’t be accepted and would be disqualified).",
+//          "- No changes in the model after the dimension checking would be allowed and any team doing so without the permission of the Core Committee member would be disqualified.",
+//          "- The decision of the judges and Core Committee will be final regarding any discrepancy on the spot or before the event.",
+//            
+//           "- Structure Specification:",
+//           "- Whole structure should be open-web (no bracings allowed)",
+//           "- No grooves allowed.",
+//           "- Only SH grade Fevicol can be used as Glue.",
+//           "- No type of coatings or paint are allowed on the popsicle structure Popsicle Stick:.",
+//           "- The Popsicle sticks can be cut or trimmed to any shape or size."],
           price: ["- INR 200/-"],
           team: ["- Maximum 4"],
         },
@@ -903,14 +917,14 @@ const questData = {
       background: subsoccer,
       details: {
         info: [
-          "In this participants will be able to experience 4 different games. i.e. Axe throw, Paintball shooting, Shuriken and archery.",
+          "In this participants will have to sit on their given position and play Football while sitting.",
         ],
         rules: [
-          "- In Shooting Arcade there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences.",
+          "TO BE DECLARED",
           
         ],
-        price: ["- INR 250/-"],
-        team: ["- Individual"],
+        price: ["- INR 180/-"],
+        team: ["- Compulsory 3"],
       },
     },
     {
@@ -932,14 +946,29 @@ const questData = {
       background: frameit,
       details: {
         info: [
-          "Fasten  your seatbelts and get ready to participate in a very exciting and never witnessed game ever. A game named after football , also can be called as a unique version of football. Team up and participate in the AirBall. Rules will remain same as football but with a twist as it will be played in the air.",
+          "Showcase your photography skills! Capture moments during the event and submit to win.",
         ],
         rules: [
-          "- Similar to Football.",
+          "TO BE DECLARED",
         ],
-        price: ["- INR 180/-"],
-        team: ["- Compulsary 3"],
+        price: ["- TO BE DECLARED"],
+        team: ["- Individual"],
       },
+    },
+    {
+      name: "Takeshi's Castle",
+      background: frameit,
+      details: {
+        info: [
+          "Features an exciting game inspired by the show.",
+        ],
+        rules: [
+          "TO BE DECLARED",
+        ],
+        price: ["- INR 100/-"],
+        team: ["- Individual"],
+      },
+      
     },
   ],
   headingSource:
@@ -958,9 +987,9 @@ const virtuosityData = {
           "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
         ],
         rules: [
-          "- Same as of BGMI. It will be held in FOTE MSU Campus"
+          "- Same as International BGMI Tournaments. It will be held in FOTE MSU Campus"
           ],
-        price: ["- INR 50/- , INR /250- "],
+        price: ["- INR 50/- , INR /200- "],
         team: ["- Individual/Squad"],
       },
     },
@@ -971,7 +1000,7 @@ const virtuosityData = {
         info: [
           " Where precise aim meets tactical prowess in a high-stakes, team-based shooter.",
         ],
-        rules: ["- Same as of Valorant. It will be an Online event."
+        rules: ["- Same as VCT. It will be an Online event."
           ],
         price: ["- INR 250/-"],
         team: ["- Compulsary 5"],
@@ -985,9 +1014,9 @@ const virtuosityData = {
           "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
         ],
         rules: [
-          "- Same as of BGMI. It will be held in FOTE MSU Campus"
+          "- Same as Standaer Free Fire Tournament. It will be held in FOTE MSU Campus"
           ],
-        price: ["- INR 50/- , INR /250- "],
+        price: ["- INR 50/- , INR /200- "],
         team: ["- Individual/Squad"],
       },
     },
@@ -996,13 +1025,13 @@ const virtuosityData = {
       background: chess,
       details: {
         info: [
-          "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
+          "Get ready to showcase your chess skills as you clash with many from all across Gujarat competing to prove their worth in an exciting single elimination chess tournament.",
         ],
         rules: [
           "- Same as of BGMI. It will be held in FOTE MSU Campus"
           ],
-        price: ["- INR 50/- , INR /250- "],
-        team: ["- Individual/Squad"],
+        price: ["- INR 100/-"],
+        team: ["- Individual"],
       },
     },
   ],

@@ -65,7 +65,7 @@ const newSponsorData = [
     },
     {
         id: 8,
-        imgSrc: `../../src/assets/SponsorLogos/DeepakWeb.jpg`,
+        imgSrc: `../../src/assets/SponsorLogos/AcumenWeb.jpg`,
         alt: `GATE PARTNER`,
         href: `https://acumenhr.in/`
     },

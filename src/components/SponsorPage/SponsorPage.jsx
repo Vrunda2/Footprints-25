@@ -3,6 +3,7 @@ import React, {useEffect} from 'react'
 import newSponsorData from '../../Data/newSponorData'
 import Footer from '../Common/Footer/Footer';
 import Heading from '../Common/Headings/Heading';
+import VideoBox from '../EventPage/VideoBox';
 import './SponsorPage.css';
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
 
@@ -11,7 +12,7 @@ function Sponsor() {
     
   useEffect(() => {
   
-    document.title="Sponsors and Partners | FootPrints'25"
+    document.title="Sponsors | FootPrints'25"
 
   }, []);
 
@@ -20,12 +21,7 @@ function Sponsor() {
     return (
       <>
         <section id="id_sponsorsPage" className="section_page">
-          <div className="sponsor_header_img" id="parent_div">
-            <div className="text-on-image-sponsor">
-              <Heading id="heading_sponsors_page" title="OUR SPONSORS" />
-            </div>
-          </div>
-
+         <VideoBox url={"SPONSORS"} />
           <div className="py-2">
             <div className="container">
               {/* Main Sponsor */}

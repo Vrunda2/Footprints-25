@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import "./MediaPage.css"
-import Heading from '../Common/Headings/Heading'
+import VideoBox from '../EventPage/VideoBox';
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
@@ -17,10 +17,8 @@ function MediaPage() {
 
     return (
       <>
-        <div className="media_header_img" id="parent_div">
-          <div className="text-on-image-media">
-            <Heading id="heading_media" title="MEDIA COVERAGE" />
-          </div>
+        <div className='headingOffset'>
+          <VideoBox url={"MEDIA"} />
         </div>
         <div className="media-container">
           {/* <Heading id="heading_media" title="MEADIA COVERAGE"/> */}

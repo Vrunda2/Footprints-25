@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './WebTeam.css';
-// Import all images
-import ayeshaImage from '../../assets/images2/ayesha.jpg';
-import vrundaImage from '../../assets/images2/vrunda.jpg';
-import meghanaImage from '../../assets/images2/meghana.jpg';
-import satchitImage from '../../assets/images2/satchitt.png';
-import shubhImage from '../../assets/images2/shubh2.png';
-import mannImage from '../../assets/images2/mann.jpg';
-import meghImage from '../../assets/images2/megh2.png';
+import ayeshaImage from '../../assets/Team/Core/Ayesha.jpg';
+import vrundaImage from '../../assets/Team/Core/Vrunda.jpg';
+import meghanaImage from '../../assets/Team/Core/Meghana.jpg';
+import satchitImage from '../../assets/Team/Core/Satchit.jpg';
+import shubhImage from '../../assets/Team/Web/Shubh.jpg';
+import mannImage from '../../assets/Team/Web/Mann.jpg';
+import meghImage from '../../assets/Team/Web/Megh.jpg';
+import madhavImage from '../../assets/Team/OT/Madhav.jpg';
+import zaahidImage from '../../assets/Team/OT/Zaahid.jpg';
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import Sponsors from "../Common/SponsorSlide/Sponsors";
+import Footer from "../Common/Footer/Footer";
+import VideoBox from "../EventPage/VideoBox";
 
 const WebTeam = () => {
+  useEffect(() => {
+    
+      document.title="Web Team | FootPrints'25"
+  
+    }, [])
+
+  const position = useMousePosition();
+
   const teamMembers = [
     {
       name: 'Ayesha Patel',
@@ -20,11 +33,27 @@ const WebTeam = () => {
       }
     },
     {
-      name: 'Vrunda Radadiya',
-      image: vrundaImage,
+      name: 'Madhav Thakkar',
+      image: madhavImage,
       social: {
-        linkedin: 'https://www.linkedin.com/in/vrunda-radadiya-8a1a43257/',
-        github: 'https://github.com/Vrunda2'
+        linkedin: 'https://www.linkedin.com/in/madhav-thakkar-119084251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        github: 'https://github.com/MadhavAT16'
+      }
+    },
+    {
+      name: 'Mann Chopda',
+      image: mannImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/man-chopda-63a012278/',
+        github: 'https://github.com/mann15'
+      }
+    },
+    {
+      name: 'Megh Prajapati',
+      image: meghImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/megh-prajapati-ab13a82b3',
+        github: 'https://github.com/Meghhhhh'
       }
     },
     {
@@ -52,67 +81,76 @@ const WebTeam = () => {
       }
     },
     {
-      name: 'Mann Chopda',
-      image: mannImage,
+      name: 'Vrunda Radadiya',
+      image: vrundaImage,
       social: {
-        linkedin: 'https://www.linkedin.com/in/man-chopda-63a012278/',
-        github: 'https://github.com/mann15'
+        linkedin: 'https://www.linkedin.com/in/vrunda-radadiya-8a1a43257/',
+        github: 'https://github.com/Vrunda2'
       }
     },
     {
-      name: 'Megh Prajapati',
-      image: meghImage,
+      name: 'Zaahid Vohra',
+      image: zaahidImage,
       social: {
-        linkedin: 'https://www.linkedin.com/in/megh-prajapati-ab13a82b3',
-        github: 'https://github.com/Meghhhhh'
+        linkedin: 'https://www.linkedin.com/in/zaahid-vohra-17048a203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        github: 'https://github.com/zaahidvohra'
       }
     }
   ];
 
   return (
-    <div className="webteam-container">
-     
-      
-      <div className="team-grid">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="team-card">
-            <div className="card-inner">
-              <div className="card-front">
-                <img 
-                  src={member.image}
-                  alt={member.name}
-                  className="member-image"
-                />
-                <div className="image-overlay"></div>
-                <div className="cyber-border-effect"></div>
-              </div>
-              
-              <div className="member-info">
-                <h3 className="member-name">{member.name}</h3>
-                <div className="social-links">
-                  <a 
-                    href={member.social.linkedin}
-                    className="social-link linkedin"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a 
-                    href={member.social.github}
-                    className="social-link github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
+    <>
+      <div className='headingOffset'>
+        <VideoBox url={"WEBTEAM"} />
+        <div className="web-container">
+          <div className="team-grid">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="team-card">
+                <div className="card-inner">
+                  <div className="card-front">
+                    <img 
+                      src={member.image}
+                      alt={member.name}
+                      className="member-image"
+                    />
+                    <div className="image-overlay"></div>
+                    <div className="cyber-border-effect"></div>
+                  </div>
+                  
+                  <div className="member-info">
+                    <h3 className="member-name">{member.name}</h3>
+                    <div className="social-links">
+                      <a 
+                        href={member.social.linkedin}
+                        className="social-link linkedin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                      <a 
+                        href={member.social.github}
+                        className="social-link github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+      <Sponsors />
+      <Footer />
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Heading from "../Common/Headings/Heading";
+import VideoBox from "../EventPage/VideoBox";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Gallery.css";
@@ -117,10 +117,8 @@ const Gallery = () => {
   ];
   return (
     <>
-      <div className="gal_header_img" id="parent_div">
-        <div className="text-on-image-gal">
-          <Heading id="heading_gallerypage" title="GALLERY" />
-        </div>
+      <div className="headingOffset">
+        <VideoBox url={"GALLERY"} />
       </div>
       <section>
         <div className="card-gallery">

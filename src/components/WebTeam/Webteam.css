@@ -1,7 +1,35 @@
-.webteam-container {
+.web-container {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #0f1724 0%, #1a1f2c 100%);
   min-height: 100vh;
+}
+
+.text-on-image-team{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.webteam_header_img{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.alt-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../assets/BGGlow.jpg');
+  background-size: 100vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(22, 22, 22, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
 }
 
 .team-grid {

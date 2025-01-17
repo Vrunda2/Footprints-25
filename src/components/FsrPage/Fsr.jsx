@@ -4,7 +4,7 @@ import FsrData from "../../Data/Fsr";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Fsr.css";
-import Heading from "../Common/Headings/Heading";
+import VideoBox from "../EventPage/VideoBox";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 function Fsr() {
@@ -25,27 +25,9 @@ function Fsr() {
   return (
     <>
       <section id="Fsr">
-        <div className="video_main">
-          <video
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-            width="100%"
-          >
-            <source
-              src={
-                "https://res.cloudinary.com/du1tas6pe/video/upload/v1705679349/vdo/vpwrc3ofzmnvxl4spo4s.mp4"
-              }
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
+        <VideoBox url={"FSR"} />
         <div className="container">
-          <Heading className="fsr_heading" id="glheading" title="FSR DRIVES" />
-          
+                    
           {FsrData.map((element) => {
             if (element.id % 2 === 0) {
               return (

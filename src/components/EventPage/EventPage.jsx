@@ -47,7 +47,7 @@ const EventCard = ({ name, details,background, index }) => {
 
   return (
     <div className={`event-card ${index % 2 ? "reverse-layout" : ""}`}>
-      <div className="image-container">
+      <div className="image-container" id={name}>
         <img
           src={background}
           alt={name}

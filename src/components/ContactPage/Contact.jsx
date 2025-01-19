@@ -5,6 +5,7 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import './Contact.css'
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import tbGif from "../../assets/tb.gif"
 
 
 
@@ -12,7 +13,7 @@ function Contact() {
 
   useEffect(() => {
   
-    document.title="Contact us | FootPrints'25"
+    document.title="About us | FootPrints'25"
 
   }, [])
 
@@ -31,62 +32,7 @@ function Contact() {
           </div>
         </div>
         <div className="container">
-          <Heading id="heading_contact" title="Heads" />
           <i className="fa-regular fa-puzzle"></i>
-
-          <div
-            id="contact"
-            className="heads_section row row-cols-1 row-cols-md-2"
-          >
-            {ContactData.map((element) => {
-              return (
-                <div className="col heads_info" key={element.id}>
-                  <div className="headpics">
-                    <div className="hoaho">
-                      <img src={element.imgSrc} alt="image" className="img" />
-                      <p className="name">{element.name}</p>
-                      <p className="p-details" id="designation">
-                        {element.details},
-                      </p>
-                      <p className="p-details" id="designation">
-                        {" "}
-                        {element.fp}
-                      </p>
-                      {/* <p className='p-details'>{element.fp}</p> */}
-
-                      {/* <p className='p-details'>{element.contact}</p> */}
-                      <div className="headsinfo">
-                        {/* <p className="conatctHead">
-                          {" "}
-                          <i className="fa fa-phone"></i>{" "}
-                          <a
-                            className="p-details footer_P_hover"
-                            href={`tel:${element.contact.slice(4)}`}
-                          >
-                            {element.contact}
-                          </a>
-                        </p> */}
-
-                        {/* <p className='p-details'>{element.mail}</p> */}
-
-                        <p className="conatctHead">
-                          {" "}
-                          <i className="fa fa-envelope"></i>{" "}
-                          <a
-                            className="p-details footer_P_hover"
-                            href={`mailto:${element.mail}`}
-                          >
-                            {element.mail}
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
           <div className="about_section">
             <Heading id="heading_contact" title="About US" />
             {AboutData.map((element) => {
@@ -144,7 +90,7 @@ function Contact() {
                     <div className="contact-details tb-logo">
                       <img
                         className="tbLogo"
-                        src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705692235/fp%20logo/ls3fe1c5q47ew1umyyem.gif"
+                        src={tbGif}
                         alt="#Think Beyond"
                         height="250px"
                         width="300px"

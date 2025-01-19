@@ -27,43 +27,20 @@ function TeamFP() {
       <Heading id="heading_ourteam" title="Our Team" />
       </div> */}
       <div className="team_header_img" id="parent_div">
-        <div className="text-on-image-team">
           <Heading id="heading_sponsors_page" title="OUR TEAM" />
-        </div>
       </div>
       {/* <section id="achivements" className="acheivements section-bg container"> */}
       <div className="container">
         <div className="coordinatesDiv">
-          <div className="heading">Coordinators</div>
+          <div className="team_header_img" id="parent_div">
+            <Heading id="heading_sponsors_page" title="COORDINATORS" />
+          </div>
           <div className="memcardsss row">
             {coordinatorsData.map((element) => {
               return (
-                // <div
-                //   key={element.id}
-                //   className="memBlock col-sm-6 col-md-5 col-lg-3 profile"
-                //   data-aos="zoom-in-up"
-                //   data-aos-delay="100"
-                //   data-aos-duration="1200"
-                // >
-                //   <div className="img-box">
-                //     <img
-                //       src={element.imgSrc}
-                //       alt={element.name}
-                //       className="memImg"
-                //     />
-                //     <ul>
-                //       <li>
-                //         <a href={element.linked} target="_blank">
-                //           <i className="fa-brands fa-linkedin"></i>
-                //         </a>
-                //       </li>
-                //     </ul>
-                //   </div>
-                //   <p className="memName">{element.name}</p>
-                // </div>
                 <div
                   key={element.id}
-                  className="col-sm-6 col-md-5 col-lg-3 outest"
+                  className="col-sm-6 col-md-4 col-lg-3 outest"
                 >
                 <div className="cardss">
                   
@@ -99,30 +76,12 @@ function TeamFP() {
           </div>
         </div>
         <div className="headsDiv">
-          <div className="heading">Heads</div>
+          <div className="team_header_img" id="parent_div">
+            <Heading id="heading_sponsors_page" title="HEADS" />
+          </div>
           <div className="memcardsss row">
             {headsData.map((element) => {
               return (
-                // <div
-                //   key={element.id}
-                //   className="memBlock col-sm-6 col-md-5 col-lg-3 profile"
-                // >
-                //   <div className="img-box">
-                //     <img
-                //       src={element.imgSrc}
-                //       alt={element.name}
-                //       className="memImg"
-                //     />
-                //     <ul>
-                //       <li>
-                //         <a href={element.linked} target="_blank">
-                //           <i className="fa-brands fa-linkedin"></i>
-                //         </a>
-                //       </li>
-                //     </ul>
-                //   </div>
-                //   <p className="memName">{element.name}</p>
-                // </div>
                 <div
                   key={element.id}
                   className="col-sm-6 col-md-5 col-lg-3 outest"
@@ -161,30 +120,12 @@ function TeamFP() {
           </div>
         </div>
         <div className="ccDiv">
-          <div className="heading">Core Committee</div>
+          <div className="team_header_img" id="parent_div">
+            <Heading id="heading_sponsors_page" title="CORE COMMITTEE" />
+          </div>
           <div className="memcardsss row">
             {ccData.map((element) => {
               return (
-                // <div
-                //   key={element.id}
-                //   className="memBlock col-sm-6 col-md-5 col-lg-3 profile"
-                // >
-                //   <div className="img-box">
-                //     <img
-                //       src={element.imgSrc}
-                //       alt={element.name}
-                //       className="memImg"
-                //     />
-                //     <ul>
-                //       <li>
-                //         <a href={element.linked} target="_blank">
-                //           <i className="fa-brands fa-linkedin"></i>
-                //         </a>
-                //       </li>
-                //     </ul>
-                //   </div>
-                //   <p className="memName">{element.name}</p>
-                // </div>
                 <div
                   key={element.id}
                   className="col-sm-6 col-md-5 col-lg-3 outest"
@@ -224,24 +165,12 @@ function TeamFP() {
         </div>
 
         <div className="orgcDiv">
-          <div className="heading">Organizing Team</div>
+          <div className="team_header_img" id="parent_div">
+            <Heading id="heading_sponsors_page" title="ORGANIZING TEAM" />
+          </div>
           <div className="memcardsss row">
             {orgcData.map((element) => {
               return (
-                // <div
-                //   key={element.id}
-                //   className="memBlock col-sm-6 col-md-5 col-lg-3 profile"
-                // >
-                //   <div className="img-box">
-                //     <img
-                //       src={element.imgSrc}
-                //       alt={element.name}
-                //       className="memImg"
-                //     />
-                //   </div>
-                //   <p className="memName">{element.name}</p>
-                // </div>
-
                 <div
                   key={element.id}
                   className="col-sm-6 col-md-5 col-lg-3 outest"
@@ -272,7 +201,6 @@ function TeamFP() {
 
                   </div>
                 </div>
-                  
                 </div>
 
               );

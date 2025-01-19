@@ -9,6 +9,8 @@ import mannImage from '../../assets/Team/Web/Mann.jpg';
 import meghImage from '../../assets/Team/Web/Megh.jpg';
 import madhavImage from '../../assets/Team/OT/Madhav.jpg';
 import zaahidImage from '../../assets/Team/OT/Zaahid.jpg';
+import devImage from '../../assets/Team/OT/Dev.jpg';
+import pearlImage from '../../assets/Team/OT/Pearl.jpg'
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
@@ -30,6 +32,30 @@ const WebTeam = () => {
       social: {
         linkedin: 'http://www.linkedin.com/in/ayeshapatel07',
         github: 'https://github.com/ayesha1209'
+      }
+    },
+    {
+      name: 'Meghana Vasava',
+      image: meghanaImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/meghana-vasava-17242a261/',
+        github: 'https://github.com/meghanavasava'
+      }
+    },
+    {
+      name: 'Satchit Bhatt',
+      image: satchitImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/satchit-bhatt-9933a1253',
+        github: 'https://github.com/Satchit2'
+      }
+    },
+    {
+      name: 'Vrunda Radadiya',
+      image: vrundaImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/vrunda-radadiya-8a1a43257/',
+        github: 'https://github.com/Vrunda2'
       }
     },
     {
@@ -57,35 +83,11 @@ const WebTeam = () => {
       }
     },
     {
-      name: 'Meghana Vasava',
-      image: meghanaImage,
-      social: {
-        linkedin: 'https://www.linkedin.com/in/meghana-vasava-17242a261/',
-        github: 'https://github.com/meghanavasava'
-      }
-    },
-    {
-      name: 'Satchit Bhatt',
-      image: satchitImage,
-      social: {
-        linkedin: 'https://www.linkedin.com/in/satchit-bhatt-9933a1253',
-        github: 'https://github.com/Satchit2'
-      }
-    },
-    {
       name: 'Shubh Doshi',
       image: shubhImage,
       social: {
         linkedin: 'https://www.linkedin.com/in/shubh-doshi-921337256/',
         github: 'https://github.com/shubhdoshi21'
-      }
-    },
-    {
-      name: 'Vrunda Radadiya',
-      image: vrundaImage,
-      social: {
-        linkedin: 'https://www.linkedin.com/in/vrunda-radadiya-8a1a43257/',
-        github: 'https://github.com/Vrunda2'
       }
     },
     {
@@ -95,7 +97,23 @@ const WebTeam = () => {
         linkedin: 'https://www.linkedin.com/in/zaahid-vohra-17048a203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         github: 'https://github.com/zaahidvohra'
       }
-    }
+    },
+    {
+      name: 'Dev Sanchla',
+      image: devImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/devsanchla',
+        github: ''
+      }
+    },
+    {
+      name: 'Pearl Sharma',
+      image: pearlImage,
+      social: {
+        linkedin: 'https://www.linkedin.com/in/pearl-sharma-163945220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        github: ''
+      }
+    },
   ];
 
   return (

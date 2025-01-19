@@ -4,6 +4,7 @@ import VideoBox from '../EventPage/VideoBox';
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import medVid from "../../assets/Anim/media.png"
 
 function MediaPage() {
 
@@ -18,7 +19,7 @@ function MediaPage() {
     return (
       <>
         <div className='headingOffset'>
-          <VideoBox url={"MEDIA"} />
+          <VideoBox url={medVid} />
         </div>
         <div className="media-container">
           {/* <Heading id="heading_media" title="MEADIA COVERAGE"/> */}

@@ -40,7 +40,7 @@ const headsData = [
     id: 2,
     imgSrc: `../src/assets/Team/Core/Joy.jpg`,
     name: "Joy Patel",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/joy-patel-b2320b1a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   
 ];
@@ -51,7 +51,7 @@ const ccData = [
     id: 1,
     imgSrc: `../src/assets/Team/Core/Ayesha.jpg`,
     name: "Ayesha Patel",
-    linked: ``,
+    linked: `http://www.linkedin.com/in/ayeshapatel07`,
   },
   {
     id: 2,
@@ -75,7 +75,7 @@ const ccData = [
     id: 5,
     imgSrc: `../src/assets/Team/Core/Meghana.jpg`,
     name: "Meghana Vasava",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/meghana-vasava-17242a261/`,
   },
   {
     id: 6,
@@ -123,7 +123,7 @@ const ccData = [
     id: 13,
     imgSrc: `../src/assets/Team/Core/Vrunda.jpg`,
     name: "Vrunda Radadiya",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/vrunda-radadiya-8a1a43257/`,
   },
   {
     id: 14,
@@ -147,7 +147,7 @@ const orgcData = [
   },
   {
     id: 3,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/OT/Amrutesh.jpg`,
     name: "Amrutesh Sharma",
   },
   {
@@ -200,11 +200,11 @@ const orgcData = [
     imgSrc: `../src/assets/Team/OT/DhruvT.jpg`,
     name: "Dhruv Tapre",
   },
-  {
-    id: 13,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
-    name: "Dhruv Vankar",
-  },
+  // {
+  //   id: 13,
+  //   imgSrc: `../src/assets/Team/Missing.jpg`,
+  //   name: "Dhruv Vankar",
+  // },
   {
     id: 14,
     imgSrc: `../src/assets/Team/OT/DhruvVy.jpg`,
@@ -215,11 +215,11 @@ const orgcData = [
     imgSrc: `../src/assets/Team/OT/Dhun.jpg`,
     name: "Dhun Sharma",
   },
-  {
-    id: 16,
-    imgSrc: `../src/assets/Team/OT/Dipen.jpg`,
-    name: "Dipen Bhaliya",
-  },
+  // {
+  //   id: 16,
+  //   imgSrc: `../src/assets/Team/OT/Dipen.jpg`,
+  //   name: "Dipen Bhaliya",
+  // },
   {
     id: 17,
     imgSrc: `../src/assets/Team/OT/Dirgh.jpg`,
@@ -247,7 +247,7 @@ const orgcData = [
   },
   {
     id: 22,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/OT/Isha.jpg`,
     name: "Isha Singh",
   },
   {
@@ -282,7 +282,7 @@ const orgcData = [
   },
   {
     id: 29,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/OT/Meerat.jpg`,
     name: "Meerat Dave",
   },
   {
@@ -292,7 +292,7 @@ const orgcData = [
   },
   {
     id: 31,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/OT/Mittal.jpg`,
     name: "Mittal Pawar",
   },
   {
@@ -327,7 +327,7 @@ const orgcData = [
   },
   {
     id: 38,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/OT/Pratik.jpg`,
     name: "Pratik Ramani",
   },
   {
@@ -368,7 +368,7 @@ const orgcData = [
   {
     id: 46,
     imgSrc: `../src/assets/Team/OT/Suhani.jpg`,
-    name: "Suhani",
+    name: "Suhani Sharma",
   },
   {
     id: 47,

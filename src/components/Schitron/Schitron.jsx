@@ -5,6 +5,7 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
 import VideoBox from '../EventPage/VideoBox';
+import schitVid from "../../assets/Anim/schitron.png"
 
 const Schitron = () => {
 
@@ -20,7 +21,7 @@ const Schitron = () => {
   return (
     <>
       <div className="scitron">
-        <VideoBox url={"SCHITRON"} />
+        <VideoBox url={schitVid} />
         <div className="scitron-des-text">
         <p className="scitron-des">
         The future belongs to young people with an education and the imagination to create.

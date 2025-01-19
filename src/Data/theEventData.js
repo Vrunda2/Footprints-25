@@ -146,7 +146,7 @@ const technotronData = {
         },
       },
     ],
-   headingSource: `../../src/assets/Anim/cyber.png`
+   headingSource: `../src/assets/Anim/cyber2.png`
   },
   lycra: {
     eventTitle: "Lycra | FootPrints'25",
@@ -240,8 +240,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "LYCRA",
+    headingSource: `../src/assets/Anim/lycra.png`,
   },
   macheanema: {
     eventTitle: "Macheanema | FootPrints'25",
@@ -368,8 +367,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "MACHEANEMA",
+    headingSource: `../src/assets/Anim/mache.png`,
   },
   rasayanam: {
     eventTitle: "Rasayanam | FootPrints'25",
@@ -427,8 +425,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "RASAYANAM",
+    headingSource: `../src/assets/Anim/rasa.png`,
   },
   sanganikee: {
     eventTitle: "Sanganikee | FootPrints'25",
@@ -748,8 +745,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "SANGANIKEE",
+    headingSource: `../src/assets/Anim/sanga.png`,
   },
   citadel: {
     eventTitle: "Citadel | FootPrints'25",
@@ -837,8 +833,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "CITADEL",
+    headingSource: `../src/assets/Anim/citadel.png`
   },
   techx: {
     eventTitle: "TechX | FootPrints'25",
@@ -971,8 +966,7 @@ const questData = {
       
     },
   ],
-  headingSource:
-    "QUEST",
+  headingSource: `../src/assets/Anim/quest.png`,
 };
 
 const virtuosityData = {
@@ -1028,15 +1022,15 @@ const virtuosityData = {
           "Get ready to showcase your chess skills as you clash with many from all across Gujarat competing to prove their worth in an exciting single elimination chess tournament.",
         ],
         rules: [
-          "- Same as of BGMI. It will be held in FOTE MSU Campus"
+          "- Format will be single elemination brackets",
+          "- Match format will be Rapid 10+0 BO1",
           ],
         price: ["- INR 100/-"],
         team: ["- Individual"],
       },
     },
   ],
-  headingSource:
-    "VIRTUOSITY",
+  headingSource: `../src/assets/Anim/virtuo.png`
 };
 
 const fseData = {

@@ -20,7 +20,7 @@ const Glimpse = () => {
           <iframe
             width="373"
             height="210"
-            src="https://www.youtube.com/embed/8K0BR9-wBNk?si=fzRs0h5xRDreDXnU"
+            src="https://www.youtube.com/embed/XMmN90MfEy4?si=evkqvUiQNqln9b2o"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -35,7 +35,7 @@ const Glimpse = () => {
           <iframe
             width="373"
             height="210"
-            src="https://www.youtube.com/embed/laV4us-nGPQ?si=pIxYjP_Tv9N0qDNA"
+            src="https://www.youtube.com/embed/-8waHD5yGQE?si=9gLWORHWT_C5i2F_"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -53,7 +53,7 @@ const Glimpse = () => {
           <iframe
             width="373"
             height="210"
-            src="https://www.youtube.com/embed/8ox93Blaxqc?si=hcz2KQmPSfgUOzkU"
+            src="https://www.youtube.com/embed/laV4us-nGPQ?si=p6cBtzwT04Cs46pc"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

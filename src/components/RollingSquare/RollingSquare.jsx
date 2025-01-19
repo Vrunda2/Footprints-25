@@ -6,6 +6,8 @@ import ImageCarousel from "./ImageCaraousal";
 import Heading from "../Common/Headings/Heading";
 import imageSources from "../../Data/RollingSquaresImages";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import VideoBox from "../EventPage/VideoBox";
+import rsVid from "../../assets/Anim/RS.png"
 
 export default function RollingSquare() {
   useEffect(() => {
@@ -17,24 +19,7 @@ export default function RollingSquare() {
   return (
     <>
       <section>
-        <div className="video_main">
-          <video
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-            width="100%"
-          >
-            <source
-              src={
-                "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597475/vdos/pgr6s6xhnbxbamh8gpld.mp4"
-              }
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
+        <VideoBox url={rsVid} />
         {/* <Heading
           className="kaleido_heading"
           id="glheading"

@@ -7,6 +7,7 @@ import "./Fsr.css";
 import VideoBox from "../EventPage/VideoBox";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 import fsrVid from "../../assets/Anim/FSR.png";
+import Heading from "../Common/Headings/Heading";
 
 function Fsr() {
   useEffect(() => {
@@ -26,9 +27,11 @@ function Fsr() {
   return (
     <>
       <section id="Fsr">
-          <div className="sponsor_header_img" id="parent_div">
-            <VideoBox url={fsrVid} />
-          </div>
+        <VideoBox url={fsrVid} />
+        <Heading
+          id="heading_main_Sponsor"
+          title={"Our Drives"}
+        />
         {/* <div>
           <div className="video_main">
             <video

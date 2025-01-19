@@ -102,7 +102,9 @@ const EventPage = ({ theParent }) => {
     <>
       <div className="events_main">
         <div className="headingOffset">
-          <VideoBox url={headingSource} />
+          <div className="vidHolder">
+            <VideoBox url={headingSource} />
+          </div>
         </div>
         <div className="headingOffset">
           <Heading className="kaleido_heading" id="glheading" title={title} />

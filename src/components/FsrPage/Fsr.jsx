@@ -6,7 +6,7 @@ import Footer from "../Common/Footer/Footer";
 import "./Fsr.css";
 import VideoBox from "../EventPage/VideoBox";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
-import fsrVid from "../../assets/FSR.png";
+import fsrVid from "../../assets/Anim/FSR.png";
 
 function Fsr() {
   useEffect(() => {

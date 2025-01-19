@@ -98,20 +98,20 @@ const technotronData = {
         },
       },
       {
-        name: "HackPrints 3.0",
+        name: "HackPrints",
         background: Hackathon,
         details: {
           info: [
-            "It is a 3-day online Hackathon based event wherein the participants have to submit a developed project i.e., a mobile/web application based on a given theme provided on the website of HackPrints 3.0",
+            "It is a 1-day offline Hackathon based event wherein the participants have to develop a project during the given time frame. Prior to the offline round the teams have to submit their idea according to specified format online.",
           ],
           rules: [
-            "- It is an online event.",
-            "- Dates:  23rd Feb to 25th Feb.",
-            "- There will be 3 rounds in the event.",
-            "- In the first round participants have to pitch their design.",
-            "- In the second round they have to present their progress.",
-            "- And in final round there will be submission and QnA based on the submission.",
-            "- Visit the link provided to go to the website of HackPrints 3.0.",
+            "- It is an hybrid event.",
+            "- Registration Dates:  10 Dec 2024 to 23 Feb 2025.",
+            "- There will be 2 rounds in the event.",
+            "- In the first round participants have to pitch their ideas according to given format.",
+            "- In the second round they have to develop their presented idea.",
+            "- For further details and queries visit the site below.",
+            "- Visit the link: https://www.odoo.com/es/event/odooxfootprints2025-6888/register",
           ],
           price: ["- Free"],
           team: ["- Maximum 4"],
@@ -127,8 +127,8 @@ const technotronData = {
           rules: [
             "TO BE DECLARED",
             ],
-          price : ["TO BE DECLARED"],
-          team: ["TO BE DECLARED"],
+          price : ["- INR 200/-"],
+          team: ["- Maximum 4"],
         },
       },
       {
@@ -146,7 +146,7 @@ const technotronData = {
         },
       },
     ],
-   headingSource: "CYBERNETICS"
+   headingSource: `../../src/assets/Anim/cyber.png`
   },
   lycra: {
     eventTitle: "Lycra | FootPrints'25",
@@ -951,7 +951,7 @@ const questData = {
         rules: [
           "TO BE DECLARED",
         ],
-        price: ["- TO BE DECLARED"],
+        price: ["- INR 50/-"],
         team: ["- Individual"],
       },
     },

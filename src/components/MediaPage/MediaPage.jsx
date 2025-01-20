@@ -4,6 +4,10 @@ import VideoBox from '../EventPage/VideoBox';
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import m1 from "../../assets/images/media/m1.jpg";
+import m2 from "../../assets/images/media/m2.jpg";
+import m3 from "../../assets/images/media/m33.jpg";
+import m4 from "../../assets/images/media/m4.jpg";
 
 function MediaPage() {
 
@@ -27,11 +31,11 @@ function MediaPage() {
 
           <img
             className="media"
-            src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705170203/media/jdj1ijpmeh4g9j7ny4rz.png"
+            src= {m1}
           />
           <img
             className="media"
-            src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705170188/media/dbndhpwum0hort1u0etk.png"
+            src={m2}
           />
 
           {/* <img
@@ -42,13 +46,13 @@ function MediaPage() {
 
           <img
             className="media col-lg-12 col-md-12 col-sm-6 col-xs-12 border-solid"
-            src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705956355/media/nwsytzxkt7kdhf4ewnyh.png"
+            src={m3}
           />
           <img
             className="media col-lg-12 col-md-12 col-sm-6 col-xs-12 border-solid"
-            src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705956355/media/eqtqtydsziokxlhtgsuy.png"
+            src={m4}
           />
-          <img
+          {/* <img
             className="media col-lg-12 col-md-12 col-sm-6 col-xs-12 border-solid"
             src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705956355/media/rraxdxyb3bpy4tat3oxa.png"
           />
@@ -63,7 +67,7 @@ function MediaPage() {
           <img
             className="media col-lg-12 col-md-12 col-sm-6 col-xs-12 border-solid"
             src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705956357/media/ri5d6ox56rmtiww5qcjq.png"
-          />
+          /> */}
           {/* <img
             className="col-md-6 col-sm-6 col-xs-12 border-solid"
             src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705956355/media/rraxdxyb3bpy4tat3oxa.png"

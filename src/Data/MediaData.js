@@ -1,24 +1,29 @@
+import m1 from "../assets/images/media/m1.jpg";
+import m2 from "../assets/images/media/m2.jpg";
+import m3 from "../assets/images/media/m33.jpg";
+import m4 from "../assets/images/media/m4.jpg";
+
 const mediaData = [
 
     {
         id: 1,
-        imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705170203/media/jdj1ijpmeh4g9j7ny4rz.png"
+        imgSrc: m1,
     },
 
     {
         id: 2,
-        imgSrc: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705170188/media/dbndhpwum0hort1u0etk.png"
+        imgSrc: m2,
     },
 
-    // {
-    //     id: 3,
-    //     imgSrc: "https://www.msufp.in/2019/images/media/m_2(1).jpg"
-    // },
+    {
+        id: 3,
+        imgSrc: m3,
+    },
 
-    // {
-    //     id: 4,
-    //     imgSrc: "https://www.msufp.in/2019/images/media/m_1.jpg"
-    // },
+    {
+        id: 4,
+        imgSrc: m4,
+    },
 
     // {
     //     id: 5,

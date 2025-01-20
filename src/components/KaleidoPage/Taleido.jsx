@@ -5,6 +5,8 @@ import Footer from "../Common/Footer/Footer";
 import "./Taleido.css";
 import Heading from "../Common/Headings/Heading";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import kaleidoVid from "../../assets/Anim/kaleido.png";
+import VideoBox from "../EventPage/VideoBox";
 
 function Taleido() {
   useEffect(() => {
@@ -16,8 +18,7 @@ function Taleido() {
   return (
     <>
       <section id="Taleido">
-     
-
+      <VideoBox url={kaleidoVid}/>
         <div className="container">
           <Heading
             className="taleido_heading"
@@ -67,8 +68,6 @@ function Taleido() {
                         alt={element.name}
                       />
                     </div>
-
-                   
                   </div>
                 </div>
               );

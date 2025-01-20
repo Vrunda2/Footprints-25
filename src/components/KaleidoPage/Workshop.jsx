@@ -5,6 +5,8 @@ import Footer from "../Common/Footer/Footer";
 import "./Workshop.css";
 import Heading from "../Common/Headings/Heading";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import kaleidoVid from "../../assets/Anim/kaleido.png";
+import VideoBox from "../EventPage/VideoBox";
 
 function Workshop() {
   useEffect(() => {
@@ -15,16 +17,7 @@ function Workshop() {
 
   return (
     <section id="Workshop">
-      <div className="video_main">
-        <video autoPlay loop muted className="w-full h-full object-cover">
-          <source
-            src="https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597470/vdos/mwwq0k4owswdxmab3a3e.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
+      <VideoBox url={kaleidoVid} />
       <div className="container">
         <Heading title="WORKSHOPS" className="workshop_heading" />
 

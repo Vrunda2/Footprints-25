@@ -91,7 +91,7 @@ const menuItems = [
   },
   {
     Segment: 5,
-    title: "Stock Exchange",
+    title: "FSE",
     subItems: [
       {
         Department: 1,
@@ -143,7 +143,7 @@ const menuItems = [
       },
       {
         Department: 5,
-        title: "Contact Us",
+        title: "About Us",
         link: "/contact",
       },
       {
@@ -163,11 +163,6 @@ const menuItems = [
       },
       {
         Department: 9,
-        title: "Accomodation",
-        link: "/accomodation",
-      },
-      {
-        Department: 10,
         title: "Gallery",
         link: "/gallery",
        

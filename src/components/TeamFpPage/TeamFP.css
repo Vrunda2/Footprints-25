@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
   padding: 1rem 0;
 }
 
@@ -13,6 +12,7 @@
 }
 
 .cardss {
+  margin: 1rem 0;
   width: 280px;
   transition: all 0.3s ease;
   background: white;

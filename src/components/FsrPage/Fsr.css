@@ -14,6 +14,22 @@
   z-index: 1;
 }
 
+.video_main {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.halfW {
+  width: 50%;
+  position: relative;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+}
+
 .FSR_header_img img {
     width: 100%;
 }

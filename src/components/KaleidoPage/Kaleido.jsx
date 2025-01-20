@@ -8,6 +8,8 @@ import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos"; // Import AOS library
 import imageSrc from "../../assets/image.jpg";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import VideoBox from "../EventPage/VideoBox";
+import kaleidoVid from "../../assets/Anim/kaleido.png";
 
 // Reusable GuestLecture Component
 const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
@@ -79,16 +81,7 @@ function Kaleido() {
   return (
     <>
       <section id="Kaleido">
-        <div className="video_main">
-          <video autoPlay loop muted className="w-full h-full object-cover">
-            <source
-              src="https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597503/vdos/xjts8oh5ts0ux8mzpqcu.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
+       <VideoBox url={kaleidoVid}/>
         {/* Current Guest Lectures */}
         <div className="container">
           <Heading

@@ -5,6 +5,8 @@ import Footer from "../Common/Footer/Footer";
 import "./Techzi.css";
 import Heading from "../Common/Headings/Heading";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import kaleidoVid from "../../assets/Anim/kaleido.png";
+import VideoBox from "../EventPage/VideoBox";
 
 function Techzi() {
   useEffect(() => {
@@ -16,24 +18,7 @@ function Techzi() {
   return (
     <>
       <section id="Techzi">
-        <div className="video_main">
-          <video
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-            width="100%"
-          >
-            <source
-              src={
-                "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597501/vdos/cfmja2rurhpbh4xkgyls.mp4"
-              }
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
+        <VideoBox url={kaleidoVid} />
         <div className="container">
           <Heading
             className="kaleido_heading"

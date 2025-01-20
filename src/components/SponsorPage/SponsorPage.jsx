@@ -6,6 +6,7 @@ import Heading from '../Common/Headings/Heading';
 import VideoBox from '../EventPage/VideoBox';
 import './SponsorPage.css';
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import sponsaVid from "../../assets/Anim/sponsor.png"
 
 function Sponsor() {
 
@@ -21,7 +22,7 @@ function Sponsor() {
     return (
       <>
         <section id="id_sponsorsPage" className="section_page">
-         <VideoBox url={"SPONSORS"} />
+         <VideoBox url={sponsaVid} />
           <div className="py-2">
             <div className="container">
               {/* Main Sponsor */}

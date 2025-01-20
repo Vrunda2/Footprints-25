@@ -6,6 +6,8 @@ import Footer from "../Common/Footer/Footer";
 import "./Fsr.css";
 import VideoBox from "../EventPage/VideoBox";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import fsrVid from "../../assets/Anim/FSR.png";
+import Heading from "../Common/Headings/Heading";
 
 function Fsr() {
   useEffect(() => {
@@ -25,7 +27,24 @@ function Fsr() {
   return (
     <>
       <section id="Fsr">
-        <VideoBox url={"FSR"} />
+        <VideoBox url={fsrVid} />
+        <Heading
+          id="heading_main_Sponsor"
+          title={"Our Drives"}
+        />
+        {/* <div>
+          <div className="video_main">
+            <video
+              autoPlay
+              loop
+              muted
+              width="100%"
+            >
+              <source src={fsrVid} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div> */}
         <div className="container">
                     
           {FsrData.map((element) => {

@@ -8,6 +8,7 @@ import m1 from "../../assets/images/media/m1.jpg";
 import m2 from "../../assets/images/media/m2.jpg";
 import m3 from "../../assets/images/media/m33.jpg";
 import m4 from "../../assets/images/media/m4.jpg";
+import medVid from "../../assets/Anim/media.png"
 
 function MediaPage() {
 
@@ -22,7 +23,7 @@ function MediaPage() {
     return (
       <>
         <div className='headingOffset'>
-          <VideoBox url={"MEDIA"} />
+          <VideoBox url={medVid} />
         </div>
         <div className="media-container">
           {/* <Heading id="heading_media" title="MEADIA COVERAGE"/> */}

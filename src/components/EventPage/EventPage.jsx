@@ -47,7 +47,7 @@ const EventCard = ({ name, details,background, index }) => {
 
   return (
     <div className={`event-card ${index % 2 ? "reverse-layout" : ""}`}>
-      <div className="image-container">
+      <div className="image-container" id={name}>
         <img
           src={background}
           alt={name}
@@ -102,7 +102,9 @@ const EventPage = ({ theParent }) => {
     <>
       <div className="events_main">
         <div className="headingOffset">
-          <VideoBox url={headingSource} />
+          <div className="vidHolder">
+            <VideoBox url={headingSource} />
+          </div>
         </div>
         <div className="headingOffset">
           <Heading className="kaleido_heading" id="glheading" title={title} />

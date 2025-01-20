@@ -51,13 +51,13 @@ export default function RollingSquare() {
           id="glheading"
           title={"Rolling Squares"}
         />
-        <ImageCarousel images={imageSources.concert} />
+        <ImageCarousel data-aos="fade-up" images={imageSources.concert} />
         
         <Heading className="kaleido_heading" id="glheading" title={"Informal"} />
-        <ImageCarousel images={imageSources.informals} />
+        <ImageCarousel  data-aos="fade-up" images={imageSources.informals} />
 
         <Heading className="kaleido_heading" id="glheading" title={"Jampad"} />
-        <ImageCarousel images={imageSources.jampad} />
+        <ImageCarousel  data-aos="fade-up" images={imageSources.jampad} />
 
         <Sponsors />
         

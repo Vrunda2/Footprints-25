@@ -4,8 +4,12 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Gallery.css";
 import RS from "../../assets/images/gallary/concert.jpg";
-import MECH from "../../assets/images/gallary/mech.jpg";
+import MECH from "../../assets/images/gallary/mechh.jpg";
 import SANGA from "../../assets/images/gallary/smack.jpg";
+import STANDUP from "../../assets/images/gallary/akashmehta.jpg";
+import FSR from "../../assets/images/gallary/fsr12.jpg";
+import CITA from "../../assets/images/gallary/cita.jpg";
+import DARSHAN from "../../assets/images/gallary/darshanrr.jpg";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 
 const Gallery = () => {
@@ -73,7 +77,7 @@ const Gallery = () => {
 
     {
       id: 5,
-      imgSrc: RS,
+      imgSrc: FSR,
       title: "FSR",
       subtitle: "FootPrints Social Responsibility",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -95,23 +99,23 @@ const Gallery = () => {
     // },
     {
       id: 7,
-      imgSrc: RS,
+      imgSrc: DARSHAN,
       title: "Rolling squares",
       subtitle: "Concert",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 8,
-      imgSrc: RS,
+      imgSrc: CITA,
       title: "Citadel",
-      subtitle: "Tremors Apsida",
+      subtitle: "Tremors Setu",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 9,
-      imgSrc: RS,
-      title: "Kaleidoscope",
-      subtitle: "Podcast",
+      imgSrc: STANDUP,
+      title: "Informal",
+      subtitle: "Stand up",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
   ];

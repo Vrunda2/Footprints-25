@@ -6,10 +6,11 @@ import "./Kaleido.css";
 import Heading from "../Common/Headings/Heading";
 import "aos/dist/aos.css"; // Import AOS CSS
 import AOS from "aos"; // Import AOS library
-import imageSrc from "../../assets/image.jpg";
+import imageSrc from "../../assets/example.jpg";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 import VideoBox from "../EventPage/VideoBox";
 import kaleidoVid from "../../assets/Anim/kaleido.png";
+
 
 // Reusable GuestLecture Component
 const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
@@ -21,7 +22,7 @@ const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
         data-aos-duration="2000" // Slower animation for image
       >
         <img
-          src={imageSrc} // Use the imported image
+          src={element.imageSrc} // Use the imported image
           className="Kaleido-img"
           alt={element.name}
         />
@@ -61,7 +62,7 @@ const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
         data-aos-duration="2000" // Slower animation for image
       >  
         <img
-          src={imageSrc} // Use the imported image
+          src={element.imageSrc} // Use the imported image
           className="Kaleido-img"
           alt={element.name}
         />
@@ -72,7 +73,7 @@ const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
 
 function Kaleido() {
   useEffect(() => {
-    document.title = "Guest Lecture | FootPrints'24";
+    document.title = "Guest Lecture | FootPrints'25";
     AOS.init(); // Initialize AOS for animations
   }, []);
 

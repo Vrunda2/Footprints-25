@@ -19,9 +19,10 @@ section {
 }
 
 .gallery img {
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 100%;
-  height: auto;
+  height: 100%;
+  /* height: auto; */
   gap: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -57,6 +58,25 @@ section {
   mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(22, 22, 22, 1), rgba(0, 0, 0, 0));
   -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
+}
+.concert-24 {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+    background: rgba(11, 12, 16, 0.8); /* Gradient background */
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+  
+}
+
+.concert-24 img {
+  max-width: 100%;
+  /* height: auto; */
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 500px) {

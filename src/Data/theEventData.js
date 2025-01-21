@@ -1,5 +1,7 @@
 import exampleImage from "../assets/example.jpg";
 import runtime from "../assets/images/eventimage/runtime1.jpg";
+import protocol from "../assets/images/eventimage/protocol.jpeg";
+
 import brokenfloats from "../assets/images/eventimage/brokenfloatss.jpg";
 import count from "../assets/images/eventimage/10count33.jpg";
 import texlycra from "../assets/images/eventimage/synopsis.jpg";
@@ -41,6 +43,7 @@ import lost from "../assets/images/eventimage/lost.jpg";
 import Squidgame from "../assets/images/eventimage/squidgamee.jpg";
 import wow from "../assets/images/eventimage/wow.jpg";
 import subsoccer from "../assets/images/eventimage/subsoccer.jpg";
+import castle from "../assets/images/eventimage/castle.jpg";
 
 import inversion from "../assets/images/eventimage/fse111.jpg";
 import sharktank from "../assets/images/eventimage/sharktank.jpg";
@@ -133,7 +136,7 @@ const technotronData = {
       },
       {
         name: "Protocol",
-        background: interfaze,
+        background: protocol,
         details: {
           info: [
             "It is a paper presentation event based on Computer Science and IT Department",
@@ -943,7 +946,7 @@ const questData = {
           "Showcase your photography skills! Capture moments during the event and submit to win.",
         ],
         rules: [
-          "TO BE DECLARED",
+          "Winners will be declared Based on Poll via Instagram",
         ],
         price: ["- INR 50/-"],
         team: ["- Individual"],
@@ -951,13 +954,13 @@ const questData = {
     },
     {
       name: "Takeshi's Castle",
-      background: frameit,
+      background: castle,
       details: {
         info: [
           "Features an exciting game inspired by the show.",
         ],
         rules: [
-          "TO BE DECLARED",
+          "FUN Show Based Events with rules revealed on the spot",
         ],
         price: ["- INR 100/-"],
         team: ["- Individual"],

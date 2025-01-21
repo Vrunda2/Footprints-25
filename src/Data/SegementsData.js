@@ -1,10 +1,18 @@
+import technotron from "../assets/images/segmentimage/TT1.png";
+import Kaleidoscope from "../assets/images/segmentimage/KALEIDOO.png";
+import RS from "../assets/images/segmentimage/RSS.png";
+import FSE from "../assets/images/segmentimage/FSE.png";
+import FSR from "../assets/images/segmentimage/FSRR.png";
+import Virtuosity from "../assets/images/segmentimage/VIRTUO.png";
+import Schitron from "../assets/images/segmentimage/SCHITRON.png";
+import Quest from "../assets/images/segmentimage/QUEST.png";
+
 const segementData = [
   {
     Segment: 1,
     title: "Technotron",
     link: "/technotron",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639941/segments/dxxo6qup3tjckntgkflt.png",
+    imageSource: technotron,
 
     subItems: [
       {
@@ -48,8 +56,7 @@ const segementData = [
     Segment: 2,
 
     title: "Kaleidoscope",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639940/segments/aafofhgqrw98mnsh4ixp.png",
+    imageSource: Kaleidoscope,
 
     subItems: [
       {
@@ -77,8 +84,7 @@ const segementData = [
   {
     Segment: 3,
     title: "Rolling squares",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639941/segments/zypzsigjwnyfmmvoerkh.png",
+    imageSource: RS,
 
     subItems: [
       {
@@ -99,8 +105,7 @@ const segementData = [
   {
     Segment: 4,
     title: "Quest",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705638069/segments/wapb8ls74dje81z5zpmy.png",
+    imageSource:Quest,
     subItems: [
       {
         title: "12th Batallian",
@@ -132,8 +137,7 @@ const segementData = [
   {
     Segment: 5,
     title: "Stock Exchange",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639940/segments/tihoc8phxiwacbl6wmcd.png",
+    imageSource:FSE,
     subItems: [
       {
         title: "Inversion",
@@ -149,8 +153,7 @@ const segementData = [
   {
     Segment: 6,
     title: "Virtuosity",
-    imageSource:
-      "https://res.cloudinary.com/du1tas6pe/image/upload/v1705639940/segments/hnzveh0zifwicjmtkyqi.png",
+    imageSource: Virtuosity,
     subItems: [
       {
         title: "BGMI",
@@ -160,6 +163,31 @@ const segementData = [
         title: "Valorant",
         link: "/virtuosity$valorant",
       },
+    ],
+  },
+  {
+    Segment: 7,
+    title: "Schitron",
+    imageSource:
+      Schitron,
+    subItems: [
+      {
+        title: "Schitron",
+        link: "/Schitron",
+      },
+    ],
+  },
+  {
+    Segment: 8,
+    title: "FSR",
+    imageSource:
+      FSR,
+    subItems: [
+      {
+        title: "FSR Drives",
+        link: "/fsr",
+      },
+      
     ],
   },
 ];

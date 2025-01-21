@@ -14,7 +14,7 @@ function TeamFP() {
   
   useEffect(() => {
   
-    document.title="Team FP | FootPrints'24"
+    document.title="Team FP | FootPrints'25"
 
   }, [])
 

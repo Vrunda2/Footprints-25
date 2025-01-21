@@ -18,10 +18,11 @@ const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
         data-aos-duration="2000" // Slower animation for image
       >
         <img
-          src={imageSrc} // Use the imported image
+          src={element.image} // Use the imported image
           className="Kaleido-img"
           alt={element.name}
         />
+         
       </div>
     )}
 
@@ -58,7 +59,7 @@ const GuestLecture = ({ element, isImageFirst, animationDirection }) => (
         data-aos-duration="2000" // Slower animation for image
       >  
         <img
-          src={imageSrc} // Use the imported image
+          src={element.image} // Use the imported image
           className="Kaleido-img"
           alt={element.name}
         />

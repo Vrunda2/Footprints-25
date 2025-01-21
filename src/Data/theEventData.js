@@ -855,8 +855,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "TECHX ",
+    headingSource: `../src/assets/Anim/techx.png`
   },
 };
 
@@ -1075,8 +1074,7 @@ const fseData = {
       },
     },
   ],
-  headingSource:
-    "FSE",
+  headingSource: `../src/assets/Anim/fse.png`
 };
 
 const theEventData = {

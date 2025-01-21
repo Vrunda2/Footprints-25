@@ -10,6 +10,8 @@ import {
   headsData,
 } from "../../Data/TeamFP";
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import  teamVid from "../../assets/Anim/ourteam.png"
+import VideoBox from '../EventPage/VideoBox';
 
 function TeamFP() {
   
@@ -26,9 +28,7 @@ function TeamFP() {
       {/* <div className="cover">
       <Heading id="heading_ourteam" title="Our Team" />
       </div> */}
-      <div className="team_header_img" id="parent_div">
-          <Heading id="heading_sponsors_page" title="OUR TEAM" />
-      </div>
+      <VideoBox url={teamVid} />
       {/* <section id="achivements" className="acheivements section-bg container"> */}
       <div className="container">
         <div className="coordinatesDiv">

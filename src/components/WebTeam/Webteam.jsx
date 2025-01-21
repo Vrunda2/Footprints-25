@@ -15,6 +15,7 @@ import { useMousePosition } from '../../CustomHooks/useMousePosition';
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import VideoBox from "../EventPage/VideoBox";
+import webVid from "../../assets/Anim/webteam.png"
 
 const WebTeam = () => {
   useEffect(() => {
@@ -119,7 +120,7 @@ const WebTeam = () => {
   return (
     <>
       <div className='headingOffset'>
-        <VideoBox url={"WEBTEAM"} />
+        <VideoBox url={webVid} />
         <div className="web-container">
           <div className="team-grid">
             {teamMembers.map((member, index) => (

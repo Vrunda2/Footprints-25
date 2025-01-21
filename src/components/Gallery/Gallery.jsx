@@ -11,6 +11,7 @@ import FSR from "../../assets/images/gallary/fsr12.jpg";
 import CITA from "../../assets/images/gallary/cita.jpg";
 import DARSHAN from "../../assets/images/gallary/darshanrr.jpg";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import galVid from '../../assets/Anim/gallery.png'
 
 const Gallery = () => {
   useEffect(() => {
@@ -122,7 +123,7 @@ const Gallery = () => {
   return (
     <>
       <div className="headingOffset">
-        <VideoBox url={"GALLERY"} />
+        <VideoBox url={galVid} />
       </div>
       <section>
         <div className="card-gallery">

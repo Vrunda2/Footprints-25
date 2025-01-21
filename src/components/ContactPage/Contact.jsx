@@ -6,6 +6,8 @@ import Footer from "../Common/Footer/Footer";
 import './Contact.css'
 import { useMousePosition } from '../../CustomHooks/useMousePosition';
 import tbGif from "../../assets/tb.gif"
+import VideoBox from '../EventPage/VideoBox';
+import abtVid from '../../assets/Anim/aboutus.png'
 
 
 
@@ -26,15 +28,11 @@ function Contact() {
         {/* <img src={img1} alt="image" /> */}
         {/* Here add cloudinary link */}
         {/* </div> */}
-        <div className="contact_header_img" id="parent_div">
-          <div className="text-on-image-contact">
-            <Heading id="heading_contact_us" title="CONTACT US" />
-          </div>
-        </div>
+        <VideoBox url={abtVid} />
         <div className="container">
           <i className="fa-regular fa-puzzle"></i>
           <div className="about_section">
-            <Heading id="heading_contact" title="About US" />
+            {/* <Heading id="heading_contact" title="About US" /> */}
             {AboutData.map((element) => {
               return (
                 <div className="grid-about" key={element.id}>

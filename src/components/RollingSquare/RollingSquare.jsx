@@ -7,7 +7,8 @@ import Heading from "../Common/Headings/Heading";
 import imageSources from "../../Data/RollingSquaresImages";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 import VideoBox from "../EventPage/VideoBox";
-import rsVid from "../../assets/Anim/RS.png"
+import rsVid from "../../assets/Anim/RS.png";
+import salim from "../../assets/images/gallary/salim.jpg";
 
 export default function RollingSquare() {
   useEffect(() => {
@@ -20,29 +21,29 @@ export default function RollingSquare() {
     <>
       <section>
         <VideoBox url={rsVid} />
-        {/* <Heading
+        <Heading
           className="kaleido_heading"
           id="glheading"
           title={"Live In Concert"}
-        /> */}
+        />
         
-        {/* <div className="concert-24">
-          <img src="https://res.cloudinary.com/du1tas6pe/image/upload/v1708442864/astronout/wc4ecblr7qpfzufr1emv.jpg" alt="Soon" />
+        <div className="concert-24">
+          <img src={salim} alt="Soon" />
           <div className="info">
-            <h1 data-aos="fade-up" className="name">Lorem ipsum</h1>
+            <h1 data-aos="fade-up" className="name">Salim Sulaiman</h1>
             <div className="meta-info">
               <div className="time">Date :9th March, 2025</div>
               <div className="venue">
-                Venue :  
+                {/* Venue :  
 
                   Faculty Of Technology And Engineering, MSU, Kalabhavan,
-                  Vadodara.
+                  Vadodara. */}
 
               </div>
             </div>
 
           </div>
-        </div> */}
+        </div>
         
         
 

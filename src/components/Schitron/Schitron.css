@@ -64,7 +64,7 @@ word-spacing: 3px;
       color: var(--white);
   margin-top: -20px;
   background: none;
-  font-family: "Karla", sans-serif;
+  font-family: "Gantari", sans-serif;
   line-height: 1.4;
   font-size: 1.1rem;
       text-transform: none;
@@ -121,8 +121,15 @@ position: relative;
     background-image: url(https://res.cloudinary.com/doe7b5us3/image/upload/v1674756116/Kaleido/schitron4_jk5vnk.jpg);
 }
 .item-3{
-    background-image: url(https://res.cloudinary.com/du1tas6pe/image/upload/v1705955503/schitron/ddskxeo3k9lfd2jlv4ug.jpg);
+    background-image: url("../../assets/images/media/schitron1.jpg");
 }
+.item-5{
+    background-image: url("../../assets/images/media/schitron2.jpg");
+}
+.item-6{
+    background-image: url("../../assets/images/media/schitron3.jpg");
+}
+
 .item:hover{
     flex: 7 1 0;
         -webkit-filter: grayscale(0%); 

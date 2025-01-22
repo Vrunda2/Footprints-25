@@ -86,7 +86,7 @@ function Taleido() {
                   </div>
 
                   <div
-                    className="about_taleido para1"
+                    className="about_taleido para2"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     // data-aos-delay="100"

@@ -38,7 +38,7 @@
 }
 #reveling-heading {
   border-bottom: none;
-  /* font-family: var(--heading-family) !important; */
+  font-family: var(--heading-family) !important; 
   font-size: 2.25rem;
   letter-spacing: 3px;
   text-align: center;
@@ -54,12 +54,14 @@
   margin-left: 0;
 }
 .fsr_lec p {
+  font-family: "Gantari", sans-serif;
   text-align: justify;
   color: var(--white);
   text-transform: none;
 }
 
 .fsr_lec {
+  font-family: "Gantari", sans-serif;
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 2rem 2rem;
@@ -87,6 +89,7 @@
 }
 
 .fsr_heading {
+  font-family: "Gantari", sans-serif;
   display: flex;
   /* margin-left: 0; */
 }

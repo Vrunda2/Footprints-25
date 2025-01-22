@@ -25,6 +25,7 @@
 }
 
 .text-on-image-history {
+  font-family: "Gantari", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,6 +102,7 @@
 
 /* Separate Block Layout for Content and Image */
 .content-block {
+  font-family: "Gantari", sans-serif;
   width: 60%;
 }
 

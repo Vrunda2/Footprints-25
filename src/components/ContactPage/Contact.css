@@ -51,6 +51,7 @@
 }
 
 #heading_contact {
+  font-family: "Gantari", sans-serif;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -77,6 +78,7 @@
 }
 
 .about-info {
+  font-family: "Gantari", sans-serif;
   margin-bottom: 2rem;
   text-align: left;
   width: 100%;
@@ -86,6 +88,7 @@
 }
 
 .contact-details {
+  font-family: "Gantari", sans-serif;
   text-align: center;
   color: var(--icon-color) !important;
   margin: auto auto;
@@ -100,6 +103,7 @@
 }
 
 .extra-info-title {
+  font-family: "Gantari", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
   margin: 1rem auto;

@@ -14,6 +14,7 @@
 
 /* Content Fade-In Effect */
 .about_workshop {
+    font-family: "Gantari", sans-serif;
     animation: fadeInContent 0.8s ease-in-out; /* Smooth fade-in for content */
 }
 
@@ -57,6 +58,7 @@
 
 /* Guest Workshop Name Styling */
 .workshop_name {
+    font-family: "Gantari", sans-serif;
     border-bottom: 2px solid #fff; /* White border */
     padding-bottom: 6px;
     color: #fff; /* Solid white text color */
@@ -72,30 +74,46 @@
 /* Responsive Design Adjustments */
 @media screen and (max-width: 768px) {
     .workshop_img img {
+        order: 1;
         width: 100%;
         
     }
 
     .about_workshop {
+        order: 2;
         text-align: center;
         margin-bottom: 2rem;
     }
 
     .workshop_name {
+        order: 2;
         font-size: 1.8rem;
     }
+    /* .workshop.content:nth-child(odd) {
+        flex-direction: column; 
+      } */
+    
+      /* .workshop.content:nth-child(even) {
+    
+        flex-direction: column; 
+      } */
 }
 
 @media screen and (max-width: 996px) and (min-width: 768px) {
     .workshop_img {
+        order: 1;
+        /* flex-direction: column; */
         margin-bottom: 2rem;
     }
 
     .workshop_heading {
+        order: 2;
+        /* flex-direction: column; */
         justify-content: center;
     }
 
     .workshop_heading h3 {
+        order: 2;
         text-align: center;
     }
 }

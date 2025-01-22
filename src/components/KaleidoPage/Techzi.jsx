@@ -27,17 +27,71 @@ function Techzi() {
           />
 
 
-          {PrevTechziData.map((element) => {
-            if (element.id % 2 === 0) {
+{PrevTechziData.map((element) => {
+            if (element.id % 2 == 0) {
               return (
-                <div key={element.id} className="techzi_lec content">
+                <div key={element.id}>
+                  <div className="techzi_lec content">
+                    <div className="about_techzi about_techzi_para1">
+                      <div className="techzi_heading">
+                        <h3 className="techzi_name">
+                          {element.name} <br /> {element.details}
+                        </h3>
+                      </div>
+                      <p className="text-without-icon-techzi">
+                        {" "}
+                        {element.content}
+                      </p>
+                    </div>
+
+                    <div
+                      className="techzi_img techzi_img_style"
+                      data-aos="zoom-in-right"
+                      data-aos-duration="1000"
+                      data-aos-delay="100"
+
+                    >
+                      <img
+                        src={element.imgSrc}
+                        className="Techzi-img"
+                        alt={element.name}
+                      />
+                    </div>
+
+                    <div className="about_techzi about_techzi_para2">
+                      <div className="techzi_heading">
+                        <h3 className="techzi_name">
+                          {element.name} <br /> {element.details}
+                        </h3>
+                      </div>
+                      <p className="text-without-icon-techzi">
+                        {" "}
+                        {element.content}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <div key={element.id}>
+                <div className="techzi_lec">
                   <div
-                    className="about_techzi about_techzi_para1"
-                    data-aos="fade-up"
+                    className="techzi_img"
+                    data-aos="zoom-in-right"
                     data-aos-duration="1000"
-                    data-aos-offset="400"
-                    data-aos-easing="ease-in-sine"
+                    data-aos-delay="100"
+
                   >
+                    <img
+                      src={element.imgSrc}
+                      className="Techzi-img"
+                      alt={element.name}
+                    />
+                  </div>
+
+                  <div className="about_techzi para1">
                     <div className="techzi_heading">
                       <h3 className="techzi_name">
                         {element.name} <br /> {element.details}
@@ -47,52 +101,6 @@ function Techzi() {
                       {element.content}
                     </p>
                   </div>
-
-                  <div
-                    className="techzi_img techzi_img_style"
-                    data-aos="GuestAnimRight"
-                  >
-                    <img
-                      src={element.imgSrc}
-                      className="Techzi-img"
-                      alt={element.name}
-                      onError={(e) => {
-                        e.target.src = "/assets/fallback-image.jpg";
-                      }}
-                    />
-                  </div>
-                </div>
-              );
-            }
-
-            return (
-              <div key={element.id} className="techzi_lec">
-                <div className="techzi_img" data-aos="GuestAnimLeft">
-                  <img
-                    src={element.imgSrc}
-                    className="Techzi-img"
-                    alt={element.name}
-                    onError={(e) => {
-                      e.target.src = "/assets/fallback-image.jpg";
-                    }}
-                  />
-                </div>
-
-                <div
-                  className="about_techzi para1"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-offset="400"
-                  data-aos-easing="ease-in-sine"
-                >
-                  <div className="techzi_heading">
-                    <h3 className="techzi_name">
-                      {element.name} <br /> {element.details}
-                    </h3>
-                  </div>
-                  <p className="text-without-icon-techzi">
-                    {element.content}
-                  </p>
                 </div>
               </div>
             );

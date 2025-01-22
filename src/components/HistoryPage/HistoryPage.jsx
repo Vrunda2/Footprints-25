@@ -55,7 +55,7 @@ function HistoryPage() {
                         data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                         data-aos-delay="400"
                       >
-                        <img src={Image} alt={element.heading} />
+                        <img src={element.image} />
                       </div>
                     </div>
                   ))}

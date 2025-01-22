@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
-import Heading from "../Common/Headings/Heading";
+import VideoBox from "../EventPage/VideoBox";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Gallery.css";
 import RS from "../../assets/images/gallary/concert.jpg";
-import MECH from "../../assets/images/gallary/mech.jpg";
-import SANGA from "../../assets/images/gallary/sanga.jpg";
+import MECH from "../../assets/images/gallary/mechh.jpg";
+import SANGA from "../../assets/images/gallary/smack.jpg";
+import STANDUP from "../../assets/images/gallary/akashmehta.jpg";
+import FSR from "../../assets/images/gallary/fsr12.jpg";
+import CITA from "../../assets/images/gallary/cita.jpg";
+import DARSHAN from "../../assets/images/gallary/darshanrr.jpg";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import galVid from '../../assets/Anim/gallery.png'
 
 const Gallery = () => {
   useEffect(() => {
     document.title = "Gallery | FootPrints'25";
   }, []);
 
-  // var [numLoaded, setLoaded] = useState(0);
-
-  // function inrLoaded() {
-  //   console.log(numLoaded);
-  //   setLoaded((prevNum) => {
-  //     return prevNum + 1;
-  //   });
-  // }
+  const position = useMousePosition();
 
   useEffect(()=>{
     const observer = new IntersectionObserver(
@@ -46,19 +45,6 @@ const Gallery = () => {
   },[]);
   
 
-  // function animate() {
-  //   // document.getElementById("img-loader").style.animation = "fadeLoader 2s";
-  //   setTimeout(() => {
-  //     data.forEach((item, idx) => {
-  //       setTimeout(() => {
-  //         document.querySelector(`#ImgCard${item.id} > .front`).style.animation = "frontAnim 2s";
-  //         document.querySelector(`#ImgCard${item.id} > .back`).style.animation = "backAnim 2s";
-  //         document.querySelector(`#ImgCard${item.id} > .back`).classList.add("SheenAnimate");
-  //       }, 350 * idx);
-  //     });
-  //   }, 1000);
-  // }
-
   let data = [
     {
       id: 1,
@@ -80,7 +66,7 @@ const Gallery = () => {
       imgSrc: SANGA,
       title: "Sanganikee",
       subtitle: "Smackbots",
-      cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
+      
     },
     {
       id: 4,
@@ -92,7 +78,7 @@ const Gallery = () => {
 
     {
       id: 5,
-      imgSrc: RS,
+      imgSrc: FSR,
       title: "FSR",
       subtitle: "FootPrints Social Responsibility",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -114,32 +100,30 @@ const Gallery = () => {
     // },
     {
       id: 7,
-      imgSrc: RS,
+      imgSrc: DARSHAN,
       title: "Rolling squares",
       subtitle: "Concert",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 8,
-      imgSrc: RS,
+      imgSrc: CITA,
       title: "Citadel",
-      subtitle: "Tremors Apsida",
+      subtitle: "Tremors Setu",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
     {
       id: 9,
-      imgSrc: RS,
-      title: "Kaleidoscope",
-      subtitle: "Podcast",
+      imgSrc: STANDUP,
+      title: "Informal",
+      subtitle: "Stand up",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     },
   ];
   return (
     <>
-      <div className="gal_header_img" id="parent_div">
-        <div className="text-on-image-gal">
-          <Heading id="heading_gallerypage" title="GALLERY" />
-        </div>
+      <div className="headingOffset">
+        <VideoBox url={galVid} />
       </div>
       <section>
         <div className="card-gallery">
@@ -171,6 +155,11 @@ const Gallery = () => {
           })}
         </div>
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+      
       <Sponsors />
       <Footer />
     </>

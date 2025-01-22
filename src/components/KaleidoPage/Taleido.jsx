@@ -4,17 +4,21 @@ import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Taleido.css";
 import Heading from "../Common/Headings/Heading";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import kaleidoVid from "../../assets/Anim/kaleido.png";
+import VideoBox from "../EventPage/VideoBox";
 
 function Taleido() {
   useEffect(() => {
     document.title = "Teleidoscope | FootPrints'25";
   }, []);
 
+  const position = useMousePosition();
+
   return (
     <>
       <section id="Taleido">
-     
-
+      <VideoBox url={kaleidoVid}/>
         <div className="container">
           <Heading
             className="taleido_heading"
@@ -64,8 +68,6 @@ function Taleido() {
                         alt={element.name}
                       />
                     </div>
-
-                   
                   </div>
                 </div>
               );
@@ -113,6 +115,11 @@ function Taleido() {
           })}
         </div>
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
       <Footer />
     </>

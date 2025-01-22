@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+section {
+  position: relative;
+  z-index: 2;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -14,9 +19,11 @@
 }
 
 .gallery img {
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 100%;
-  height: auto;
+  height: 100%;
+  /* height: auto; */
+  gap: 20px;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -25,7 +32,7 @@
 
 .gallery img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px 4px rgba(102, 252, 241, 0.8);
+  box-shadow: 0 0 10px 2px rgba(102, 252, 241, 0.8);
   border: 2px solid #66fcf1; 
   z-index: 1;
   filter: grayscale(0%);
@@ -52,25 +59,44 @@
   -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   z-index: 1;
 }
+.concert-24 {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+    background: rgba(11, 12, 16, 0.8); /* Gradient background */
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+  
+}
+
+.concert-24 img {
+  max-width: 100%;
+  /* height: auto; */
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-right: 2rem;
+}
 
 @media screen and (max-width: 500px) {
   .gallery img {
     border-radius: 5px;
   }
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 619px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (min-width: 620px) and (max-width: 759px) {
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

@@ -4,7 +4,10 @@ import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import './Contact.css'
-// import img1 from "../../assets/images/contact-header.png"
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import tbGif from "../../assets/tb.gif"
+import VideoBox from '../EventPage/VideoBox';
+import abtVid from '../../assets/Anim/aboutus.png'
 
 
 
@@ -12,9 +15,11 @@ function Contact() {
 
   useEffect(() => {
   
-    document.title="Contact us | FootPrints'24"
+    document.title="About us | FootPrints'25"
 
   }, [])
+
+  const position = useMousePosition();
 
   return (
     <>
@@ -23,70 +28,11 @@ function Contact() {
         {/* <img src={img1} alt="image" /> */}
         {/* Here add cloudinary link */}
         {/* </div> */}
-        <div className="contact_header_img" id="parent_div">
-          <div className="text-on-image-contact">
-            <Heading id="heading_contact_us" title="CONTACT US" />
-          </div>
-        </div>
+        <VideoBox url={abtVid} />
         <div className="container">
-          <Heading id="heading_contact" title="Heads" />
           <i className="fa-regular fa-puzzle"></i>
-
-          <div
-            id="contact"
-            className="heads_section row row-cols-1 row-cols-md-2"
-          >
-            {ContactData.map((element) => {
-              return (
-                <div className="col heads_info" key={element.id}>
-                  <div className="headpics">
-                    <div className="hoaho">
-                      <img src={element.imgSrc} alt="image" className="img" />
-                      <p className="name">{element.name}</p>
-                      <p className="p-details" id="designation">
-                        {element.details},
-                      </p>
-                      <p className="p-details" id="designation">
-                        {" "}
-                        {element.fp}
-                      </p>
-                      {/* <p className='p-details'>{element.fp}</p> */}
-
-                      {/* <p className='p-details'>{element.contact}</p> */}
-                      <div className="headsinfo">
-                        {/* <p className="conatctHead">
-                          {" "}
-                          <i className="fa fa-phone"></i>{" "}
-                          <a
-                            className="p-details footer_P_hover"
-                            href={`tel:${element.contact.slice(4)}`}
-                          >
-                            {element.contact}
-                          </a>
-                        </p> */}
-
-                        {/* <p className='p-details'>{element.mail}</p> */}
-
-                        <p className="conatctHead">
-                          {" "}
-                          <i className="fa fa-envelope"></i>{" "}
-                          <a
-                            className="p-details footer_P_hover"
-                            href={`mailto:${element.mail}`}
-                          >
-                            {element.mail}
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
           <div className="about_section">
-            <Heading id="heading_contact" title="About US" />
+            {/* <Heading id="heading_contact" title="About US" /> */}
             {AboutData.map((element) => {
               return (
                 <div className="grid-about" key={element.id}>
@@ -142,7 +88,7 @@ function Contact() {
                     <div className="contact-details tb-logo">
                       <img
                         className="tbLogo"
-                        src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705692235/fp%20logo/ls3fe1c5q47ew1umyyem.gif"
+                        src={tbGif}
                         alt="#Think Beyond"
                         height="250px"
                         width="300px"
@@ -190,6 +136,11 @@ function Contact() {
           </div>
         </div>
       </div>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
       <Footer />
     </>

@@ -3,26 +3,26 @@ import React, {useEffect} from 'react'
 import newSponsorData from '../../Data/newSponorData'
 import Footer from '../Common/Footer/Footer';
 import Heading from '../Common/Headings/Heading';
+import VideoBox from '../EventPage/VideoBox';
 import './SponsorPage.css';
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import sponsaVid from "../../assets/Anim/sponsor.png"
 
 function Sponsor() {
 
     
   useEffect(() => {
   
-    document.title="Sponsors and Partners | FootPrints'23"
+    document.title="Sponsors | FootPrints'25"
 
   }, []);
+
+  const position = useMousePosition();
 
     return (
       <>
         <section id="id_sponsorsPage" className="section_page">
-          <div className="sponsor_header_img" id="parent_div">
-            <div className="text-on-image-sponsor">
-              <Heading id="heading_sponsors_page" title="OUR SPONSORS" />
-            </div>
-          </div>
-
+         <VideoBox url={sponsaVid} />
           <div className="py-2">
             <div className="container">
               {/* Main Sponsor */}
@@ -56,6 +56,8 @@ function Sponsor() {
               </div>
 
               {/*  Sponsor Grid */}
+              
+              <Heading id="heading_partner_grid" title="OUR SPONSORS" />
 
               <div
                 id="sponsorsGrid"
@@ -73,6 +75,9 @@ function Sponsor() {
                           </div>
                         </div>
                       </div>
+                      <div className='sponsorName'>
+                          <a target='_blank' href={element.href}><h5><center>{element.alt}</center></h5></a>
+                        </div>
                     </div>
                   );
                 })}
@@ -80,7 +85,7 @@ function Sponsor() {
 
               {/*  Partner Grid */}
 
-              <Heading id="heading_partner_grid" title="OUR PARTNERES" />
+              {/* <Heading id="heading_partner_grid" title="OUR PARTNERES" />
 
               <div
                 id="PartnersGrid"
@@ -101,10 +106,14 @@ function Sponsor() {
                     </div>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
+        <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+        />
 
         <Footer />
       </>

@@ -1,5 +1,7 @@
 import exampleImage from "../assets/example.jpg";
 import runtime from "../assets/images/eventimage/runtime1.jpg";
+import protocol from "../assets/images/eventimage/protocol.jpeg";
+
 import brokenfloats from "../assets/images/eventimage/brokenfloatss.jpg";
 import count from "../assets/images/eventimage/10count33.jpg";
 import texlycra from "../assets/images/eventimage/synopsis.jpg";
@@ -9,6 +11,47 @@ import Hackathon from "../assets/images/eventimage/hackathonn.jpg";
 import webtech from "../assets/images/eventimage/webtechhh.jpg";
 import interfaze from "../assets/images/eventimage/interfazee.jpg";
 import Hydrex from "../assets/images/eventimage/hydrexx.jpg";
+import Burnout from "../assets/images/eventimage/burnoutt.jpeg";
+import Ballista from "../assets/images/eventimage/ballista.jpeg";
+import Gizmo from "../assets/images/eventimage/gizmo.jpg";
+import poweredepoch from "../assets/images/eventimage/pepoch.jpg";
+import rocket from "../assets/images/eventimage/rocket.jpg";
+
+import Wrestlemania from "../assets/images/eventimage/wrestle.jpg";
+import technokick from "../assets/images/eventimage/technokick.jpg";
+import smackbot from "../assets/images/eventimage/smack.jpg";
+import monochrome from "../assets/images/eventimage/monochrom.jpg";
+import dfa from "../assets/images/eventimage/dfa.jpg";
+import Insight from "../assets/images/eventimage/insight.jpg";
+import Renaissance from "../assets/images/eventimage/renaisance.jpeg";
+
+import cad from "../assets/images/eventimage/cad.jpg";
+import wwe from "../assets/images/eventimage/wwe.jpg";
+import tremors from "../assets/images/eventimage/tremors.jpg";
+import civiq from "../assets/images/eventimage/civiq.jpg";
+
+import Chemaze from "../assets/images/eventimage/chemaze.jpg";
+import ChemX from "../assets/images/eventimage/chemxx.jpg";
+import chemohustle from "../assets/images/eventimage/chemohustle.jpg";
+import Synopsis from "../assets/images/eventimage/synopsiss.jpg";
+
+import TechX from "../assets/images/eventimage/techxx.jpg";
+
+import Batallian from "../assets/images/eventimage/12b.jpg";
+import frameit from "../assets/images/eventimage/cameraa.jpg";
+import lost from "../assets/images/eventimage/lost.jpg";
+import Squidgame from "../assets/images/eventimage/squidgamee.jpg";
+import wow from "../assets/images/eventimage/wow.jpg";
+import subsoccer from "../assets/images/eventimage/subsoccer.jpg";
+import castle from "../assets/images/eventimage/castle.jpg";
+
+import inversion from "../assets/images/eventimage/fse111.jpg";
+import sharktank from "../assets/images/eventimage/sharktank.jpg";
+
+import BGMI from "../assets/images/eventimage/bgmi.jpg";
+import Valorant from "../assets/images/eventimage/valo.jpg";
+import freefire from "../assets/images/eventimage/freefire.jpg";
+import chess from "../assets/images/eventimage/chess.jpg";
 
 
 
@@ -16,6 +59,7 @@ import Hydrex from "../assets/images/eventimage/hydrexx.jpg";
 
 const technotronData = {
   cybernetics: {
+    eventTitle: "Cybernetics | FootPrints'25",
     title : "Event Related to Computer And IT Department",
     data: [
       {
@@ -57,47 +101,58 @@ const technotronData = {
         },
       },
       {
-        name: "HackPrints 3.0",
+        name: "HackPrints",
         background: Hackathon,
         details: {
           info: [
-            "It is a 3-day online Hackathon based event wherein the participants have to submit a developed project i.e., a mobile/web application based on a given theme provided on the website of HackPrints 3.0",
+            "It is a 1-day offline Hackathon based event wherein the participants have to develop a project during the given time frame. Prior to the offline round the teams have to submit their idea according to specified format online.",
           ],
           rules: [
-            "- It is an online event.",
-            "- Dates:  23rd Feb to 25th Feb.",
-            "- There will be 3 rounds in the event.",
-            "- In the first round participants have to pitch their design.",
-            "- In the second round they have to present their progress.",
-            "- And in final round there will be submission and QnA based on the submission.",
-            "- Visit the link provided to go to the website of HackPrints 3.0.",
+            "- It is an hybrid event.",
+            "- Registration Dates:  10 Dec 2024 to 23 Feb 2025.",
+            "- There will be 2 rounds in the event.",
+            "- In the first round participants have to pitch their ideas according to given format.",
+            "- In the second round they have to develop their presented idea.",
+            "- For further details and queries visit the site below.",
+            "- Visit the link: https://www.odoo.com/es/event/odooxfootprints2025-6888/register",
           ],
           price: ["- Free"],
           team: ["- Maximum 4"],
         },
       },
       {
-        name: "AlgoSync",
+        name: "Interfaze",
         background: interfaze,
         details: {
           info: [
-            "Exploring supervised and unsupervised realms, a pivotal machine learning event.",
+            "UI designing and devlopment based competition. It challenges participatiing teams to devlop an user friendly and intuitive UI within given constraints",
           ],
           rules: [
-            "- Python Language Compulsary",
-            "- Find the solution using Algorithms.",
-            "- Participants need to bring their own Laptop.",
-            "- Judging will be based on fastest optimum output."
+            "TO BE DECLARED",
             ],
-          price : ["- INR 150/-"],
-          team: ["- Individual "],
+          price : ["- INR 200/-"],
+          team: ["- Maximum 4"],
+        },
+      },
+      {
+        name: "Protocol",
+        background: protocol,
+        details: {
+          info: [
+            "It is a paper presentation event based on Computer Science and IT Department",
+          ],
+          rules: [
+            "TO BE DECLARED",
+            ],
+          price : ["TO BE DECLARED"],
+          team: ["TO BE DECLARED"],
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597489/vdos/avcm5iaaztsgrjnevfym.mp4",
+   headingSource: `../src/assets/Anim/cyber2.png`
   },
   lycra: {
+    eventTitle: "Lycra | FootPrints'25",
     title : "Event Related to Textile Department",
     data: [
       {
@@ -188,15 +243,15 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597497/vdos/bzwnuwlp0ynmhvdzonlw.mp4",
+    headingSource: `../src/assets/Anim/lycra.png`,
   },
   macheanema: {
+    eventTitle: "Macheanema | FootPrints'25",
     title : "Event Related to Mechanical And Metallurgy Department.",
     data: [
       {
         name: "Burnout",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Burnout,
         details: {
           info: [
             "The participants have to design a vehicle powered by an internal combustion engine which can complete the given track in least possible time along with certain obstacles on the way.",
@@ -220,7 +275,7 @@ const technotronData = {
       },
       {
         name: "Ballista",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Ballista,
         details: {
           info: [
             "It is an event in which participants will have to design an X-bow using elastic, torsional or any other mechanism capable of hitting a given target with variable height and distance.",
@@ -240,7 +295,7 @@ const technotronData = {
 
       {
         name: "Powered Epoch",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: poweredepoch,
         details: {
           info: [
             "It is a paper presentation event related to Mechanical and Metallurgy Engineering department.",
@@ -266,7 +321,7 @@ const technotronData = {
       },
       {
         name: "Gizmo",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Gizmo,
         details: {
           info: [
             "It is a knowledge based event related to Mechanical engineering department consisting of quiz, puzzles, crosswords, treasure hunt and industry defined problems.",
@@ -295,16 +350,35 @@ const technotronData = {
           team: ["- Maximum 4"],
         },
       },
+      {
+        name: "Rocketlaunch",
+        background: rocket,
+        details: {
+          info: [
+            "Participants have to build hydraulic crane capable of scooping and placing the given load.",
+          ],
+          rules: [
+            "- The dimensions of the base plate should be 60 x 30 with no restriction on height.",
+            "- The arm’s reach should be a minimum of 40cm and maximum 80cm.",
+            "- The minimum movement of the arm should be 90 degrees.",
+            "- The scoop volume should be at maximum of 100 ml.",
+            "- Only commercial syringes (20ml) can be used with no restriction on number of syringes.",
+            "- Any fluid such as water or oil can be used.",
+          ],
+          price: ["-INR 200/-"],
+          team: ["- Maximum 4"],
+        },
+      },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597482/vdos/lgxbaguxqaytbc5hdmms.mp4",
+    headingSource: `../src/assets/Anim/mache.png`,
   },
   rasayanam: {
+    eventTitle: "Rasayanam | FootPrints'25",
     title : "Event Related to Chemical Department",
     data: [
       {
         name: "Chem-o-Hustle",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: chemohustle,
         details: {
           info: [
             "You have to design a Car which should be powered by a chemical reaction. ",
@@ -320,7 +394,7 @@ const technotronData = {
       },
       {
         name: "Synopsis",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Synopsis,
         details: {
           info: [
             "It is a paper presentation event in which you have to select a topic based on Chemical Engineering or Pharmacy field.",
@@ -332,7 +406,7 @@ const technotronData = {
       },
       {
         name: "Chemaze",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Chemaze,
         details: {
           info: ["It is a knowledge based event."],
           rules: ["- Rules will be disclosed on the day of event. "],
@@ -343,7 +417,7 @@ const technotronData = {
 
       {
         name: "ChemX",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: ChemX,
         details: {
           info: [
             "Participant has to make a working or non working model based on the chemical field.",
@@ -354,15 +428,15 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597503/vdos/dtcd0klnsxhtybh13uw2.mp4",
+    headingSource: `../src/assets/Anim/rasa.png`,
   },
   sanganikee: {
+    eventTitle: "Sanganikee | FootPrints'25",
     title : "Event Related to Electrical And Electronics Department",
     data: [
       {
         name: "Wrestlemania",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Wrestlemania,
         details: {
           info: [
             "Participants have to design a robot, which are capable of wrestling in a head-to-head bout based on the fundamental principle of conventional human wrestling matches.",
@@ -413,7 +487,7 @@ const technotronData = {
       },
       {
         name: "Technokick",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: technokick,
         details: {
           info: [
             "This event provides participants platform to show their robotic skill by developing wired/wireless bot which can play soccer in specially designed Arena.",
@@ -478,7 +552,7 @@ const technotronData = {
       },
       {
         name: "Smackbotz",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: smackbot,
         details: {
           info: [
             "Participants have to design and construct a remote-controlled robot capable of fighting against another robot in a one-on-one combat.",
@@ -526,7 +600,7 @@ const technotronData = {
       },
       {
         name: "D.F.A 7.0",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: dfa,
         details: {
           info: [
             "Teams have to build an all-terrain robust RC vehicle that can work on dual frequency and has to complete the given track from starting point to the ending point in the minimum possible time",
@@ -587,7 +661,7 @@ const technotronData = {
       },
       {
         name: "Monochrome",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: monochrome,
         details: {
           info: [
             "Participants have to design autonomous robot which can solve given line network.",
@@ -639,7 +713,7 @@ const technotronData = {
       },
       {
         name: "Insight",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Insight,
         details: {
           info: [
             "Knowledge based event for Electrical & Electronics Engineering Dept.",
@@ -651,7 +725,7 @@ const technotronData = {
       },
       {
         name: "Renaissance",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: Renaissance,
         details: {
           info: ["Paper presentation event for Electrical & Electronics Engineering Dept."],
           rules: ["- Rules",
@@ -674,15 +748,15 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597488/vdos/ovmwks27oc6mqrldvfl4.mp4",
+    headingSource: `../src/assets/Anim/sanga.png`,
   },
   citadel: {
+    eventTitle: "Citadel | FootPrints'25",
     title : "Event Related to Civil And IWM Department",
     data: [
       {
         name: "CivIQ",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: civiq,
         details: {
           info: [
             "Its Treasure hunt event based on immense consept and knowledge of  civil engineering.",
@@ -694,7 +768,7 @@ const technotronData = {
       },
       {
         name: "CAD",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: cad,
         details: {
           info: [
             "In this Participants have to design a multipurpose building based on a given detailed problem statement.",
@@ -718,7 +792,7 @@ const technotronData = {
       },
       {
         name: "WWE",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: wwe,
         details: {
           info: [
             "It is a paper presentation event along with case study with a solution based approach.",
@@ -729,45 +803,48 @@ const technotronData = {
         },
       },
       {
-        name: "Tremors Setu",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        name: "Tremors Nuevo",
+        background: tremors,
         details: {
           info: ["Participants have to make a model using popsicle sticks."],
-          rules: ["- Dimensions of the Warren Truss",
- 
-          "- Clear Span of Truss = 65-70cm",
-          "- Height of truss: 8 to 10cm",
-          "- Base span should be max 2stick and other members should be 1 stick thick.",
-           
-          "- Rules:",
-         "- Each team should be of maximum 4 members.",
-         "- Materials to be used: Popsticle sticks and Fevicol of SH grade.",
-         "- Use of any other adhesive, etc is prohibited and participants using it will be disqualified from the event.",
-         "- Strings cannot be used to tie popsicle sticks.",
-         "- All the models must be taken for the dimension checking during the specified period of time (any entry after that won’t be accepted and would be disqualified).",
-         "- No changes in the model after the dimension checking would be allowed and any team doing so without the permission of the Core Committee member would be disqualified.",
-         "- The decision of the judges and Core Committee will be final regarding any discrepancy on the spot or before the event.",
-           
-          "- Structure Specification:",
-          "- Whole structure should be open-web (no bracings allowed)",
-          "- No grooves allowed.",
-          "- Only SH grade Fevicol can be used as Glue.",
-          "- No type of coatings or paint are allowed on the popsicle structure Popsicle Stick:.",
-          "- The Popsicle sticks can be cut or trimmed to any shape or size."],
+          rules: [
+            "TO BE DECLARED"
+          ],
+//           rules: ["- Dimensions of the Warren Truss",
+//  
+//           "- Clear Span of Truss = 65-70cm",
+//           "- Height of truss: 8 to 10cm",
+//           "- Base span should be max 2stick and other members should be 1 stick thick.",
+//            
+//           "- Rules:",
+//          "- Each team should be of maximum 4 members.",
+//          "- Materials to be used: Popsticle sticks and Fevicol of SH grade.",
+//          "- Use of any other adhesive, etc is prohibited and participants using it will be disqualified from the event.",
+//          "- Strings cannot be used to tie popsicle sticks.",
+//          "- All the models must be taken for the dimension checking during the specified period of time (any entry after that won’t be accepted and would be disqualified).",
+//          "- No changes in the model after the dimension checking would be allowed and any team doing so without the permission of the Core Committee member would be disqualified.",
+//          "- The decision of the judges and Core Committee will be final regarding any discrepancy on the spot or before the event.",
+//            
+//           "- Structure Specification:",
+//           "- Whole structure should be open-web (no bracings allowed)",
+//           "- No grooves allowed.",
+//           "- Only SH grade Fevicol can be used as Glue.",
+//           "- No type of coatings or paint are allowed on the popsicle structure Popsicle Stick:.",
+//           "- The Popsicle sticks can be cut or trimmed to any shape or size."],
           price: ["- INR 200/-"],
           team: ["- Maximum 4"],
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597496/vdos/pkniafcpxrsayqrzmqml.mp4",
+    headingSource: `../src/assets/Anim/citadel.png`
   },
   techx: {
+    eventTitle: "TechX | FootPrints'25",
     title : "Event Related to Projects",
     data: [
       {
         name: "TechX",
-        background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+        background: TechX,
         details: {
           info: [
             "Step into the forefront of tech evolution at our Open Hardware and Software Project Exhibition! Explore both working and non-working models, showcasing the latest innovations. Don't miss this chance to witness groundbreaking projects and be part of the technological revolution!",
@@ -781,17 +858,17 @@ const technotronData = {
         },
       },
     ],
-    headingSource:
-      "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597468/vdos/npu2xbnc1blymot30z2r.mp4 ",
+    headingSource: `../src/assets/Anim/techx.png`
   },
 };
 
 const questData = {
+  eventTitle: "Quest | FootPrints'25",
   title : "Fun Based Non-Technical Events",
   data: [
     {
       name: "12th Battalion",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: Batallian,
       details: {
         info: [
           "It is an event which checks your physical strength with games such as tug of war, wall climbing and much more.",
@@ -806,7 +883,7 @@ const questData = {
     },
     {
       name: "War Of Words",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: wow,
       details: {
         info: [
           "It is a debate based event. This event would provide you a platform to exchange your views regarding a certain topic.",
@@ -820,7 +897,7 @@ const questData = {
     },
     {
       name: "Squid Game",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: Squidgame,
       details: {
         info: [
           "It is a event based on web series with fun and exciting games.",
@@ -833,23 +910,23 @@ const questData = {
       },
     },
     {
-      name: "Shooting Arcade",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      name: "Sub Soccer",
+      background: subsoccer,
       details: {
         info: [
-          "In this participants will be able to experience 4 different games. i.e. Axe throw, Paintball shooting, Shuriken and archery.",
+          "In this participants will have to sit on their given position and play Football while sitting.",
         ],
         rules: [
-          "- In Shooting Arcade there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences.",
+          "TO BE DECLARED",
           
         ],
-        price: ["- INR 250/-"],
-        team: ["- Individual"],
+        price: ["- INR 180/-"],
+        team: ["- Compulsory 3"],
       },
     },
     {
       name: "Lost",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: lost,
       details: {
         info: [
           "It is a treasure hunt based event.Here the participants would have to decode a plot based on clues which would be hidden at various locations in the college.",
@@ -862,65 +939,109 @@ const questData = {
       },
     },
     {
-      name: "Air Ball",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      name: "Frameit",
+      background: frameit,
       details: {
         info: [
-          "Fasten  your seatbelts and get ready to participate in a very exciting and never witnessed game ever. A game named after football , also can be called as a unique version of football. Team up and participate in the AirBall. Rules will remain same as football but with a twist as it will be played in the air.",
+          "Showcase your photography skills! Capture moments during the event and submit to win.",
         ],
         rules: [
-          "- Similar to Football.",
+          "Winners will be declared Based on Poll via Instagram",
         ],
-        price: ["- INR 180/-"],
-        team: ["- Compulsary 3"],
+        price: ["- INR 50/-"],
+        team: ["- Individual"],
       },
     },
+    {
+      name: "Takeshi's Castle",
+      background: castle,
+      details: {
+        info: [
+          "Features an exciting game inspired by the show.",
+        ],
+        rules: [
+          "FUN Show Based Events with rules revealed on the spot",
+        ],
+        price: ["- INR 100/-"],
+        team: ["- Individual"],
+      },
+      
+    },
   ],
-  headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597495/vdos/ps1vj1shmdsjzzwbykiw.mp4",
+  headingSource: `../src/assets/Anim/quest.png`,
 };
 
 const virtuosityData = {
+  eventTitle: "Virtuosity | FootPrints'25",
   title : "Gaming Events",
   data: [
     {
       name: "BGMI",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: BGMI,
       details: {
         info: [
           "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
         ],
         rules: [
-          "- Same as of BGMI. It will be held in FOTE MSU Campus"
+          "- Same as International BGMI Tournaments. It will be held in FOTE MSU Campus"
           ],
-        price: ["- INR 50/- , INR /250- "],
+        price: ["- INR 50/- , INR /200- "],
         team: ["- Individual/Squad"],
       },
     },
     {
       name: "Valorant",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: Valorant,
       details: {
         info: [
           " Where precise aim meets tactical prowess in a high-stakes, team-based shooter.",
         ],
-        rules: ["- Same as of Valorant. It will be an Online event."
+        rules: ["- Same as VCT. It will be an Online event."
           ],
         price: ["- INR 250/-"],
         team: ["- Compulsary 5"],
       },
     },
+    {
+      name: "Free Fire",
+      background: freefire,
+      details: {
+        info: [
+          "Dive into the heart of thrilling battles and strategic gameplay in this captivating gaming experience.",
+        ],
+        rules: [
+          "- Same as Standaer Free Fire Tournament. It will be held in FOTE MSU Campus"
+          ],
+        price: ["- INR 50/- , INR /200- "],
+        team: ["- Individual/Squad"],
+      },
+    },
+    {
+      name: "Chess",
+      background: chess,
+      details: {
+        info: [
+          "Get ready to showcase your chess skills as you clash with many from all across Gujarat competing to prove their worth in an exciting single elimination chess tournament.",
+        ],
+        rules: [
+          "- Format will be single elemination brackets",
+          "- Match format will be Rapid 10+0 BO1",
+          ],
+        price: ["- INR 100/-"],
+        team: ["- Individual"],
+      },
+    },
   ],
-  headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597484/vdos/c73gac8okynpy2d9adqs.mp4",
+  headingSource: `../src/assets/Anim/virtuo.png`
 };
 
 const fseData = {
+  eventTitle: "FSE | FootPrints'25",
   title : "Event Related to Stock Market",
   data: [
     {
       name: "Inversion",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: inversion,
       details: {
         info: [
           "In this event participants have to use their financial knowledge and get the maximum return for their money in different rounds and scenarios.",
@@ -939,7 +1060,7 @@ const fseData = {
     },
     {
       name: "Pitchers Project",
-      background: "https://res.cloudinary.com/du1tas6pe/image/upload/v1705687361/astronout/ve7saq1zaciv1s0zahcn.png",
+      background: sharktank,
       details: {
         info: [
           `\"Pitchers Project\" is an entrepreneurship event tailored for FootPrints'24, designed to
@@ -956,8 +1077,7 @@ const fseData = {
       },
     },
   ],
-  headingSource:
-    "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597483/vdos/ruammnkjmu1hxfyofx9s.mp4",
+  headingSource: `../src/assets/Anim/fse.png`
 };
 
 const theEventData = {

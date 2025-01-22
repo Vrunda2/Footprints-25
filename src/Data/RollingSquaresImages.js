@@ -1,20 +1,35 @@
+import RS1 from "../assets/images/gallary/rs1.jpg";
+import RS2 from "../assets/images/gallary/concert.jpg";
+import RS3 from "../assets/images/gallary/rs3.jpg";
+import RS4 from "../assets/images/gallary/rs4.jpg";
+import RS5 from "../assets/images/gallary/rs2.jpg";
+import RS6 from "../assets/images/gallary/rs5.jpg";
+
+import INFO1 from "../assets/images/gallary/INFO1.jpg";
+import INFO2 from "../assets/images/gallary/info2.jpg";
+import INFO3 from "../assets/images/gallary/info3.jpg";
+import INFO4 from "../assets/images/gallary/info4.jpg";
+import INFO5 from "../assets/images/gallary/info5.jpg";
+import INFO6 from "../assets/images/gallary/info6.jpg";
+
 const imageSources = {
   concert: [
-    "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640244/Gallery/Jasleen_Royal_nlwvns_pjsgbn.jpg",
-    "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640244/Gallery/Jasleen_Royal_nlwvns_pjsgbn.jpg",
-    "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640244/Gallery/Jasleen_Royal_nlwvns_pjsgbn.jpg",
-    "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640244/Gallery/Jasleen_Royal_nlwvns_pjsgbn.jpg",
-    "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640244/Gallery/Jasleen_Royal_nlwvns_pjsgbn.jpg",
-    "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640244/Gallery/Jasleen_Royal_nlwvns_pjsgbn.jpg",
+    RS1,
+    RS2,
+    RS3,
+    RS4,
+    RS5,
+    RS6,
+
     // Add other image sources here
   ],
   informals: [
-    "https://cdn.pixabay.com/photo/2021/02/24/10/24/microphone-6046111_1280.jpg",
-    "https://cdn.pixabay.com/photo/2021/02/24/10/24/microphone-6046111_1280.jpg",
-    "https://cdn.pixabay.com/photo/2021/02/24/10/24/microphone-6046111_1280.jpg",
-    "https://cdn.pixabay.com/photo/2021/02/24/10/24/microphone-6046111_1280.jpg",
-    "https://cdn.pixabay.com/photo/2021/02/24/10/24/microphone-6046111_1280.jpg",
-    "https://cdn.pixabay.com/photo/2021/02/24/10/24/microphone-6046111_1280.jpg",
+    INFO2,
+    INFO1,
+    INFO3,
+    INFO4,
+    INFO5,
+    INFO6,
   ],
   jampad: [
     "https://res.cloudinary.com/doxl5r7md/image/upload/v1666640187/Gallery/Jampad_f4edla_uyok1p.jpg",

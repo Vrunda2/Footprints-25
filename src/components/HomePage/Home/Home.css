@@ -4,18 +4,19 @@
   margin: 40px auto;
   perspective: 1000px;
   padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .home-gif {
   transform-style: preserve-3d;
  
   transform: rotateX(0deg) rotateY(0deg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   border-radius: 12px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  z-index: 2;
 }
 
 .home-gif:hover {
@@ -28,7 +29,7 @@
   max-height: 500px;
   object-fit: contain;
   padding: 20px;
-  
+  position: relative;
   z-index: 2;
 }
 

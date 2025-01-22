@@ -120,16 +120,20 @@ const segementData = [
         link: "/quest#squid-games",
       },
       {
-        title: "Shooting Arcade",
-        link: "/quest#shooting-arcade",
+        title: "Takeshi's Castle",
+        link: "/quest#takeshi-castle",
       },
       {
         title: "Lost",
         link: "/quest#lost",
       },
       {
-        title: "Air Balls",
-        link: "/quest#air-ball",
+        title: "Sub Soccer",
+        link: "/quest#sub-soccer",
+      },
+      {
+        title: "Frame it",
+        link: "/quest#frame-it",
       },
     ],
   },
@@ -161,7 +165,15 @@ const segementData = [
       },
       {
         title: "Valorant",
-        link: "/virtuosity$valorant",
+        link: "/virtuosity#valorant",
+      },
+      {
+        title: "Free Fire",
+        link: "/virtuosity#free-fire",
+      },
+      {
+        title: "Chess",
+        link: "/virtuosity#chess",
       },
     ],
   },

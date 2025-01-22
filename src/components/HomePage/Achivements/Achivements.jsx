@@ -75,7 +75,7 @@ function Achivements() {
                     key={element.id}
                     className="cardBlock col-xl-6"
                     data-aos="fade-right"
-                    data-aos-delay="100"
+                    data-aos-delay="150"
                     data-aos-duration="1200"
                   >
                     <div className="achievements-item row h-100">

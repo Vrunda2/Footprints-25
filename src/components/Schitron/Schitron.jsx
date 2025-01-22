@@ -3,25 +3,25 @@ import "./Schitron.css";
 import Heading from "../Common/Headings/Heading";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
+import { useMousePosition } from '../../CustomHooks/useMousePosition';
+import VideoBox from '../EventPage/VideoBox';
+import schitVid from "../../assets/Anim/schitron.png"
 
 const Schitron = () => {
 
   
   useEffect(() => {
   
-    document.title="Schitron | FootPrints'24"
+    document.title="Schitron | FootPrints'25"
 
   }, [])
   
+  const position = useMousePosition();
 
   return (
     <>
       <div className="scitron">
-        <div className="schitron_header_img" id="parent_div">
-          <div className="text-on-image-schitron">
-            <Heading id="heading_schitron" title="SCHITRON" />
-          </div>
-        </div>
+        <VideoBox url={schitVid} />
         <div className="scitron-des-text">
         <p className="scitron-des">
         The future belongs to young people with an education and the imagination to create.
@@ -111,6 +111,11 @@ To encourage young brains and introduce school students to the fascinating world
           </div>
         </div>
       </div>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
       <Footer />
     </>

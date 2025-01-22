@@ -4,6 +4,9 @@ import FsrData from "../../Data/Fsr";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import Footer from "../Common/Footer/Footer";
 import "./Fsr.css";
+import VideoBox from "../EventPage/VideoBox";
+import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import fsrVid from "../../assets/Anim/FSR.png";
 import Heading from "../Common/Headings/Heading";
 
 function Fsr() {
@@ -19,30 +22,31 @@ function Fsr() {
     document.title = "FSR | FootPrints'25";
   }, []);
 
+  const position = useMousePosition();
+
   return (
     <>
       <section id="Fsr">
-        <div className="video_main">
-          <video
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-            width="100%"
-          >
-            <source
-              src={
-                "https://res.cloudinary.com/du1tas6pe/video/upload/v1705679349/vdo/vpwrc3ofzmnvxl4spo4s.mp4"
-              }
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
+        <VideoBox url={fsrVid} />
+        <Heading
+          id="heading_main_Sponsor"
+          title={"Our Drives"}
+        />
+        {/* <div>
+          <div className="video_main">
+            <video
+              autoPlay
+              loop
+              muted
+              width="100%"
+            >
+              <source src={fsrVid} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div> */}
         <div className="container">
-          <Heading className="fsr_heading" id="glheading" title="FSR DRIVES" />
-          
+                    
           {FsrData.map((element) => {
             if (element.id % 2 === 0) {
               return (
@@ -118,8 +122,12 @@ function Fsr() {
         </div>
         
       </section>
+      <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+      />
+
       <Sponsors />
-      
       <Footer />
     </>
   );

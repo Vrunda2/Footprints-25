@@ -6,6 +6,9 @@ import ImageCarousel from "./ImageCaraousal";
 import Heading from "../Common/Headings/Heading";
 import imageSources from "../../Data/RollingSquaresImages";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import VideoBox from "../EventPage/VideoBox";
+import rsVid from "../../assets/Anim/RS.png";
+import salim from "../../assets/images/gallary/salim.jpg";
 
 export default function RollingSquare() {
   useEffect(() => {
@@ -17,47 +20,30 @@ export default function RollingSquare() {
   return (
     <>
       <section>
-        <div className="video_main">
-          <video
-            autoPlay
-            loop
-            muted
-            className="w-full h-full object-cover"
-            width="100%"
-          >
-            <source
-              src={
-                "https://res.cloudinary.com/dwevqwmg7/video/upload/v1705597475/vdos/pgr6s6xhnbxbamh8gpld.mp4"
-              }
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        {/* <Heading
+        <VideoBox url={rsVid} />
+        <Heading
           className="kaleido_heading"
           id="glheading"
           title={"Live In Concert"}
-        /> */}
+        />
         
-        {/* <div className="concert-24">
-          <img src="https://res.cloudinary.com/du1tas6pe/image/upload/v1708442864/astronout/wc4ecblr7qpfzufr1emv.jpg" alt="Soon" />
+        <div className="concert-24">
+          <img src={salim} alt="Soon" />
           <div className="info">
-            <h1 data-aos="fade-up" className="name">Lorem ipsum</h1>
+            <h1 data-aos="fade-up" className="name">Salim Sulaiman</h1>
             <div className="meta-info">
               <div className="time">Date :9th March, 2025</div>
               <div className="venue">
-                Venue :  
+                {/* Venue :  
 
                   Faculty Of Technology And Engineering, MSU, Kalabhavan,
-                  Vadodara.
+                  Vadodara. */}
 
               </div>
             </div>
 
           </div>
-        </div> */}
+        </div>
         
         
 
@@ -66,13 +52,13 @@ export default function RollingSquare() {
           id="glheading"
           title={"Rolling Squares"}
         />
-        <ImageCarousel images={imageSources.concert} />
+        <ImageCarousel data-aos="fade-up" images={imageSources.concert} />
         
         <Heading className="kaleido_heading" id="glheading" title={"Informal"} />
-        <ImageCarousel images={imageSources.informals} />
+        <ImageCarousel  data-aos="fade-up" images={imageSources.informals} />
 
         <Heading className="kaleido_heading" id="glheading" title={"Jampad"} />
-        <ImageCarousel images={imageSources.jampad} />
+        <ImageCarousel  data-aos="fade-up" images={imageSources.jampad} />
 
         <Sponsors />
         

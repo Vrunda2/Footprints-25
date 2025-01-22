@@ -21,7 +21,6 @@ import Techzi from "./components/KaleidoPage/Techzi";
 import Taleido from "./components/KaleidoPage/Taleido";
 import Fsr from "./components/FsrPage/Fsr";
 import Schitron from "./components/Schitron/Schitron";
-import Acco from "./components/Acco/Acco";
 
 import MediaPage from "./components/MediaPage/MediaPage";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -76,7 +75,6 @@ function App() {
             <Route exact path="/taleidoscope" element={<Taleido />} />
             <Route exact path="/fsr" element={<Fsr />} />
             <Route exact path="/schitron" element={<Schitron />} />
-            <Route exact path="/accomodation" element={<Acco />} />
             <Route exact path="/media" element={<MediaPage />} />
             <Route
               exact

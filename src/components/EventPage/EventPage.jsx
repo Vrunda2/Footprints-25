@@ -8,6 +8,7 @@ import VideoBox from "./VideoBox";
 import Error from "../Error";
 import "./EventPage.css";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
+import { useEffect } from "react";
 
 const EventCard = ({ name, details,background, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -46,7 +47,7 @@ const EventCard = ({ name, details,background, index }) => {
 
   return (
     <div className={`event-card ${index % 2 ? "reverse-layout" : ""}`}>
-      <div className="image-container">
+      <div className="image-container" id={name}>
         <img
           src={background}
           alt={name}
@@ -89,19 +90,37 @@ const EventPage = ({ theParent }) => {
   const theData = event ? theEventData[theParent][event] : theEventData[theParent];
 
   if (!theData) return <Error />;
-  const { title, headingSource, data } = theData;
+  const { title, headingSource, data, eventTitle } = theData;
+
+  useEffect(() => {
+    document.title = `${eventTitle}`;
+  }, [title]);
+
+  const position = useMousePosition();
 
   return (
     <>
       <div className="events_main">
-        <VideoBox url={headingSource} />
-        <Heading className="kaleido_heading" id="glheading" title={title} />
+        <div className="headingOffset">
+          <div className="vidHolder">
+            <VideoBox url={headingSource} />
+          </div>
+        </div>
+        <div className="headingOffset">
+          <Heading className="kaleido_heading" id="glheading" title={title} />
+        </div>
         <div className={`main-tech tech-${data.length}`}>
           {data.map((item, idx) => (
             <EventCard key={idx} {...item} index={idx} />
           ))}
         </div>
+        <div 
+        className="alt-bg" 
+        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+        />
       </div>
+      <Sponsors/>
+      <Footer/>
     </>
   );
 };

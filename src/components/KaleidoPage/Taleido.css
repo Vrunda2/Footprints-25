@@ -1,27 +1,23 @@
 /* General Animation and Transition Styles */
-
-/* Hover effects for the images */
 .taleido_img img {
-    transition: transform 0.8s ease-in-out, box-shadow 1.5s ease-in-out; /* Slower and smoother zoom and glow transition */
+    transition: transform 0.8s ease-in-out, box-shadow 1.5s ease-in-out;
 }
 
-/* Hover Effect for Image */
 .taleido_img img:hover {
-    transform: scale(1.1); /* Slightly larger zoom for more impact */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Slightly larger glow for emphasis */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
 }
 
-/* Content Fade-In Effect */
+/* About Section Animation */
 .about_taleido {
     font-family: "Gantari", sans-serif;
-    animation: fadeInContent 0.3s ease-in-out; /* Smooth fade-in for content */
+    animation: fadeInContent 0.3s ease-in-out;
 }
 
-/* Keyframes for content fade-in */
 @keyframes fadeInContent {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Slide up from the bottom */
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -29,6 +25,7 @@
     }
 }
 
+/* Background Effects */
 .alt-bg {
     position: fixed;
     top: 0;
@@ -43,116 +40,44 @@
     mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(22, 22, 22, 1), rgba(0, 0, 0, 0));
     -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     z-index: 1;
-  }
+}
+
+/* Main Container and Layout */
+.taleido_lec {
+    padding: 2rem;
+    color: white;
+}
+
+.taleido_item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* Heading Styles */
 .taleido_heading {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 50px;
-    color: #fff; /* Heading color */
-    animation: fadeIn 1.5s ease-out;
+    margin-bottom: 1.5rem;
 }
 
-/* Guest Workshop Name Styling */
 .taleido_name {
     font-family: "Gantari", sans-serif;
-    border-bottom: 2px solid #fff; /* White border */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 2px solid #fff;
     padding-bottom: 6px;
-    color: #fff; /* Solid white text color */
-    text-align: left;
     transition: color 0.3s ease-in-out;
-}
-
-/* Hover effect for workshop name */
-.taleido_name:hover {
-    color: cyan; /* On hover, color changes to cyan */
-}
-
-/* Responsive Design Adjustments */
-@media screen and (max-width: 768px) {
-    .taleido_img img {
-        width: 100%;
-    }
-
-    .about_taleido {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .taleido_name {
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width: 996px) and (min-width: 768px) {
-    .taleido_img {
-        margin-bottom: 2rem;
-    }
-
-    .taleido_heading {
-        justify-content: center;
-    }
-
-    .taleido_heading h3 {
-        text-align: center;
-    }
-}
-/* Watch Now Button Styling */
-.yt-link-part {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid cyan; /* Cyan border */
-    background-color: transparent; /* Transparent background */
-    color: cyan; /* Cyan text */
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
     text-align: center;
-    transition: all 0.4s ease-in-out; /* Smooth transition for hover effects */
-    border-radius: 5px; /* Rounded corners */
 }
 
-/* Hover Effect for Watch Now Button */
-.yt-link-part:hover {
-    background-color: cyan; /* Cyan background */
-    color: black; /* White text */
-    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.5); /* Subtle glow effect */
+.taleido_name:hover {
+    color: cyan;
 }
 
-/* Global Style Adjustments */
-.text-without-icon {
-    margin-top: 20px;
-    font-size: 1.1rem;
-}
-
-/* Responsive Tweaks for Small Screen Sizes */
-@media screen and (max-width: 338px) {
-    .taleido_name {
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-    }
-}
-
-/* Styling for taleido_lec (Content Layout) */
-.taleido_lec {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3rem 2rem;
-    color: white;
-}
-
-/* Responsive Design for Taleido Lec */
-@media screen and (max-width: 996px) {
-    .taleido_lec {
-        display: block;
-        width: 100%;
-        padding: 1rem 2rem;
-    }
-}
-
-/* Styling the Image and Content Layout */
+/* Image Styles */
 .taleido_img {
     display: flex;
     justify-content: center;
@@ -160,281 +85,105 @@
 }
 
 .taleido_img img {
-    width: 50%;
+    width: 90%;
+    max-width: 500px;
     background: rgba(168, 168, 168, 0.04);
     padding: 14px;
 }
 
-.about_taleido_para1,
-.about_taleido_para2 {
-    margin: 15%;
+/* Content Styles */
+.text-without-icon-taleido {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: white;
 }
 
-@media screen and (max-width: 480px) {
-    .taleido_name {
-        font-size: 1.2rem;
+/* Button Styles */
+.yt-link-part {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid cyan;
+    background-color: transparent;
+    color: cyan;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+}
+
+.yt-link-part:hover {
+    background-color: cyan;
+    color: black;
+    box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 768px) {
+    .taleido_item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
     }
 
-    .about_taleido {
+    /* Alternate layout for even items */
+    .taleido_lec:nth-child(even) .taleido_item {
+        direction: rtl;
+    }
+
+    .taleido_lec:nth-child(even) .taleido_item > * {
+        direction: ltr;
+    }
+
+    .taleido_name {
+        font-size: 1.39rem;
+        text-align: left;
+    }
+
+    .text-without-icon-taleido {
+        text-align: left;
+    }
+
+    .yt-link-part {
         margin: 0;
     }
 }
 
-/* Kaleido Section Styles */
-#Taleido {
-  position: relative;
-}
-
-.video_main video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container {
-  position: relative;
-  z-index: 10; /* Ensure text/content is above video */
-}
-
-.guest_lec.content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.guest_img.image-frame {
-  flex: 1;
-  padding: 20px;
-}
-
-.about_guest {
-  flex: 2;
-  padding: 20px;
-}
-
-/* AOS Animations */
-[data-aos="fade-up"] {
-  transition: opacity 1s ease-in-out; /* Faster fade effect for content */
-}
-
-[data-aos="GuestAnimLeft"] {
-  transition: transform 2s ease-in-out; /* Slower transition for image */
-  transform: translateX(-100%);
-}
-
-[data-aos="GuestAnimRight"] {
-  transition: transform 2s ease-in-out; /* Slower transition for image */
-  transform: translateX(100%);
-}
-
-[data-aos="GuestAnimLeft"].aos-animate {
-  transform: translateX(0);
-}
-
-[data-aos="GuestAnimRight"].aos-animate {
-  transform: translateX(0);
-}
-
-/* Footer and Sponsor Slide Styling */
-.sponsor-slide {
-  margin-top: 40px;
-}
-
-footer {
-  margin-top: 50px;
-}
-
-@media screen and (min-width: 999px) {
-    .about_taleido {
-        font-family: "Gantari", sans-serif;
-        text-align: justify;
-    }
-
-    .taleido_name {
-        /* font-size: 1.6rem; */
-        font-family: "Gantari", sans-serif;
-        font-size: 1.39rem;
-    }
-    
-}
-
+/* Mobile Adjustments */
 @media screen and (max-width: 767px) {
-    .taleido_heading {
-        justify-content: center;
+    .taleido_lec {
+        padding: 1rem;
+    }
+
+    .taleido_item {
+        gap: 1.5rem;
     }
 
     .taleido_name {
-        text-align: center;
-        letter-spacing: 1px;
-    }
-
-    .about_taleido {
-        text-align: center;
-    }
-
-    .taleido_lec {
-        display: block;
-        width: 100%;
-        padding: 1rem 2rem;
-    }
-
-    .about_taleido_para1 {
-        display: none;
-    }
-
-    .about_taleido_para2 {
-        display: block;
-    }
-
-    .taleido_img {
-        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 0;
     }
 
     .taleido_img img {
         width: 100%;
     }
-
-    .header_img img {
-        padding-bottom: 20px;
-    }
-
-    .kaleido_header {
-        padding-top: 20px;
-        padding-bottom: 0;
-    }
-    .about_taleido{
-    margin-left: 0;
-}
-.taleido_img_style{
-    position: relative;
-    right: 0%;
-}
-.para1 {
-    margin-right: 0%;
-}
-.para2 {
-    margin-right: 0%;
-}
 }
 
-@media screen and (max-width: 996px) and (min-width:768px) {
-    .taleido_img {
-        justify-content: center;
-        margin-bottom: 2rem;
-    }
-
-    .taleido_lec {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .about_taleido_para1 {
-        display: block;
-    }
-
-    .about_taleido_para2 {
-        display: block;
-    }
-
-    .taleido_heading {
-        justify-content: center;
-    }
-    .taleido_heading h3{
-        text-align: center;
-    }
-
-    .taleido_lec {
-        padding: 2rem;
-    }
-
-    .taleido_name {
-        font-size: 1.9rem;
-    }
-    .about_taleido{
-    margin-left: 10%;
-    width: 90%;
-}
-.taleido_img_style{
-    position: relative;
-    right: 0%;
-}
+/* AOS Animation Styles */
+[data-aos="fade-up"] {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
-@media screen and (max-width: 1199px) and (min-width: 999px) {
-
-    /* .taleido_name{font-size: 1.4rem;} */
-    .taleido_lec {
-        padding: 3rem 0rem;
-    }
-.taleido_img img {
-    width: 90%;
-    background: #A8A8A80A;
-    padding: 14px;
-
-}
-.about_taleido{
-    margin-left: 5%;
-}
-.taleido_img_style{
-    position: relative;
-    right: 0%;
-}
-.para1 {
-    margin-right: 0%;
-}
-
-}
-
-@media screen and (max-width: 518px) and (min-width: 410px) {
-    .taleido_name {
-        font-size: 1.4rem;
-        letter-spacing: 0px;
-    }
-        .about_taleido{
-    margin-left: 0;
-}
-.taleido_img_style{
-    position: relative;
-    right: 0%;
-}
-
-}
-
-@media screen and (max-width: 480px) and (min-width: 447px) {
-    .prev_taleido_name {
-        letter-spacing: 2px;
-    }
-}
-
-@media screen and (max-width: 409px) and (min-width: 380px) {
-    .taleido_heading {
-        margin: 1rem;
-    }
-}
-
-@media screen and (max-width: 338px) {
-    .taleido_name {
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-    }
-}
-
-.taleido_lec p {
-    text-align: justify;
-    color: var(--white);
-    text-transform: none;
-}
-
-/* added by Abdeali */
-
-/* #Kaleido .fa{
-    color: var(--white) !important;
-} */
-.text-without-icon{
-    margin-top: 20px;
-    font-size: 1.05rem;
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+    opacity: 1;
 }

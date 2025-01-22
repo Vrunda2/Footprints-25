@@ -212,3 +212,38 @@ footer {
   margin-top: 50px;
 }
 
+/* General Animation and Transition Styles */
+/* [Previous styles remain the same until media queries] */
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    .workshop_lec {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    /* Remove the conditional rendering logic for odd/even */
+    .workshop_img {
+        width: 100%;
+        margin-bottom: 2rem;
+        order: unset !important; /* Override any order settings */
+    }
+
+    .workshop_img img {
+        width: 80%; /* Increased from 50% for better mobile visibility */
+        margin: 0 auto;
+    }
+
+    .about_workshop {
+        text-align: center;
+        margin-bottom: 2rem;
+        order: unset !important; /* Override any order settings */
+    }
+
+    .workshop_name {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+/* [Rest of the previous styles remain the same] */

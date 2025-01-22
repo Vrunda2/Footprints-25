@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './WebTeam.css';
+import './Webteam.css';
 import ayeshaImage from '../../assets/Team/Core/Ayesha.jpg';
 import vrundaImage from '../../assets/Team/Core/Vrunda.jpg';
 import meghanaImage from '../../assets/Team/Core/Meghana.jpg';

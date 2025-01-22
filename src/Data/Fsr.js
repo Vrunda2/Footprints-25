@@ -1,4 +1,5 @@
 import fsr from "../assets/images/media/fsrfood.png";
+import fsr1 from "../assets/images/gallary/fsr12.jpg";
 const FsrData = [
   {
     id: 1,
@@ -6,7 +7,7 @@ const FsrData = [
     name: "Social Service",
 
     imgSrc:
-      "https://res.cloudinary.com/dwevqwmg7/image/upload/v1705586804/fsr/ube47tsvbczh4mbe97iw.jpg",
+      fsr1,
 
     content:
       "This year, in collaboration with Arpan Charitable Trust and House of Humanity we spent a heartwarming day with 30 differently-abled people, sharing laughter, delicious food, and unforgettable moments at 1331 Diner. Through kindness and connection, FSR celebrates humanity, creating smiles that inspire a brighter, more compassionate world.",

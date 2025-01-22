@@ -3,6 +3,17 @@ const FsrData = [
   {
     id: 1,
 
+    name: "Social Service",
+
+    imgSrc:
+      "https://res.cloudinary.com/dwevqwmg7/image/upload/v1705586804/fsr/ube47tsvbczh4mbe97iw.jpg",
+
+    content:
+      "This year, in collaboration with Arpan Charitable Trust and House of Humanity we spent a heartwarming day with 30 differently-abled people, sharing laughter, delicious food, and unforgettable moments at 1331 Diner. Through kindness and connection, FSR celebrates humanity, creating smiles that inspire a brighter, more compassionate world.",
+  },
+  {
+    id: 2,
+
     name: "Food Campaign",
 
     imgSrc:
@@ -12,7 +23,7 @@ const FsrData = [
       "In the tapestry of humanity, social responsibility is the thread that weaves compassion, ethics, and sustainability, creating a fabric that envelops us all in the warmth of collective well-being.In a world where people run behind materialistic and gold-coated things, we believe the greatest pleasure is uplifting someone's spirit. Team FootPrints'23 engaged in a joint effort with \"House of Humanity\" and \"Arpan Trust\" and spent some unforgettable moments with differently-abled children at Decathlon, where we played games, shared laughter, and distributed soft toys and bottles to brighten their morning. With the same enthusiastic spirit, in the evening we distributed food and essentials to the fighting warriors undergoing treatment at SSG Hospital. We ended our day with warm blessings and sweet memories with the elders of our old home. We will remain committed to giving our utmost to society.",
   },
   {
-    id: 2,
+    id: 3,
 
     name: "Umbrella Distribution",
 
@@ -23,7 +34,7 @@ const FsrData = [
       "Team FootPrints visited Shahpura, Sundarpura, Fatehpura and Umarva villages, where in collaboration with Shandar Group and JCI India, we distributed essentials like notebooks and geometry boxes; crayons and umbrellas. Drawing competitions were held, followed by prize distributions. Awareness about practical applications of higher studies & personal hygiene was promoted in the students. Over games, bike rides, chocolate distribution & fun. Students were ecstatic.",
   },
   {
-    id: 3,
+    id: 4,
 
     name: "Health & Hygiene Awareness",
 
@@ -34,7 +45,7 @@ const FsrData = [
       "Team FootPrints in collaboration with Baroda Youth Club visited Shahpura, Umarva, Hansapura, Ajitpura and Sundarpura villages where we highlighted the importance of hygiene and cleanliness in times of diseases like dengue & malaria. Girls and women were encouraged to discuss openly about menstrual hygiene. Sanitary pads were distributed at no charge and its proper usage and disposal were demonstrated.",
   },
   {
-    id: 4,
+    id: 5,
 
     name: "Instilling The Education Values",
 
@@ -45,7 +56,7 @@ const FsrData = [
       "Team FootPrints tried to stimulate the notion of benevolence by visiting Shahpura, Sundarpura, Hansapura, Ajitpura and Umarva where in collaboration with the Leo Club of Baroda, we distributed notebooks and pencils emphasizing the importance of education to the students. Our sense of purpose is what drives us as humans. With the motive and hope to see them in our places and higher, we strive to provide value to the young minds.",
   },
   {
-    id: 5,
+    id: 6,
 
     name: "Bridging The Gap Of School Education",
 
@@ -56,7 +67,7 @@ const FsrData = [
       "Due to the current scenario of online education, many children experience trouble with learning. Taking the initiative to bridge the gap of school education, The Changemakers Club has been doing a great job since last 5 years and last Sunday, Team FootPrints along with them, visited the students of the Manjalpur village of Vadodara. A day filled with teaching and entertainment, proved to be a worthwhile memory for the kids as well as for the team.",
   },
   {
-    id: 6,
+    id: 7,
 
     name: "Bridging The Generation Gap",
 
@@ -67,7 +78,7 @@ const FsrData = [
       "FootPrints took a step ahead for connecting the generations, walking on parallel paths, through an invisible bridge of wisdom.",
   },
   {
-    id: 7,
+    id: 8,
 
     name: "The Dynamics Of HIM=HER",
 
@@ -78,7 +89,7 @@ const FsrData = [
       'Any serious shift towards more sustainable societies must include gender equality. FootPrints in an attempt to take this ideology a step ahead, presented "The Dynamics of HIM=HER". A step to make people realize that the only difference between a man and a woman is an XY instead of XX.',
   },
   {
-    id: 8,
+    id: 9,
 
     name: "Adopting The Responsibility Of A Better Tomorrow : UMARWA",
 
@@ -89,7 +100,7 @@ const FsrData = [
       "Here's our share to pay back the society its bestowment. For us, apart from the technical journey, it's also about a heart and a soul.",
   },
   {
-    id: 9,
+    id: 10,
 
     name: "Father's Day",
 
@@ -100,7 +111,7 @@ const FsrData = [
       '"A father is someone you look up to no matter how tall you grow." This was a small gratitude from Team FootPrints to the real life heroes.',
   },
   {
-    id: 10,
+    id: 11,
 
     name: "We Hold A World Record : SAY NO TO PLASTIC",
 

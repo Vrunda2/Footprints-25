@@ -58,6 +58,14 @@ To encourage young brains and introduce school students to the fascinating world
           </p>
         </div>
         <div className="robo-outside">
+          <Heading title="Aerotech Drone Workshop" />
+          <div className="robo">
+            <p className="scitron-des">
+            Under the ‘Schitron’ banner, FootPrints’25 conducted an Aerotech Drone Workshop for the students of The Mother’s School, offering an in-depth foray into the realm of remotely operated multipurpose aerial vehicles. This workshop imparted a robust understanding of drone aerodynamics and their sophisticated control mechanisms. Participants were immersed in hands-on activities, delving into the intricacies of technical sensors and embedded software systems, acquiring practical knowledge of drone functionality and operation in professional environments. Furthermore, the sessions highlighted the diverse applications of drones in sectors, showcasing their transformative potential across various fields. With an enthusiastic cohort of approximately 60 students, the workshop featured interactive and engaging sessions. The organizers provided all essential materials, ensuring a seamless learning experience. The initiative proved to be a tremendous success, igniting a fervent curiosity among participants and inspiring them to explore the cutting-edge domain of drone technology and aeronautics.
+            </p>
+          </div>
+        </div>
+        <div className="robo-outside">
           <Heading title="Monochrome Workshop" />
           <div className="robo">
             <p className="scitron-des">
@@ -76,7 +84,6 @@ To encourage young brains and introduce school students to the fascinating world
             </p>
           </div>
         </div>
-      
         <div className="glass-outside">
           <Heading
             title="Self

@@ -2,26 +2,26 @@
 const coordinatorsData = [
   {
     id: 1,
-    imgSrc: `https://res.cloudinary.com/du1tas6pe/image/upload/v1705673980/z4vgnqwwwojgbciejlra.jpg`,
+    imgSrc: `../src/assets/Team/Core/Akshit.jpg`,
     name: "Akshit Patel",
     linked: `https://www.linkedin.com/in/akshit-patel-a54643177`,
   },
   {
     id: 2,
-    imgSrc: `https://res.cloudinary.com/dqkhtzm13/image/upload/e_improve:outdoor/FP'24%20Website%20Photos/zkx7fqhyg4i7urixbda0.jpg`,
+    imgSrc: `../src/assets/Team/Core/Pulin.jpg`,
     name: "Pulin Makwana",
     linked: `https://www.linkedin.com/in/pulin-makwana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   {
     id: 3,
-    imgSrc: `https://res.cloudinary.com/dqkhtzm13/image/upload/v1705595463/FP%2724%20Website%20Photos/ogvqqcirvhdullcg0hx1.jpg`,
+    imgSrc: `../src/assets/Team/Core/Raj.jpg`,
     name: "Raj Lad",
     linked: `https://www.linkedin.com/in/raj-lad-33066b237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   
   {
     id: 4,
-    imgSrc: `https://res.cloudinary.com/dqkhtzm13/image/upload/e_improve:outdoor/FP'24%20Website%20Photos/qx865rlhdhr8iagaarbj.jpg`,
+    imgSrc: `../src/assets/Team/Core/Shubham.jpg`,
     name: "Shubham Prajapati",
     linked: ``,
   },
@@ -34,7 +34,7 @@ const headsData = [
     id: 1,
     imgSrc: `../src/assets/Team/Core/Dhaval.jpg`,
     name: "Dhaval Saxena",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/dhaval-saxena-207187259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   {
     id: 2,
@@ -63,13 +63,13 @@ const ccData = [
     id: 3,
     imgSrc: `../src/assets/Team/Core/Heer.jpg`,
     name: "Heer Mistry",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/heer-mistry-816b89292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app`,
   },
   {
     id: 4,
     imgSrc: `../src/assets/Team/Core/Krunal.jpg`,
     name: "Krunal Vankar",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/krunal-vankar-764198253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ const ccData = [
   },
   {
     id: 6,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/Core/Meher.jpg`,
     name: "Meher Thadani",
     linked: ``,
   },
@@ -87,7 +87,7 @@ const ccData = [
     id: 7,
     imgSrc: `../src/assets/Team/Core/Nachiket.jpg`,
     name: "Nachiket Karambelkar",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/nachiket-karambelkar-976566259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   {
     id: 8,
@@ -170,11 +170,11 @@ const orgcData = [
     imgSrc: `../src/assets/Team/OT/Ayush.jpg`,
     name: "Ayush Alsika",
   },
-  {
-    id: 8,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
-    name: "Darshit Shah",
-  },
+  // {
+  //   id: 8,
+  //   imgSrc: `../src/assets/Team/Missing.jpg`,
+  //   name: "Darshit Shah",
+  // },
   {
     id: 9,
     imgSrc: `../src/assets/Team/OT/Dev.jpg`,
@@ -260,11 +260,11 @@ const orgcData = [
     imgSrc: `../src/assets/Team/OT/Krisha.jpg`,
     name: "Krisha Gandhi",
   },
-  {
-    id: 25,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
-    name: "Krishna Agrawal",
-  },
+  // {
+  //   id: 25,
+  //   imgSrc: `../src/assets/Team/Missing.jpg`,
+  //   name: "Krishna Agrawal",
+  // },
   {
     id: 26,
     imgSrc: `../src/assets/Team/OT/Lavya.jpg`,
@@ -285,11 +285,11 @@ const orgcData = [
     imgSrc: `../src/assets/Team/OT/Meerat.jpg`,
     name: "Meerat Dave",
   },
-  {
-    id: 30,
-    imgSrc: `../src/assets/Team/OT/Mehang.jpg`,
-    name: "Mehang Solanki",
-  },
+  // {
+  //   id: 30,
+  //   imgSrc: `../src/assets/Team/OT/Mehang.jpg`,
+  //   name: "Mehang Solanki",
+  // },
   {
     id: 31,
     imgSrc: `../src/assets/Team/OT/Mittal.jpg`,
@@ -332,7 +332,7 @@ const orgcData = [
   },
   {
     id: 39,
-    imgSrc: `../src/assets/Team/Missing.jpg`,
+    imgSrc: `../src/assets/Team/OT/Priyanshu.jpg`,
     name: "Priyanshu Chauhan",
   },
   {

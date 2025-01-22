@@ -46,6 +46,12 @@ const newSponsorData = [
         href: `https://www.axtelindia.com/`
     },
     {
+        id: 4.5,
+        imgSrc: `../../src/assets/SponsorLogos/SEEWeb.jpg`,
+        alt: `HYDREX & BALLISTA SPONSOR`,
+        href: ``
+    },
+    {
         id: 5,
         imgSrc: `../../src/assets/SponsorLogos/BoomWeb.jpg`,
         alt: `QUEST SPONSOR`,
@@ -96,13 +102,30 @@ const newSponsorData = [
         alt: `YOUTH PARTNER`,
         href: ``
     },
-
     {
         id: 13,
         imgSrc: `../../src/assets/SponsorLogos/EliteWeb.jpg`,
         alt: `TICKETING PARTNER`,
         href: ``
-    }
+    },
+    {
+        id: 14,
+        imgSrc: `../../src/assets/SponsorLogos/JoyaWeb.jpg`,
+        alt: `JEWELLERY PARTNER`,
+        href: ``
+    },
+    {
+        id: 15,
+        imgSrc: `../../src/assets/SponsorLogos/JayWeb.jpg`,
+        alt: `PRINTING PARTNER`,
+        href: ``
+    },
+    {
+        id: 16,
+        imgSrc: `../../src/assets/SponsorLogos/OmkarWeb.jpg`,
+        alt: `PAINT PARTNER`,
+        href: ``
+    },
 ];
 
 export default newSponsorData;

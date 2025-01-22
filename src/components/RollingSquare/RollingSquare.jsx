@@ -27,23 +27,23 @@ export default function RollingSquare() {
           title={"Live In Concert"}
         />
         
-        <div className="concert-24">
+        {/* <div className="concert-24">
           <img src={salim} alt="Soon" />
           <div className="info">
             <h1 data-aos="fade-up" className="name">Salim Sulaiman</h1>
             <div className="meta-info">
               <div className="time">Date :9th March, 2025</div>
               <div className="venue">
-                {/* Venue :  
+                Venue :  
 
                   Faculty Of Technology And Engineering, MSU, Kalabhavan,
-                  Vadodara. */}
+                  Vadodara.
 
               </div>
             </div>
 
           </div>
-        </div>
+        </div> */}
         
         
 

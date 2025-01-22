@@ -1,22 +1,18 @@
 const ContactData = [
   {
     id: 1,
-    imgSrc:
-      "https://res.cloudinary.com/dqkhtzm13/image/upload/e_improve:outdoor/FP'24%20Website%20Photos/rsawplbwagoinwpjsehb.jpg",
     name: "Dhaval Saxena",
     details: "Head, Core Committee",
     fp: "FootPrints'25",
-    contact: "+91-7874287905",
+    contact: "+91-8849410379",
     mail: "dhaval.saxena@msufp.in",
   },
   {
     id: 2,
-    imgSrc:
-      "https://res.cloudinary.com/dqkhtzm13/image/upload/e_improve:outdoor/FP'24%20Website%20Photos/mwlv12pzb5ytmbuegixi.jpg",
     name: "Joy Patel",
     details: "Associate Head, Core Committee",
     fp: "FootPrints'25",
-    contact: "+91-9265574891",
+    contact: "",
     mail: "joy.patel@msufp.in",
   },
 ];
@@ -31,7 +27,7 @@ const AboutData=[
 const ContactInfoData=[
     {
         id:1,
-        phone: '+91-7874287905',
+        phone: '+91-8849410379',
         mail: 'info@msufp.in',
         details: 'Training and Placement Cell,',
         extra_details: ' Faculty of Technology and Engineering,',

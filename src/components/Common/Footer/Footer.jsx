@@ -239,13 +239,7 @@ function Footer() {
                   <p>
                     {" "}
                     <a className="footer_P_hover" href="tel:9023312580">
-                      +91-9023312580
-                    </a>
-                  </p>
-                  <p>
-                    {" "}
-                    <a className="footer_P_hover" href="tel:9265574891">
-                      +91-9265574891
+                      +91-8849410379
                     </a>
                   </p>
                 </div>

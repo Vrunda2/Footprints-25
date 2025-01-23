@@ -2,8 +2,9 @@ import RS1 from "../assets/images/gallary/rs1.jpg";
 import RS2 from "../assets/images/gallary/concert.jpg";
 import RS3 from "../assets/images/gallary/rs3.jpg";
 import RS4 from "../assets/images/gallary/rs4.jpg";
-import RS5 from "../assets/images/gallary/rs2.jpg";
 import RS6 from "../assets/images/gallary/rs5.jpg";
+import RS5 from "../assets/images/gallary/rs2.jpg";
+
 
 import INFO1 from "../assets/images/gallary/INFO1.jpg";
 import INFO2 from "../assets/images/gallary/info2.jpg";

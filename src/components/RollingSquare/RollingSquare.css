@@ -82,6 +82,7 @@ section {
 @media screen and (max-width: 500px) {
   .gallery img {
     border-radius: 5px;
+    padding: 5px;
   }
   .gallery {
     grid-template-columns: repeat(1, 1fr);
@@ -92,16 +93,28 @@ section {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+  .gallery img {
+    border-radius: 5px;
+    gap: 10px;
+  }
 }
 
 @media screen and (min-width: 620px) and (max-width: 759px) {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+  .gallery img {
+    border-radius: 5px;
+    gap: 5px;
+  }
 }
 
 @media screen and (min-width: 760px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery img {
+    border-radius: 5px;
+    gap: 5px;
   }
 }

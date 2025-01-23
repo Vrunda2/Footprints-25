@@ -79,7 +79,7 @@ const Glimpse = () => {
               height="200px"
             />
             <div className="ig-overlay">
-              <img src="https://res.cloudinary.com/du1tas6pe/image/upload/v1705427552/reel/ncbl5lrsub6rybpi1zpa.png" alt="" />
+              <img src="https://www.instagram.com/reel/DBwGQACteqF/?igsh=MThpdW5za3NreXQ0Zg==" alt="" />
             </div>
           </a>
         </div>
@@ -90,7 +90,7 @@ const Glimpse = () => {
           data-aos-delay="100"
           data-aos-duration="1200"
         >
-          <a target="_blank" href="https://www.instagram.com/reel/Ct0h_36At9K/?igshid=NTc4MTIwNjQ2YQ==">
+          <a target="_blank" href="https://www.instagram.com/reel/C8v-l-btSm1/?igsh=dXFqbGk4MDFteXpo">
             <img
               src={RSS}
               className="imagef"
@@ -113,7 +113,7 @@ const Glimpse = () => {
           data-aos-delay="100"
           data-aos-duration="1200"
         >
-          <a target="_blank" href="https://www.instagram.com/reel/CvhA84wARr2/?igshid=NTc4MTIwNjQ2YQ==">
+          <a target="_blank" href="https://www.instagram.com/reel/C-ccggmSc-L/?igsh=bDI0dWtrMmI4eWR0">
             <img
               src={Info}
               className="imagef"

@@ -7,12 +7,14 @@ import Heading from "../Common/Headings/Heading";
 import imageSources from "../../Data/RollingSquaresImages";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 import VideoBox from "../EventPage/VideoBox";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import rsVid from "../../assets/Anim/RS.png";
-import salim from "../../assets/images/gallary/salim.jpg";
 
 export default function RollingSquare() {
   useEffect(() => {
     document.title = "Rolling Squares | FootPrints'25";
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS with options
   }, []);
 
   const position = useMousePosition();
@@ -21,50 +23,37 @@ export default function RollingSquare() {
     <>
       <section>
         <VideoBox url={rsVid} />
-        {/* <Heading
-          className="kaleido_heading"
-          id="glheading"
-          title={"Live In Concert"}
-        />
-        
-        {/* <div className="concert-24">
-          <img src={salim} alt="Soon" />
-          <div className="info">
-            <h1 data-aos="fade-up" className="name">Salim Sulaiman</h1>
-            <div className="meta-info">
-              <div className="time">Date :9th March, 2025</div>
-              <div className="venue">
-                Venue :  
-
-                  Faculty Of Technology And Engineering, MSU, Kalabhavan,
-                  Vadodara.
-
-              {/* </div>
-            </div>
-
-          </div>
-        </div> */}
-        
-        
 
         <Heading
           className="kaleido_heading"
           id="glheading"
           title={"Rolling Squares"}
         />
-        <ImageCarousel data-aos="fade-up" images={imageSources.concert} />
-        
+        <div data-aos="fade-up">
+          <ImageCarousel images={imageSources.concert} />
+        </div>
+
         <Heading className="kaleido_heading" id="glheading" title={"Informal"} />
-        <ImageCarousel  data-aos="fade-up" images={imageSources.informals} />
+        <div data-aos="fade-up">
+          <ImageCarousel images={imageSources.informals} />
+        </div>
 
         <Heading className="kaleido_heading" id="glheading" title={"Jampad"} />
-        <ImageCarousel  data-aos="fade-up" images={imageSources.jampad} />
+        <div data-aos="fade-up">
+          <ImageCarousel images={imageSources.jampad} />
+        </div>
 
         <Sponsors />
-        
+
         <Footer />
       </section>
-      <div className="alt-bg" style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}></div>
+      <div
+        className="alt-bg"
+        style={{
+          "--xPos": `${position.x}px`,
+          "--yPos": `${position.y}px`,
+        }}
+      ></div>
     </>
   );
 }

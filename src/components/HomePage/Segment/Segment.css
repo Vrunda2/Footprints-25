@@ -289,7 +289,7 @@
   .event-button {
     padding: 12px 24px;
     font-size: 14px;
-    gap: 20px;
+    gap: 10px;
   }
   
   .prev,
@@ -302,7 +302,7 @@
   .product-events {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     align-items: center;
   }
 }
@@ -462,7 +462,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 /* Update media queries to maintain centering */

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import theEventData from "../../Data/theEventData";
 import Heading from "../Common/Headings/Heading";
@@ -8,11 +8,12 @@ import VideoBox from "./VideoBox";
 import Error from "../Error";
 import "./EventPage.css";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
-import { useEffect } from "react";
 
-const EventCard = ({ name, details,background, index }) => {
+const EventCard = ({ name, details, background, index }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef(null);
 
   const sections = {
     problem: { title: "Problem Statement", content: details.info },
@@ -45,14 +46,31 @@ const EventCard = ({ name, details,background, index }) => {
     if (!isExpanded) setActiveSection(null);
   };
 
+  // Intersection Observer for fade-up animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { threshold: 0.1 }
+    );
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className={`event-card ${index % 2 ? "reverse-layout" : ""}`}>
+    <div
+      className={`event-card ${index % 2 ? "reverse-layout" : ""} ${
+        isVisible ? "fade-up" : ""
+      }`}
+      ref={cardRef}
+    >
       <div className="image-container" id={name}>
-        <img
-          src={background}
-          alt={name}
-          className="event-image"
-        />
+        <img src={background} alt={name} className="event-image" />
       </div>
       <div className="content-container">
         <h2 className="event-card-title">{name}</h2>
@@ -66,7 +84,9 @@ const EventCard = ({ name, details,background, index }) => {
               {Object.keys(sections).map((key) => (
                 <button
                   key={key}
-                  className={`option-btn ${activeSection === key ? "active" : ""}`}
+                  className={`option-btn ${
+                    activeSection === key ? "active" : ""
+                  }`}
                   onClick={() => setActiveSection(key)}
                 >
                   {sections[key].title}
@@ -87,7 +107,9 @@ const EventCard = ({ name, details,background, index }) => {
 const EventPage = ({ theParent }) => {
   const { event } = useParams();
   if (!theEventData[theParent]) return <Error />;
-  const theData = event ? theEventData[theParent][event] : theEventData[theParent];
+  const theData = event
+    ? theEventData[theParent][event]
+    : theEventData[theParent];
 
   if (!theData) return <Error />;
   const { title, headingSource, data, eventTitle } = theData;
@@ -114,13 +136,16 @@ const EventPage = ({ theParent }) => {
             <EventCard key={idx} {...item} index={idx} />
           ))}
         </div>
-        <div 
-        className="alt-bg" 
-        style={{'--xPos':`${position.x}px`,'--yPos':`${position.y}px`}}
+        <div
+          className="alt-bg"
+          style={{
+            "--xPos": `${position.x}px`,
+            "--yPos": `${position.y}px`,
+          }}
         />
       </div>
-      <Sponsors/>
-      <Footer/>
+      <Sponsors />
+      <Footer />
     </>
   );
 };

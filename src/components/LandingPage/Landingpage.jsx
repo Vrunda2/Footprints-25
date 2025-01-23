@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./landingpage.css";
+import header from "../LandingPage/Footprints25Silver.png";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const LandingPage = () => {
       <div className="overlay"></div>
       <div className="logo-container">
         <img 
-          src="src\components\LandingPage\Footprints25Silver.png"
+          src={header}
           alt="Footprints 25 Logo" 
           className="center-logo"
           

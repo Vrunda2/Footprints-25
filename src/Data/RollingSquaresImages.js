@@ -6,12 +6,12 @@ import RS6 from "../assets/images/gallary/rss5.jpg";
 import RS5 from "../assets/images/gallary/rss2.jpg";
 
 
-import INFO1 from "../assets/images/gallary/info1.jpg";
-import INFO2 from "../assets/images/gallary/info2.jpg";
-import INFO3 from "../assets/images/gallary/info3.jpg";
-import INFO4 from "../assets/images/gallary/info4.jpg";
-import INFO5 from "../assets/images/gallary/info5.jpg";
-import INFO6 from "../assets/images/gallary/info6.jpg";
+import INFO1 from "../assets/images/gallary/infoo1.jpg";
+import INFO2 from "../assets/images/gallary/infoo2.jpg";
+import INFO3 from "../assets/images/gallary/infoo3.jpg";
+import INFO4 from "../assets/images/gallary/infoo4.jpg";
+import INFO5 from "../assets/images/gallary/infoo5.jpg";
+import INFO6 from "../assets/images/gallary/infoo6.jpg";
 
 const imageSources = {
   concert: [

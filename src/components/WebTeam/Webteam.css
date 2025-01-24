@@ -180,3 +180,36 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .web-container {
+    padding: 2rem 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .team-card {
+    height: 320px;
+  }
+
+  .member-name {
+    font-size: 1.25rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+}

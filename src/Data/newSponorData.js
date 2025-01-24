@@ -1,3 +1,5 @@
+import matrix from "../assets/SponsorLogos/MatrixWeb.jpg"
+
 const newSponsorData = [
 
 
@@ -7,7 +9,7 @@ const newSponsorData = [
 
     {
         id: 1.1,
-        imgSrc: `../../src/assets/SponsorLogos/MatrixWeb.jpg`,
+        imgSrc: matrix,
         alt: `TITLE SPONSOR`,
         href: `https://www.matrixcomsec.com/`,
         type: "TITLE SPONSOR"

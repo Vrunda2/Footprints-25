@@ -1,8 +1,10 @@
-import AS from "../assets/images/GL/anilswarup.jpeg";
-import MSA from "../assets/images/GL/MSA.jpg";
-import SS from "../assets/images/GL/sanjay-singal.jpg";
-import RK from "../assets/images/GL/rkrishna.jpg";
+import AS from "../assets/Anil swaroop.jpg";
+import MSA from "../assets/montek Singh.jpg";
+import SS from "../assets/Sanjay-Singhal.jpg";
+import RK from "../assets/R-Gopalkrishnan.jpg";
 import VA from "../assets/vivekatray.jpg";
+import AKS from "../assets/admiral karambir singh.jpg";
+import SR from "../assets/sanjay raval.jpg";
 
 
 const AboutGuestData = [
@@ -30,7 +32,7 @@ const AboutGuestData = [
 
     details: "Chairman, NMF and Former Chief of the Naval Staff, Indian Navy",
     image:
-      "src/assets/admiral karambir singh.jpg",
+      AKS,
 
 
 //     details: "Chairman, NMF and Former Chief of the Naval Staff, Indian Navy ",
@@ -46,7 +48,7 @@ const AboutGuestData = [
     id: 3,
     name: "Sanjay Raval",
     details: "Motivational Speaker",
-    image: "src/assets/sanjay raval.jpg", // Ensure this path is correct in your project
+    image: SR, 
     content:
       "He is a motivational speaker, entrepreneur, builder, and author. Founder of SMSR Skill Centre and Skill City at Anand. Producer of the Gujarati movie ‘Vitamin She.’ His books have sold more than 2 lakh copies across India. He has conducted over 2000 seminars in the last five years and has over 1.1 million followers on social media.",
   },
@@ -58,9 +60,9 @@ const CurrentGuestData = [
     id: 1,
     name: "Anil Swarup",
     details: "Coal & Literacy Secretary of India",
-    image: "src/assets/Anil swaroop.jpg", 
+    image: AS, 
    
-    // Ensure this path is correct in your project
+    
     content:
       "Anil Swarup, a former IAS officer, held key positions such as Coal Secretary of India and Secretary of School Education & Literacy. He led the transparent e-auctioning of coal blocks and introduced initiatives to enhance education quality across 1.5 million schools.",
     date: "7th March, 2025",
@@ -71,7 +73,7 @@ const CurrentGuestData = [
     name: "Ramabadran Gopalkrishnan",
     details: "Ex Executive Director of TATA Sons & Vice Chairman of HUL",
     image:
-      "src/assets/R-Gopalkrishnan.jpg",
+      RK,
 
 //    {
 //      id: 1,
@@ -111,7 +113,7 @@ const CurrentGuestData = [
     name: "Montek Singh Ahluwalia",
     details: "Economic Advisor to the Prime Minister",
     image:
-      "src/assets/montek Singh.jpg",
+      MSA,
 
 
 //     name: "Admiral Karambir Singh, PVSM, AVSM, IN (Retd)",
@@ -132,7 +134,7 @@ const CurrentGuestData = [
 
     name: "Sanjay Singal",
     details: "Current CEO of WaghBakri Tea and COO of ITC Ltd",
-    image: "src/assets/Sanjay-Singhal.jpg", // Add the correct path or URL for the image
+    image: SS, // Add the correct path or URL for the image
 
 
 //     name: "Sanjay Raval",

@@ -16,6 +16,8 @@
 .about_workshop {
     font-family: "Gantari", sans-serif;
     animation: fadeInContent 0.8s ease-in-out; /* Smooth fade-in for content */
+    text-align: justify;
+        justify-content: center;
 }
 
 /* Keyframes for content fade-in */
@@ -54,6 +56,8 @@
     margin-bottom: 50px;
     color: #fff; /* Heading color */
     animation: fadeIn 1.5s ease-out;
+    text-align: justify;
+        justify-content: center;
 }
 
 /* Guest Workshop Name Styling */
@@ -62,8 +66,10 @@
     border-bottom: 2px solid #fff; /* White border */
     padding-bottom: 6px;
     color: #fff; /* Solid white text color */
-    text-align: left;
+    /* text-align: left; */
     transition: color 0.3s ease-in-out;
+    text-align: justify;
+        justify-content: center;
 }
 
 /* Hover effect for workshop name */
@@ -81,13 +87,17 @@
 
     .about_workshop {
         order: 2;
-        text-align: center;
+        /* text-align: center; */
         margin-bottom: 2rem;
+        text-align: justify;
+        justify-content: center;
     }
 
     .workshop_name {
         order: 2;
         font-size: 1.8rem;
+        text-align: justify;
+        justify-content: center;
     }
     /* .workshop.content:nth-child(odd) {
         flex-direction: column; 
@@ -114,7 +124,9 @@
 
     .workshop_heading h3 {
         order: 2;
-        text-align: center;
+        /* text-align: center; */
+        text-align: justify;
+        justify-content: center;
     }
 }
 
@@ -175,6 +187,8 @@
 
     .about_workshop {
         margin: 0;
+        text-align: justify;
+        justify-content: center;
     }
 }
   
@@ -235,14 +249,18 @@ footer {
     }
 
     .about_workshop {
-        text-align: center;
+        /* text-align: center; */
         margin-bottom: 2rem;
         order: unset !important; /* Override any order settings */
+        text-align: justify;
+        justify-content: center;
     }
 
     .workshop_name {
         font-size: 1.8rem;
-        text-align: center;
+        /* text-align: center; */
+        text-align: justify;
+        justify-content: center;
     }
 }
 

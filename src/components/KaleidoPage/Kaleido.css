@@ -58,7 +58,10 @@
 .about_guest {
   flex: 2;
   padding: 20px;
+  width: fit-content;
   font-family: var(--heading-family);
+  text-align: justify;
+  justify-content: center;
   opacity: 1; /* Ensure full opacity for guest content */
 }
 
@@ -67,6 +70,7 @@
   font-size: 24px;
   color: white;
   border-bottom: 2px solid #fff;
+  justify-content: center;
   font-weight: bold;
   position: relative;
   transition: color 0.3s ease; /* Smooth transition for color change */
@@ -157,6 +161,8 @@ footer {
 @media (max-width: 768px) {
   .guest_lec.content {
     flex-direction: column;
+    text-align: justify;
+    justify-content: center;
     align-items: center;
     opacity: 1; /* Ensure full opacity in responsive view */
   }
@@ -167,6 +173,8 @@ footer {
   }
 
   .about_guest {
+    text-align: justify;
+    justify-content: center;
     padding: 10px;
     opacity: 1; /* Full opacity for guest descriptions */
   }
@@ -179,6 +187,15 @@ footer {
   .kaleido_heading {
     font-size: 28px;
     opacity: 1; /* Full opacity for heading in responsive view */
+    text-align: center;
+
+  }
+  .guest_heading h3 {
+    font-size: 24px; /* Adjust font size for mobile */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Enable flexbox for better alignment */
+    justify-content: center; /* Center horizontally */
+    margin: 20px auto; /* Add spacing and ensure it's centered */
   }
 }
 
@@ -198,6 +215,8 @@ footer {
     order: 2; /* Ensure content follows the image */
     padding: 10px;
     text-align: center; /* Center-align text for smaller screens */
+    text-align: justify;
+    justify-content: center;
   }
 
   .Kaleido-img {
@@ -208,6 +227,13 @@ footer {
 
   .kaleido_heading {
     font-size: 28px; /* Adjust heading size for tablets */
+  }
+  .guest_heading h3 {
+    font-size: 24px; /* Adjust font size for mobile */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Enable flexbox for better alignment */
+    justify-content: center; /* Center horizontally */
+    margin: 20px auto; /* Add spacing and ensure it's centered */
   }
 }
 
@@ -242,6 +268,8 @@ footer {
     order: 2; /* Ensure content follows the image */
     padding: 10px;
     text-align: center; /* Center-align text for smaller screens */
+    text-align: justify;
+    justify-content: center;
   }
 
   .Kaleido-img {
@@ -252,6 +280,15 @@ footer {
 
   .kaleido_heading {
     font-size: 24px; /* Smaller font size for phone view */
+    text-align: center;
+    justify-content: center;
+  }
+  .guest_heading h3 {
+    font-size: 24px; /* Adjust font size for mobile */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Enable flexbox for better alignment */
+    justify-content: center; /* Center horizontally */
+    margin: 20px auto; /* Add spacing and ensure it's centered */
   }
 }
 
@@ -259,6 +296,8 @@ footer {
 @media (max-width: 480px) {
   .guest_lec.content {
     padding: 10px;
+    text-align: justify;
+    justify-content: center;
   }
 
   /* .guest_img.image-frame {
@@ -289,12 +328,20 @@ footer {
     order: 2; /* Ensure content follows the image */
     padding: 5px;
     font-size: 14px;
-    text-align: center; /* Center-align text for smaller screens */
+    text-align: justify; /* Center-align text for smaller screens */
+    justify-content: center;
   }
 
   .Kaleido-img {
     order: 1;
     width: 100%; /* Make images take full width */
     height: auto;
+  }
+  .guest_heading h3 {
+    font-size: 24px; /* Adjust font size for mobile */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Enable flexbox for better alignment */
+    justify-content: center; /* Center horizontally */
+    margin: 20px auto; /* Add spacing and ensure it's centered */
   }
 }

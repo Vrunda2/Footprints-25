@@ -57,7 +57,7 @@ import cse from "../assets/Anim/cyber2.png";
 import lycraa from "../assets/Anim/lycra.png";
 import mache from "../assets/Anim/mache.png";
 import rasa from "../assets/Anim/rasa.png";
-import sangaa from "../assets/Anim/sanga.png";
+import sangaa from "../assets/Anim/Sanga.png";
 import citadel from "../assets/Anim/citadel.png";
 import techxx from "../assets/Anim/techx.png";
 import questt from "../assets/Anim/quest.png";

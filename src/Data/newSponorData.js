@@ -10,7 +10,7 @@ import IMS from "../assets/SponsorLogos/IMSWeb.jpg";
 import ACUMEN from "../assets/SponsorLogos/AcumenWeb.jpg";
 import ASGARD from "../assets/SponsorLogos/AsgardWeb.jpg";
 import YB from "../assets/SponsorLogos/YBWeb.jpg";
-import VM from "../assets/SponsorLogos/VmWeb.jpg";
+import VM from "../assets/SponsorLogos/VMweb.jpg";
 import YELLOW from "../assets/SponsorLogos/YellowWeb.jpg";
 import ELITE from "../assets/SponsorLogos/EliteWeb.jpg";
 import JOYA from "../assets/SponsorLogos/JoyaWeb.jpg";

@@ -53,6 +53,16 @@ import Valorant from "../assets/images/eventimage/valo.jpg";
 import freefire from "../assets/images/eventimage/freefire.jpg";
 import chess from "../assets/images/eventimage/chess.jpg";
 
+import cse from "../assets/Anim/cyber2.png";
+import lycraa from "../assets/Anim/lycra.png";
+import mache from "../assets/Anim/mache.png";
+import rasa from "../assets/Anim/rasa.png";
+import sangaa from "../assets/Anim/sanga.png";
+import citadel from "../assets/Anim/citadel.png";
+import techxx from "../assets/Anim/techx.png";
+import questt from "../assets/Anim/quest.png";
+import virtuosity from "../assets/Anim/virtuo.png";
+import fsee from "../assets/Anim/fse.png";
 
 
 
@@ -150,7 +160,7 @@ const technotronData = {
         },
       },
     ],
-   headingSource: `../src/assets/Anim/cyber2.png`
+   headingSource: cse,
   },
   lycra: {
     eventTitle: "Lycra | FootPrints'25",
@@ -245,7 +255,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource: `../src/assets/Anim/lycra.png`,
+    headingSource: lycraa,
   },
   macheanema: {
     eventTitle: "Macheanema | FootPrints'25",
@@ -367,7 +377,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource: `../src/assets/Anim/mache.png`,
+    headingSource: mache,
   },
   rasayanam: {
     eventTitle: "Rasayanam | FootPrints'25",
@@ -425,7 +435,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource: `../src/assets/Anim/rasa.png`,
+    headingSource: rasa,
   },
   sanganikee: {
     eventTitle: "Sanganikee | FootPrints'25",
@@ -745,7 +755,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource: `../src/assets/Anim/sanga.png`,
+    headingSource: sangaa,
   },
   citadel: {
     eventTitle: "Citadel | FootPrints'25",
@@ -857,7 +867,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource: `../src/assets/Anim/citadel.png`
+    headingSource: citadel
   },
   techx: {
     eventTitle: "TechX | FootPrints'25",
@@ -879,7 +889,7 @@ const technotronData = {
         },
       },
     ],
-    headingSource: `../src/assets/Anim/techx.png`
+    headingSource: techxx
   },
 };
 
@@ -989,7 +999,7 @@ const questData = {
       
     },
   ],
-  headingSource: `../src/assets/Anim/quest.png`,
+  headingSource: questt,
 };
 
 const virtuosityData = {
@@ -1053,7 +1063,7 @@ const virtuosityData = {
       },
     },
   ],
-  headingSource: `../src/assets/Anim/virtuo.png`
+  headingSource: virtuosity
 };
 
 const fseData = {
@@ -1098,7 +1108,7 @@ const fseData = {
       },
     },
   ],
-  headingSource: `../src/assets/Anim/fse.png`
+  headingSource: fsee
 };
 
 const theEventData = {

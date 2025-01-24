@@ -2,6 +2,8 @@ import AS from "../assets/images/GL/anilswarup.jpeg";
 import MSA from "../assets/images/GL/MSA.jpg";
 import SS from "../assets/images/GL/sanjay-singal.jpg";
 import RK from "../assets/images/GL/rkrishna.jpg";
+import VA from "../assets/vivekatray.jpg";
+
 
 const AboutGuestData = [
   {
@@ -10,7 +12,7 @@ const AboutGuestData = [
 
     details: "Ex IAS Officer, TEDx Speaker",
     image:
-      "src/assets/vivek atre.jpg",
+      VA,
 
 
 //     details: "Ex IAS Officer, Ted X Speaker",

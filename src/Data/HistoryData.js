@@ -11,7 +11,7 @@ import h10 from "../assets/X10.jpg";
 import h11 from "../assets/fp21.png";
 import h12 from "../assets/FP22.jpeg";
 import h13 from "../assets/FP23.jpg";
-import h14 from "../assets/FP24.jpg";
+import h14 from "../assets/aditya.jpg";
 
 const HistoryData=[
 

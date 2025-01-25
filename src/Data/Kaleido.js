@@ -65,7 +65,7 @@ const CurrentGuestData = [
     
     content:
       "Anil Swarup, a former IAS officer, held key positions such as Coal Secretary of India and Secretary of School Education & Literacy. He led the transparent e-auctioning of coal blocks and introduced initiatives to enhance education quality across 1.5 million schools.",
-    date: "7th March, 2025",
+    date: "8th March, 2025",
     venue: "FoTE, MSU Baroda",
   },
   {
@@ -147,7 +147,7 @@ const CurrentGuestData = [
 
     content:
       "Sanjay Singal is a seasoned professional with extensive experience in the FMCG sector. He serves as the CEO of WaghBakri Tea Group and has held positions like COO at ITC Limited. An alumnus of IIM Bangalore, he has managed iconic brands and driven rapid growth in his career.",
-    date: "9th March, 2025",
+    date: "7th March, 2025",
     venue: "FoTE, MSU Baroda",
   },
 ];

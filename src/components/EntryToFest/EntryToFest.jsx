@@ -14,7 +14,7 @@ const EntryToFest = () => {
   return (
     <div className="event-simple-page">
       <div className="event-top-image">
-        <picture>
+        <picture className="banner-img">
           <source media="(min-width: 768px)" srcSet={desktopBanner} />
           <img src={mobileBanner} alt="Event Banner" />
         </picture>

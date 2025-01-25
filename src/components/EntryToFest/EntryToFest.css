@@ -41,6 +41,9 @@
   height: 100%;
   display: block;
 }
+.banner-img{
+  padding: 20px;
+}
 
 .event-top-image img {
   width: 100%;
@@ -141,4 +144,14 @@
 /* Footer Positioning */
 .event-simple-page > footer {
   margin-top: auto;
+}
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
 }

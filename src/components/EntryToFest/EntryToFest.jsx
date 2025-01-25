@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import Footer from "../Common/Footer/Footer";
 import Sponsors from "../Common/SponsorSlide/Sponsors";
 import "./EntryToFest.css";
-import banner from "../../assets/images/eventimage/MobBanner.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import mobileBanner from '../../assets/images/eventimage/MobBanner.jpg';
+import desktopBanner from '../../assets/images/eventimage/desktop.png';
 
 const EntryToFest = () => {
   useEffect(() => {
@@ -14,8 +13,11 @@ const EntryToFest = () => {
 
   return (
     <div className="event-simple-page">
-      <div className="event-top-image" data-aos="fade-up">
-        <img src={banner} alt="Event" />
+      <div className="event-top-image">
+        <picture>
+          <source media="(min-width: 768px)" srcSet={desktopBanner} />
+          <img src={mobileBanner} alt="Event Banner" />
+        </picture>
       </div>
       <div className="event-contact-section" data-aos="fade-up">
         <h2>For More Details Contact</h2>

@@ -897,7 +897,35 @@ const questData = {
   eventTitle: "Quest | FootPrints'25",
   title : "Fun Based Non-Technical Events",
   data: [
-   
+    // {
+    //   name: "12th Battalion",
+    //   background: Batallian,
+    //   details: {
+    //     info: [
+    //       "It is an event which checks your physical strength with games such as tug of war, wall climbing and much more.",
+    //     ],
+    //     rules: [
+    //       "- In 12th Batallian there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences."
+    //     ],
+    //     price: ["- INR 100/-"],
+    //     team: ["- Individual or Maximum 3"],
+    //     image: "https://www.istockphoto.com/photos/sample-image",
+    //   },
+    // },
+    {
+      name: "Lost",
+      background: lost,
+      details: {
+        info: [
+          "It is a treasure hunt based event.Here the participants would have to decode a plot based on clues which would be hidden at various locations in the college.",
+        ],
+        rules: [
+          "- In Lost there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences.",
+        ],
+        price: ["- INR 180/-"],
+        team: ["- Maximum 3"],
+      },
+    },
     {
       name: "War Of Words",
       background: wow,
@@ -941,21 +969,21 @@ const questData = {
         team: ["- Compulsory 3"],
       },
     },
-    {
-      name: "Lost",
-      background: lost,
-      details: {
-        info: [
-          "It is a treasure hunt based event.Here the participants would have to decode a plot based on clues which would be hidden at various locations in the college.",
-        ],
-        rules: [
-          "- In Lost there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences.",
-        ],
-        price: ["- INR 180/-"],
-        team: ["- Maximum 3"],
-      },
-    },
     
+    // {
+    //   name: "Frameit",
+    //   background: frameit,
+    //   details: {
+    //     info: [
+    //       "Showcase your photography skills! Capture moments during the event and submit to win.",
+    //     ],
+    //     rules: [
+    //       "Winners will be declared Based on Poll via Instagram",
+    //     ],
+    //     price: ["- INR 50/-"],
+    //     team: ["- Individual"],
+    //   },
+    // },
     {
       name: "Takeshi's Castle",
       background: castle,

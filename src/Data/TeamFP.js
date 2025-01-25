@@ -57,7 +57,7 @@ const ccData = [
     id: 2,
     imgSrc: `../src/assets/Team/Core/Digvijay.jpg`,
     name: "Digvijay Shekhawat",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/digvijay-shekhawat-14965b1a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   {
     id: 3,
@@ -111,7 +111,7 @@ const ccData = [
     id: 11,
     imgSrc: `../src/assets/Team/Core/Sumit.jpg`,
     name: "Sumit Vankar",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/sumit-vankar-429bbb284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app`,
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ const ccData = [
     id: 14,
     imgSrc: `../src/assets/Team/Core/Yana.jpg`,
     name: "Yana Velani",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/yana-velani-3002702a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
 ];
 

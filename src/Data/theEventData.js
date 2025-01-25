@@ -897,21 +897,7 @@ const questData = {
   eventTitle: "Quest | FootPrints'25",
   title : "Fun Based Non-Technical Events",
   data: [
-    {
-      name: "12th Battalion",
-      background: Batallian,
-      details: {
-        info: [
-          "It is an event which checks your physical strength with games such as tug of war, wall climbing and much more.",
-        ],
-        rules: [
-          "- In 12th Batallian there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences."
-        ],
-        price: ["- INR 100/-"],
-        team: ["- Individual or Maximum 3"],
-        image: "https://www.istockphoto.com/photos/sample-image",
-      },
-    },
+   
     {
       name: "War Of Words",
       background: wow,
@@ -969,20 +955,7 @@ const questData = {
         team: ["- Maximum 3"],
       },
     },
-    {
-      name: "Frameit",
-      background: frameit,
-      details: {
-        info: [
-          "Showcase your photography skills! Capture moments during the event and submit to win.",
-        ],
-        rules: [
-          "Winners will be declared Based on Poll via Instagram",
-        ],
-        price: ["- INR 50/-"],
-        team: ["- Individual"],
-      },
-    },
+    
     {
       name: "Takeshi's Castle",
       background: castle,
@@ -1110,12 +1083,64 @@ const fseData = {
   ],
   headingSource: fsee
 };
+const festData = {
+  eventTitle: "Fest | FootPrints'25",
+  title : "Entry to the Fest",
+  data: [
+    {
+      name: "Frameit",
+      background: frameit,
+      details: {
+        info: [
+          "Showcase your photography skills! Capture moments during the event and submit to win.",
+        ],
+        rules: [
+          "Winners will be declared Based on Poll via Instagram",
+        ],
+        price: ["- INR 50/-"],
+        team: ["- Individual"],
+      },
+    },
+    {
+      name: "12th Battalion",
+      background: Batallian,
+      details: {
+        info: [
+          "It is an event which checks your physical strength with games such as tug of war, wall climbing and much more.",
+        ],
+        rules: [
+          "- In 12th Batallian there is no particular specification that you need to follow. There is no restriction to anything. There is no standard time limit in which you need to complete the event.  It is a whole fun segment and you will enjoy a lot and gain new experiences."
+        ],
+        price: ["- INR 100/-"],
+        team: ["- Individual or Maximum 3"],
+        image: "https://www.istockphoto.com/photos/sample-image",
+      },
+    },
+    {
+      name: "Quiz-O-Tex",
+      background: texlycra,
+      details: {
+        info: ["A quiz event pertaining to Textile Department."],
+        rules: [
+          "- Teams will be formed strictly by the Core Committee.",
+          "- The Core Committee reserves the right to change any of the rules. Participants will be informed about the changes if any.",
+        ],
+        price: ["- INR 100/-"],
+        team: ["- Individual"],
+      },
+    },
+  ],
+  
+  headingSource: fsee
+};
+
 
 const theEventData = {
   technotron: technotronData,
   quest: questData,
   virtuosity: virtuosityData,
   fse: fseData,
+  fest: festData,
 };
 
 export default theEventData;

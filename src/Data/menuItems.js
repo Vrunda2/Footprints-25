@@ -67,6 +67,14 @@ const menuItems = [
       },
     ],
   },
+  
+  {
+    Segment: 8,
+    title: " Entry to Fest",
+    
+        link: "/entry-to-fest",
+    
+  },
   {
     Segment: 3,
     title: "Rolling squares",
@@ -116,8 +124,9 @@ const menuItems = [
     title: "Web Team",
     link: "/webTeamPage"
   },
+ 
   {
-    Segment: 8,
+    Segment: 9,
     title: "More",
     subItems: [
       {

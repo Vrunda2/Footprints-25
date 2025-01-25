@@ -33,6 +33,7 @@ import LandingPage from "./components/LandingPage/Landingpage";
 import Error from "./components/Error";
 import Footer from "./components/Common/Footer/Footer";
 import Sponsors from "./components/Common/SponsorSlide/Sponsors";
+import EntryToFest from "./components/EntryToFest/EntryToFest";
 // import Countdown from "./components/CountDown/Countdown"
 
 AOS.init();
@@ -95,7 +96,13 @@ function App() {
               exact
               path="/technotron/:event"
               element={<EventPage theParent={"technotron"} />}
+              
             />
+             <Route 
+    exact 
+    path="/entry-to-fest" 
+    element={<EntryToFest  />} 
+  />
             <Route exact path="/error" element={<Error />} />
             {/* <Route path="/count" element={<Countdown/>}/>        */}
             <Route path="/*" element={<Error />} />

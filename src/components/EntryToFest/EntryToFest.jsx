@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import Footer from "../Common/Footer/Footer";
 import "./EntryToFest.css";
-import mobileBanner from '../../assets/images/eventimage/MobBanner.jpg';
-import desktopBanner from '../../assets/images/eventimage/DesktopBanner.jpg';
+import banner from '../../assets/images/eventimage/MobBanner.jpg';
 
 const EntryToFest = () => {
   useEffect(() => {
@@ -12,10 +11,7 @@ const EntryToFest = () => {
   return (
     <div className="event-simple-page">
       <div className="event-top-image">
-        <picture>
-          <source media="(min-width: 768px)" srcSet={desktopBanner} />
-          <img src={mobileBanner} alt="Event Banner" />
-        </picture>
+        <img src={banner} alt="Event" />
       </div>
       <div className="event-contact-section">
         <h2>For More Details Contact</h2>

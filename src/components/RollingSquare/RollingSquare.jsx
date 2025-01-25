@@ -33,7 +33,7 @@ export default function RollingSquare() {
           <ImageCarousel images={imageSources.concert} />
         </div>
 
-        <Heading className="kaleido_heading" id="glheading" title={"Informal"} />
+        <Heading className="kaleido_heading" id="glheading" title={"Informals"} />
         <div data-aos="fade-up">
           <ImageCarousel images={imageSources.informals} />
         </div>

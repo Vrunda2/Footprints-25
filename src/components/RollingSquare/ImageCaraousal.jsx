@@ -1,16 +1,12 @@
-
 import React, { useEffect } from "react";
 import "./RollingSquare.css";
 
 const ImageCarousel = ({images}) => {
-
-  useEffect(()=>{
-    if (window.innerWidth<619) {
-      // console.log("Hello");
+  useEffect(() => {
+    if (window.innerWidth < 619) {
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            // console.log(entry);
             if (entry.isIntersecting) {
               entry.target.classList.add("img-transition");
             } else {
@@ -19,7 +15,7 @@ const ImageCarousel = ({images}) => {
           });
         },
         {
-          threshold: "0.98",
+          threshold: 0.5, // Reduced threshold for better mobile experience
         }
       );
   
@@ -28,21 +24,18 @@ const ImageCarousel = ({images}) => {
         observer.observe(el);
       });
     }
-  },[])
+  }, [])
 
   return (
     <div className="rs_images-container">
       <div className="gallery">
         {images?.map((src, index) => (
-          // <div className="slide" key={index}>
           <img
             key={index}
             src={src}
             alt={`Image ${index + 1}`}
             draggable="false"
-            className={""}
           />
-          // </div>
         ))}
       </div>
     </div>

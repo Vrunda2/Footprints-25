@@ -35,7 +35,7 @@
   height: auto;
   filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
   transition: transform 0.3s ease;
-  transform: translateY(-40px); /* Push up by 20px on smaller screens */
+  transform: translateY(-20px); /* Push up by 20px on smaller screens */
 }
 
 .center-logo:hover {
@@ -130,6 +130,6 @@
     height: auto;
     filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
     transition: transform 0.3s ease;
-    transform: translateY(-20px); /* Push up by 20px on smaller screens */
+    transform: translateY(-40px); /* Push up by 20px on smaller screens */
   }
 }

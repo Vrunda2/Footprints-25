@@ -1,19 +1,23 @@
 import React, { useEffect } from "react";
 import Footer from "../Common/Footer/Footer";
+import Sponsors from "../Common/SponsorSlide/Sponsors";
 import "./EntryToFest.css";
-import banner from '../../assets/images/eventimage/MobBanner.jpg';
+import banner from "../../assets/images/eventimage/MobBanner.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const EntryToFest = () => {
   useEffect(() => {
     document.title = "Event Details";
+    AOS.init({ duration: 1000, once: false }); // Initialize AOS with options
   }, []);
 
   return (
     <div className="event-simple-page">
-      <div className="event-top-image">
+      <div className="event-top-image" data-aos="fade-up">
         <img src={banner} alt="Event" />
       </div>
-      <div className="event-contact-section">
+      <div className="event-contact-section" data-aos="fade-up">
         <h2>For More Details Contact</h2>
         <div className="contact-numbers">
           <p>Event Coordinators:</p>
@@ -25,7 +29,8 @@ const EntryToFest = () => {
           </ul>
         </div>
       </div>
-      <Footer />
+      <Sponsors data-aos="fade-up" />
+      <Footer data-aos="fade-up" />
     </div>
   );
 };

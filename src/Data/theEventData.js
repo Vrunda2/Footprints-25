@@ -70,7 +70,7 @@ import fsee from "../assets/Anim/fse.png";
 const technotronData = {
   cybernetics: {
     eventTitle: "Cybernetics | FootPrints'25",
-    title : "Event Related to Computer And IT Department",
+    title : "Events Related to Computer And IT Department",
     data: [
       {
         name: "Runtime",
@@ -164,7 +164,7 @@ const technotronData = {
   },
   lycra: {
     eventTitle: "Lycra | FootPrints'25",
-    title : "Event Related to Textile Department",
+    title : "Events Related to Textile Department",
     data: [
       {
         name: "The Vogue",
@@ -259,7 +259,7 @@ const technotronData = {
   },
   macheanema: {
     eventTitle: "Macheanema | FootPrints'25",
-    title : "Event Related to Mechanical And Metallurgy Department.",
+    title : "Events Related to Mechanical And Metallurgy Department.",
     data: [
       {
         name: "Burnout",
@@ -367,10 +367,15 @@ const technotronData = {
         background: rocket,
         details: {
           info: [
-            "Participants have to build hydraulic crane capable of scooping and placing the given load.",
+            "Participants have to design a rocket model and the launch pad with the use of fluid mechanics which can cover the maximum distance possible.",
           ],
           rules: [
-            "TO BE DECLARED",
+            "- The bottles used for the rocket model should be max of 1.25 L",
+            "- Length of the pipes used for the launch pad can be of any length and diameter.",
+            "- 2 elbows of 90°, 1 elbow of 45°, 1 T-shaped elbow and 2 caps for closing the open end of pipes should be used.",
+            "- The valve used in the launch pad should be that of bicycle tubes only.",
+            "- Strictly water should be used as the fluid in the event.",
+            "- The launch pad model should be based on using hydraulic and pressure mechanism only.",
           ],
           price: ["-INR 200/-"],
           team: ["- Maximum 4"],
@@ -381,7 +386,7 @@ const technotronData = {
   },
   rasayanam: {
     eventTitle: "Rasayanam | FootPrints'25",
-    title : "Event Related to Chemical Department",
+    title : "Events Related to Chemical and Pharmacy Department",
     data: [
       {
         name: "Chem-o-Hustle",
@@ -439,7 +444,7 @@ const technotronData = {
   },
   sanganikee: {
     eventTitle: "Sanganikee | FootPrints'25",
-    title : "Event Related to Electrical And Electronics Department",
+    title : "Events Related to Electrical And Electronics Department",
     data: [
       {
         name: "Wrestlemania",
@@ -759,14 +764,14 @@ const technotronData = {
   },
   citadel: {
     eventTitle: "Citadel | FootPrints'25",
-    title : "Event Related to Civil And IWM Department",
+    title : "Events Related to Civil And IWM Department",
     data: [
       {
         name: "CivIQ",
         background: civiq,
         details: {
           info: [
-            "Its Treasure hunt event based on immense consept and knowledge of  civil engineering.",
+            "Its Treasure hunt event based on immense concept and knowledge of  civil engineering.",
           ],
           rules: ["- The rules will be disclosed by the team on the day of event."],
           price: ["- INR 120/-"],
@@ -965,8 +970,8 @@ const questData = {
           "- Fun Event. More details to be revealed on the spot.",
           
         ],
-        price: ["- INR 180/-"],
-        team: ["- Compulsory 3"],
+        price: ["- INR 150/-"],
+        team: ["- Compulsory 2"],
       },
     },
     
@@ -1095,7 +1100,7 @@ const fseData = {
       background: sharktank,
       details: {
         info: [
-          `\"Pitchers Project\" is an entrepreneurship event tailored for FootPrints'24, designed to
+          `\"Pitchers Project\" is an entrepreneurship event tailored for FootPrints'25, designed to
         foster innovation and support budding entrepreneurs in bringing their startup ideas to
         fruition. This event serves as a platform for individuals with entrepreneurial aspirations
         to showcase their business concepts, receive valuable feedback, and potentially secure

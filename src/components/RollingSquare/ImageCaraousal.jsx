@@ -35,6 +35,7 @@ const ImageCarousel = ({images}) => {
             src={src}
             alt={`Image ${index + 1}`}
             draggable="false"
+            data-aos="fade-up"
           />
         ))}
       </div>

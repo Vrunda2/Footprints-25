@@ -2,7 +2,7 @@ import React from "react";
 // import Img from "../../../assets/images/Insta-icon3.png";
 import Heading from "../../Common/Headings/Heading";
 import "./Glimpse.css";
-import FSRR from "../../../assets/images/temp/fsr11.jpg";
+import FSRR from "../../../assets/images/gallary/fsrglimpse.jpg";
 import RSS from "../../../assets/images/temp/aditya.jpg";
 import Info from "../../../assets/images/temp/informal.jpg";
 

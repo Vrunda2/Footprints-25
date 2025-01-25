@@ -7,6 +7,22 @@
   padding: 20px 0;
 }
 
+.alt-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../assets/BGGlow.jpg');
+  background-size: 100vw auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(22, 22, 22, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -61,4 +77,18 @@
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.carousel-image {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+
+[data-aos] {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos].aos-animate {
+  opacity: 1; /* Visible when in view */
 }

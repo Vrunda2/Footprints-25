@@ -9,6 +9,8 @@ import SANGA from "../../assets/images/gallary/smack.jpg";
 import STANDUP from "../../assets/images/gallary/akashmehta.jpg";
 import FSR from "../../assets/images/gallary/fsr12.jpg";
 import CITA from "../../assets/images/gallary/cita.jpg";
+import DECO from "../../assets/images/gallary/deco.jpg";
+import GL from "../../assets/images/gallary/gl.jpg";
 import DARSHAN from "../../assets/images/gallary/darshanrr.jpg";
 import { useMousePosition } from "../../CustomHooks/useMousePosition";
 import galVid from '../../assets/Anim/gallery.png'
@@ -70,7 +72,7 @@ const Gallery = () => {
     },
     {
       id: 4,
-      imgSrc: RS,
+      imgSrc: GL,
       title: "Kaleidoscope",
       subtitle: "Guest Lecture",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
@@ -86,7 +88,7 @@ const Gallery = () => {
 
     {
       id: 6,
-      imgSrc: RS,
+      imgSrc: DECO,
       title: "College Decoration",
       subtitle: "During the Fest",
       cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",

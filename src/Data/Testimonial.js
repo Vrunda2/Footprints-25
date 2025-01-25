@@ -131,7 +131,7 @@ const testiData=[
   {
      id:14,
  
-     name:`Dr. DAVID GREENSPOON`,
+     name:`Dr. DAVID GRINSPOON`,
  
      profession:`American astrobiologist & former inaugural Baruch S. Blumberg NASA`,
  

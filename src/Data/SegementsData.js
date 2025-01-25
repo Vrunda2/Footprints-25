@@ -92,7 +92,7 @@ const segementData = [
         link: "/rolling-squares",
       },
       {
-        title: "Informal",
+        title: "Informals",
         link: "/rolling-squares",
       },
       {
@@ -107,10 +107,7 @@ const segementData = [
     title: "Quest",
     imageSource:Quest,
     subItems: [
-      {
-        title: "12th Batallian",
-        link: "/quest#12th-batallian",
-      },
+      
       {
         title: "War of Words",
         link: "/quest#war-of-words",
@@ -131,10 +128,7 @@ const segementData = [
         title: "Sub Soccer",
         link: "/quest#sub-soccer",
       },
-      {
-        title: "Frame it",
-        link: "/quest#frame-it",
-      },
+      
     ],
   },
 

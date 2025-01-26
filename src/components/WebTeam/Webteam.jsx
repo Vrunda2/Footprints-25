@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Webteam.css';
 import ayeshaImage from '../../assets/Team/Core/Ayesha.jpg';
 import vrundaImage from '../../assets/Team/Core/Vrunda.jpg';
+import nachiket from '../../assets/Team/Core/Nachiket.jpg';
 import meghanaImage from '../../assets/Team/Core/Meghana.jpg';
 import satchitImage from '../../assets/Team/Core/Satchit.jpg';
 import shubhImage from '../../assets/Team/Web/Shubh.jpg';
@@ -57,6 +58,14 @@ const WebTeam = () => {
       social: {
         linkedin: 'https://www.linkedin.com/in/vrunda-radadiya-8a1a43257/',
         github: 'https://github.com/Vrunda2'
+      }
+    },
+    {
+      name: 'Nachiket Karambelkar',
+      image: nachiket,
+      social: {
+        linkedin: '',
+        github: ''
       }
     },
     {

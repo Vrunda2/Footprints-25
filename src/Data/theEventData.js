@@ -844,29 +844,13 @@ const technotronData = {
         details: {
           info: ["Participants have to make a model using popsicle sticks."],
           rules: [
-            "TO BE DECLARED"
+            "The materials used are popsicle sticks and SH grade fevicol only.",
+            "The base of the water tank should be hexagonal of side 10cm each of 2 stick thickness.",
+            "No of columns must be 6 of height 25cm each.",
+            "The walls of the water tank should be 10cm in length and 4 stick high and properly joined with minimum 2 supports and maximum 4 supports.",
+            "The support at the top and bottom of the pillar must be of 5cm.",
+            "A hook must be fixed between any 2 walls of the water tank.",
           ],
-//           rules: ["- Dimensions of the Warren Truss",
-//  
-//           "- Clear Span of Truss = 65-70cm",
-//           "- Height of truss: 8 to 10cm",
-//           "- Base span should be max 2stick and other members should be 1 stick thick.",
-//            
-//           "- Rules:",
-//          "- Each team should be of maximum 4 members.",
-//          "- Materials to be used: Popsticle sticks and Fevicol of SH grade.",
-//          "- Use of any other adhesive, etc is prohibited and participants using it will be disqualified from the event.",
-//          "- Strings cannot be used to tie popsicle sticks.",
-//          "- All the models must be taken for the dimension checking during the specified period of time (any entry after that won’t be accepted and would be disqualified).",
-//          "- No changes in the model after the dimension checking would be allowed and any team doing so without the permission of the Core Committee member would be disqualified.",
-//          "- The decision of the judges and Core Committee will be final regarding any discrepancy on the spot or before the event.",
-//            
-//           "- Structure Specification:",
-//           "- Whole structure should be open-web (no bracings allowed)",
-//           "- No grooves allowed.",
-//           "- Only SH grade Fevicol can be used as Glue.",
-//           "- No type of coatings or paint are allowed on the popsicle structure Popsicle Stick:.",
-//           "- The Popsicle sticks can be cut or trimmed to any shape or size."],
           price: ["- INR 200/-"],
           team: ["- Maximum 4"],
         },

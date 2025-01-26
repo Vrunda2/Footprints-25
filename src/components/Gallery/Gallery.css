@@ -11,7 +11,7 @@
   pointer-events: none;
   mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(22, 22, 22, 1), rgba(0, 0, 0, 0));
   -webkit-mask-image: radial-gradient(circle max(6vw,68px) at var(--xPos, 0px) var(--yPos, 0px), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 .card-gallery {
@@ -21,6 +21,7 @@
   justify-content: center;
   gap: 10px 0px;
   animation-fill-mode: forwards !important;
+  z-index: 5;
 }
 
 .SheenAnimate::after {

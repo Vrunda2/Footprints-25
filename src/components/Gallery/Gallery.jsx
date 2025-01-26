@@ -127,7 +127,7 @@ const Gallery = () => {
       <div className="headingOffset">
         <VideoBox url={galVid} />
       </div>
-      <section>
+      <section className="headingOffset">
         <div className="card-gallery">
           {/* {numLoaded === data.length ? animate() : ""} */}
           {data.map((item) => {

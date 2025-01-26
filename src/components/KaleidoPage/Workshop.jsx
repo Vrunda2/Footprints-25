@@ -30,6 +30,26 @@ function Workshop() {
         >
           <h3 className="workshop_name">{element.name}</h3>
           <p>{element.content}</p>
+        </div>
+      </div>
+    ));
+  };
+
+  const renderNewWorkshopSection = (data) => {
+    return data.map((element) => (
+      <div key={element.id} className="workshop_lec">
+        <div className="workshop_img" data-aos="fade-right">
+          <img src={element.imgSrc} alt={element.name} />
+        </div>
+        <div
+          className="about_workshop"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="400"
+          data-aos-easing="ease-in-sine"
+        >
+          <h3 className="workshop_name">{element.name}</h3>
+          <p>{element.content}</p>
           <p className="clock-icon">
             <i className="fa fa-calendar"></i> {element.date}
           </p>
@@ -43,7 +63,7 @@ function Workshop() {
       <VideoBox url={kaleidoVid} />
       <div className="container">
         <Heading title="WORKSHOPS" className="workshop_heading" />
-        {renderWorkshopSection(CurrentWorkshopData)}
+        {renderNewWorkshopSection(CurrentWorkshopData)}
         
         <Heading title="PREVIOUS WORKSHOPS" className="workshop_heading" />
         {renderWorkshopSection(PrevWorkshopData)}

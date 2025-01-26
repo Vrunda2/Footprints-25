@@ -153,7 +153,8 @@ const technotronData = {
             "It is a paper presentation event based on Computer Science and IT Department",
           ],
           rules: [
-            "TO BE DECLARED",
+            "It is a paper presentation event in which you have to select a topic based on Computer Science Engineering or IT field.",
+            "Abstract has to submitted before 7th March at protocol25@gmail.com",
             ],
           price : ["- INR 100/-"],
           team: ["- Maximum 2"],

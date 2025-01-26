@@ -31,8 +31,8 @@ a {
   color: #66fcf1;
 }
 
-.numberLink a:hover {
-  color: #fff;
+.contact-numbers a:hover {
+  color: #fff !important;
 }
 
 /* Background Glow Effect */

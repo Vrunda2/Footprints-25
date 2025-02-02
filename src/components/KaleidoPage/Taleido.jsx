@@ -18,7 +18,9 @@ function Taleido() {
   return (
     <>
       <section id="Taleido">
-        <VideoBox url={kaleidoVid} />
+        <div className="headingOffset">
+          <VideoBox url={kaleidoVid} />
+        </div>
         <div className="container">
           <Heading
             className="taleido_heading"

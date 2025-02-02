@@ -18,7 +18,9 @@ function Techzi() {
   return (
     <>
       <section id="Techzi">
-        <VideoBox url={kaleidoVid} />
+        <div className="headingOffset">
+          <VideoBox url={kaleidoVid} />
+        </div>
         <div className="container">
           <Heading
             className="kaleido_heading"

@@ -29,7 +29,9 @@ function TeamFP() {
       {/* <div className="cover">
       <Heading id="heading_ourteam" title="Our Team" />
       </div> */}
-      <VideoBox url={teamVid} />
+      <div className='headingOffset'>
+        <VideoBox url={teamVid} />
+      </div>
       {/* <section id="achivements" className="acheivements section-bg container"> */}
       <div className="container">
         <div className="coordinatesDiv">

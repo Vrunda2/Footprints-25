@@ -27,11 +27,13 @@ function Fsr() {
   return (
     <>
       <section id="Fsr">
-        <VideoBox url={fsrVid} />
-        <Heading
-          id="heading_main_Sponsor"
-          title={"Our Drives"}
-        />
+        <div className="headingOffset">
+          <VideoBox url={fsrVid} />
+          <Heading
+            id="heading_main_Sponsor"
+            title={"Our Drives"}
+          />
+        </div>
         {/* <div>
           <div className="video_main">
             <video

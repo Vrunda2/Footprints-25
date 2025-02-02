@@ -28,7 +28,9 @@ function Sponsor() {
     return (
       <>
         <section id="id_sponsorsPage" className="section_page">
-         <VideoBox url={sponsaVid} />
+         <div className='headingOffset'>
+          <VideoBox url={sponsaVid} />
+        </div>
           <div className="py-2">
             <div className="container">
               {/* Main Sponsor */}
@@ -69,7 +71,7 @@ function Sponsor() {
                 id="sponsorsGrid"
                 className="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3"
               >
-                {newSponsorData.slice(3, 20).map((element) => {
+                {newSponsorData.slice(3, 25).map((element) => {
                   return (
                     <div className="col" key={element.id}>
                       <div className="card">

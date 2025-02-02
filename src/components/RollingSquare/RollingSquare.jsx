@@ -22,27 +22,28 @@ export default function RollingSquare() {
   return (
     <>
       <section>
-        <VideoBox url={rsVid} />
+        <div className="headingOffset">
+          <VideoBox url={rsVid} />
 
-        <Heading
-          className="kaleido_heading"
-          id="glheading"
-          title={"Rolling Squares"}
-        />
-        <div data-aos="fade-up">
-          <ImageCarousel images={imageSources.concert} />
+          <Heading
+            className="kaleido_heading"
+            id="glheading"
+            title={"Rolling Squares"}
+          />
+          <div data-aos="fade-up" >
+            <ImageCarousel images={imageSources.concert} />
+          </div>
+
+          <Heading className="kaleido_heading" id="glheading" title={"Informals"} />
+          <div data-aos="zoom-in fade-up">
+            <ImageCarousel images={imageSources.informals} />
+          </div>
+
+          <Heading className="kaleido_heading" id="glheading" title={"Jampad"} />
+          <div data-aos="flip-left fade-up">
+            <ImageCarousel images={imageSources.jampad} />
+          </div>
         </div>
-
-        <Heading className="kaleido_heading" id="glheading" title={"Informals"} />
-        <div data-aos="zoom-in fade-up">
-          <ImageCarousel images={imageSources.informals} />
-        </div>
-
-        <Heading className="kaleido_heading" id="glheading" title={"Jampad"} />
-        <div data-aos="flip-left fade-up">
-          <ImageCarousel images={imageSources.jampad} />
-        </div>
-
 
        
       </section>

@@ -91,7 +91,9 @@ function Kaleido() {
   return (
     <>
       <section id="Kaleido">
-       <VideoBox url={kaleidoVid}/>
+        <div className="headingOffset">
+          <VideoBox url={kaleidoVid} />
+        </div>
         {/* Current Guest Lectures */}
         <div className="container">
           <Heading

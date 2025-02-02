@@ -70,6 +70,7 @@ import Yash from "../assets/Team/OT/Yash.jpg";
 import Yashvi from "../assets/Team/OT/Yashvi.jpg";
 import Zaahid from "../assets/Team/OT/Zaahid.jpg";
 
+import Sujal from "../assets/Team/OT/JOT1.jpg";
 
 
 
@@ -98,7 +99,7 @@ const coordinatorsData = [
     id: 4,
     imgSrc: shubham,
     name: "Shubham Prajapati",
-    linked: ``,
+    linked: `https://www.linkedin.com/in/shubham-prajapati-917242230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
   },
   
 ];
@@ -447,7 +448,7 @@ const orgcData = [
   },
   {
     id: 47,
-    imgSrc: missing,
+    imgSrc: Sujal,
     name: "Sujal Kumar",
   },
   {

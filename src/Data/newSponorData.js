@@ -18,6 +18,9 @@ import JAY from "../assets/SponsorLogos/JayWeb.jpg";
 import OMKAR from "../assets/SponsorLogos/OmkarWeb.jpg";
 import dhrron from "../assets/SponsorLogos/dhrron.jpg";
 import mbhlogo from "../assets/SponsorLogos/mbhlogo.jpg";
+import WAGO from "../assets/SponsorLogos/WAGOWeb.jpg";
+import ALLURE from "../assets/SponsorLogos/AllureWeb.jpg";
+import DECA from "../assets/SponsorLogos/DecathalonWeb.jpg";
 
 const newSponsorData = [
 
@@ -38,7 +41,7 @@ const newSponsorData = [
         id: 1.2,
         imgSrc: vinrox,
         alt: `CO-SPONSOR`,
-        href: vinrox,
+        href: `https://vinrox.com/`,
         type: "CO-SPONSOR"
     },
 
@@ -53,6 +56,13 @@ const newSponsorData = [
 
     /* Other Sponsor - Grid */
 
+    {
+        id: 2,
+        imgSrc: WAGO,
+        alt: `TECHNOTRON SPONSOR`,
+        href: `https://www.wago.com/in/`
+    },
+    
     {
         id: 3,
         imgSrc: DEEPAK,
@@ -70,7 +80,7 @@ const newSponsorData = [
         id: 4.5,
         imgSrc:SEE,
         alt: `HYDREX & BALLISTA SPONSOR`,
-        href: ``
+        href: `https://www.seelinkages.in/`
     },
     {
         id: 5,
@@ -94,7 +104,7 @@ const newSponsorData = [
         id: 8,
         imgSrc: dhrron,
         alt: `STUDY ABROAD PARTNER`,
-        href: ``
+        href: `https://dhrronconsultancy.com/`
     },
     {
         id: 9,
@@ -149,12 +159,24 @@ const newSponsorData = [
     },
     {
         id: 17,
+        imgSrc: ALLURE,
+        alt: `STYLE PARTNER`,
+        href: ``
+    },
+    {
+        id: 18,
+        imgSrc: DECA,
+        alt: `ATHLETIC PARTNER`,
+        href: ``
+    },
+    {
+        id: 19,
         imgSrc: JAY,
         alt: `PRINTING PARTNER`,
         href: ``
     },
     {
-        id: 18,
+        id: 20,
         imgSrc: OMKAR,
         alt: `PAINT PARTNER`,
         href: ``

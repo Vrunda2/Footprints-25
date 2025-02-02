@@ -60,7 +60,9 @@ function Workshop() {
 
   return (
     <section id="Workshop">
-      <VideoBox url={kaleidoVid} />
+      <div className="headingOffset">
+        <VideoBox url={kaleidoVid} />
+      </div>
       <div className="container">
         <Heading title="WORKSHOPS" className="workshop_heading" />
         {renderNewWorkshopSection(CurrentWorkshopData)}

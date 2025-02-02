@@ -28,7 +28,9 @@ function Contact() {
         {/* <img src={img1} alt="image" /> */}
         {/* Here add cloudinary link */}
         {/* </div> */}
-        <VideoBox url={abtVid} />
+        <div className='headingOffset'>
+          <VideoBox url={abtVid} />
+        </div>
         <div className="container">
           <i className="fa-regular fa-puzzle"></i>
           <div className="about_section">

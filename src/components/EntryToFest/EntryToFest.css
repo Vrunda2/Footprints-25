@@ -100,6 +100,24 @@ a {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.TandC {
+  padding: 5vw;
+  background-color: rgba(11, 12, 16, 0.4);
+  backdrop-filter: blur(10px);
+  flex-grow: 1;
+  z-index: 5;
+  margin-top: 5vw;
+}
+
+.TandC h3 {
+  color: #66fcf1;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
 .contact-numbers {
   max-width: 600px;
   margin: 0 auto;

@@ -1,7 +1,7 @@
 //Coordinators
 import missing from "../assets/Team/Missing.jpg";
 import akshit from "../assets/Team/Core/akshit1.jpg";
-import pulin from "../assets/Team/Core/pulin.jpg";
+import pulin from "../assets/Team/Core/Pulin.jpg";
 import raj from "../assets/Team/Core/Raj.jpg";
 import shubham from "../assets/Team/Core/shubham1.jpg";
 

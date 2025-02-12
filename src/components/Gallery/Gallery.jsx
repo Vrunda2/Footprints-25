@@ -100,13 +100,13 @@ const Gallery = () => {
     //   subtitle: "Technokick",
     //   cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
     // },
-    {
-      id: 7,
-      imgSrc: DARSHAN,
-      title: "Rolling squares",
-      subtitle: "Concert",
-      cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
-    },
+    // {
+    //   id: 7,
+    //   imgSrc: DARSHAN,
+    //   title: "Rolling squares",
+    //   subtitle: "Concert",
+    //   cardImg: "https://res.cloudinary.com/diniuq0eg/image/upload/v1703862699/Blank_card_eqh4f4.png",
+    // },
     {
       id: 8,
       imgSrc: CITA,

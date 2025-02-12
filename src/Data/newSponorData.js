@@ -4,6 +4,7 @@ import KYB from "../assets/SponsorLogos/KYBWeb.jpg";
 import DEEPAK from "../assets/SponsorLogos/DeepakWeb.jpg";
 import AXTEL from "../assets/SponsorLogos/AxtelWeb.jpg";
 import SEE from "../assets/SponsorLogos/SEEWeb.jpg";
+import OX from "../assets/SponsorLogos/csee.jpg";
 import BOOM from "../assets/SponsorLogos/BoomWeb.jpg";
 import JUMP from "../assets/SponsorLogos/JumpWeb.jpg";
 import IMS from "../assets/SponsorLogos/IMSWeb.jpg";
@@ -81,6 +82,12 @@ const newSponsorData = [
         imgSrc:SEE,
         alt: `HYDREX & BALLISTA SPONSOR`,
         href: `https://www.seelinkages.in/`
+    },
+    {
+        id: 4.8,
+        imgSrc:OX,
+        alt: `CYBERNETICS SPONSOR`,
+        href: `https://fiscalox.com/`
     },
     {
         id: 5,

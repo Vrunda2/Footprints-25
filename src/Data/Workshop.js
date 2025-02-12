@@ -19,7 +19,7 @@ const CurrentWorkshopData = [
     content:
       " Microsoft Fabric is a unified platform designed to simplify Big Data management and analytics, offering tools like **OneLake** and **Lakehouse** for efficient data storage and analysis. It integrates seamlessly with **Power BI**, allowing for advanced data manipulation and visualization, creating powerful reports and dashboards. The platform also includes **Data Factory**, which helps automate data processes by building pipelines for smooth data flow and transformation. With its unified interface and robust tools, Microsoft Fabric enables the creation of **end-to-end data analytics solutions**, streamlining the process of managing and analyzing large datasets for better decision-making and business intelligence.",
 
-    date: "7th March, 2024",
+    date: "8th March, 2024",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const CurrentWorkshopData = [
     content:
       "Generative AI, harnesses the potential of AI across various disciplines by utilizing technologies like Machine Learning and Deep Learning. These technologies power AI models to learn from data, make predictions, and create new content. In this training, you'll explore real-life examples of AI tailored for all branches, from healthcare to finance, engineering, and beyond. You will also learn the step-by-step process of collecting and preparing data to build basic AI models using drag-and-drop features or pre-built tools. Additionally, the course will cover methods to improve AI models, providing hands-on experience in creating and refining models. The training will introduce you to the workings of Large Language Models (LLM), teaching you how to create personalized LLMs for specific use cases. Finally, you'll explore the integration of AI in various applications and web services, understanding how AI is transforming industries and enhancing everyday technology.",
 
-    date: "8th March, 2024",
+    date: "7th March, 2024",
   },
   {
     id: 3,

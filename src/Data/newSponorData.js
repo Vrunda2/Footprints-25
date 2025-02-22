@@ -1,15 +1,21 @@
 import matrix from "../assets/SponsorLogos/MatrixWeb.jpg";
 import vinrox from "../assets/SponsorLogos/VinroxWeb.jpg";
-import KYB from "../assets/SponsorLogos/KYBWeb.jpg";
+import KYB from "../assets/SponsorLogos/conmat.jpg";
 import DEEPAK from "../assets/SponsorLogos/DeepakWeb.jpg";
 import AXTEL from "../assets/SponsorLogos/AxtelWeb.jpg";
 import SEE from "../assets/SponsorLogos/SEEWeb.jpg";
 import OX from "../assets/SponsorLogos/csee.jpg";
+import CITA from "../assets/SponsorLogos/modi.jpg";
+import CITA1 from "../assets/SponsorLogos/nathdwar.jpg";
+import T2 from "../assets/SponsorLogos/t2.jpg";
+import PHOTO from "../assets/SponsorLogos/photography.jpg";
+import CONCEPT from "../assets/SponsorLogos/concept.jpg";
 import BOOM from "../assets/SponsorLogos/BoomWeb.jpg";
 import JUMP from "../assets/SponsorLogos/JumpWeb.jpg";
 import IMS from "../assets/SponsorLogos/IMSWeb.jpg";
 import ACUMEN from "../assets/SponsorLogos/AcumenWeb.jpg";
 import ASGARD from "../assets/SponsorLogos/AsgardWeb.jpg";
+import THOMAS from "../assets/SponsorLogos/thomas.jpg";
 import YB from "../assets/SponsorLogos/YBWeb.jpg";
 import VM from "../assets/SponsorLogos/VMWeb.jpg";
 import YELLOW from "../assets/SponsorLogos/YellowWeb.jpg";
@@ -78,112 +84,149 @@ const newSponsorData = [
         href: `https://www.axtelindia.com/`
     },
     {
-        id: 4.5,
+        id: 5,
         imgSrc:SEE,
         alt: `HYDREX & BALLISTA SPONSOR`,
         href: `https://www.seelinkages.in/`
     },
     {
-        id: 4.8,
+        id: 6,
         imgSrc:OX,
         alt: `CYBERNETICS SPONSOR`,
         href: `https://fiscalox.com/`
     },
     {
-        id: 5,
+        id: 7,
+        imgSrc:CITA,
+        alt: `CITADEL SPONSOR`,
+        href: ``
+    },
+    {
+        id: 8,
+        imgSrc:CITA1,
+        alt: `CITADEL SPONSOR`,
+        href: ``
+    },
+    {
+        id: 9,
         imgSrc: BOOM,
         alt: `QUEST SPONSOR`,
         href: ``
     },
     {
-        id: 6,
+        id: 10,
         imgSrc: JUMP,
         alt: `QUEST SPONSOR`,
         href: ``
     },
     {
-        id: 7,
+        id: 11,
         imgSrc: mbhlogo,
         alt: `WRESTLEMANIA SPONSOR`,
         href: ``
     },
     {
-        id: 8,
+        id: 12,
+        imgSrc: T2,
+        alt: `INFORMALS SPONSOR`,
+        href: ``
+    },
+    {
+        id: 13,
         imgSrc: dhrron,
         alt: `STUDY ABROAD PARTNER`,
         href: `https://dhrronconsultancy.com/`
     },
     {
-        id: 9,
+        id: 14,
         imgSrc: IMS,
         alt: `CAT PARTNER`,
         href: `https://imsindia.com/center/vadodara/`
     },
     {
-        id: 10,
+        id: 15,
         imgSrc: ACUMEN,
         alt: `GATE PARTNER`,
         href: `https://acumenhr.in/`
     },
     {
-        id: 11,
+        id: 16,
+        imgSrc: THOMAS,
+        alt: `FOREX & TOUR PARTNER`,
+        href: ``
+    },
+    {
+        id: 17,
+        imgSrc: PHOTO,
+        alt: `PHOTOGRAPHY PARTNER`,
+        href: ``
+    },
+    {
+        id: 18,
+        imgSrc: CONCEPT,
+        alt: `PRODUCTION PARTNER`,
+        href: ``
+    },
+    {
+        id: 19,
         imgSrc: ASGARD,
         alt: `SOCIAL MEDIA PARTNER`,
         href: ``
     },
     {
-        id: 12,
+        id: 20,
         imgSrc: YB,
         alt: `SOCIAL MEDIA PARTNER`,
         href: ``
     },
 
+
     {
-        id: 13,
+        id: 21,
         imgSrc: VM,
         alt: `SOCIAL MEDIA PARTNER`,
         href: ``
     },
 
 
+    // {
+    //     id: 14,
+    //     imgSrc: YELLOW,
+    //     alt: `YOUTH PARTNER`,
+    //     href: ``
+    // },
     {
-        id: 14,
-        imgSrc: YELLOW,
-        alt: `YOUTH PARTNER`,
-        href: ``
-    },
-    {
-        id: 15,
+        id: 22,
         imgSrc: ELITE,
         alt: `TICKETING PARTNER`,
         href: ``
     },
     {
-        id: 16,
+        id: 23,
         imgSrc: JOYA,
         alt: `JEWELLERY PARTNER`,
         href: ``
     },
     {
-        id: 17,
+        id: 24,
         imgSrc: ALLURE,
         alt: `STYLE PARTNER`,
         href: ``
     },
     {
-        id: 18,
+        id: 25,
         imgSrc: DECA,
         alt: `ATHLETIC PARTNER`,
         href: ``
     },
     {
-        id: 19,
+        id: 26,
         imgSrc: JAY,
         alt: `PRINTING PARTNER`,
         href: ``
     },
     {
-        id: 20,
+        id: 27,
         imgSrc: OMKAR,
         alt: `PAINT PARTNER`,
         href: ``

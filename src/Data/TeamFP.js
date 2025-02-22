@@ -66,7 +66,7 @@ import Vanshika from "../assets/Team/OT/Vanshika.jpg";
 import Vedangi from "../assets/Team/OT/Vedangi.jpg";
 import Vinay from "../assets/Team/OT/Vinay.jpg";
 import Viraj from "../assets/Team/OT/Viraj.jpg";
-import Yash from "../assets/Team/OT/Yash.jpg";
+// import Yash from "../assets/Team/OT/Yash.jpg";
 import Yashvi from "../assets/Team/OT/Yashvi.jpg";
 import Zaahid from "../assets/Team/OT/Zaahid.jpg";
 
@@ -220,6 +220,11 @@ const orgcData = [
     id: 2,
     imgSrc: advaita,
     name: "Advaita Tandel",
+  },
+  {
+    id: 2,
+    imgSrc: missing,
+    name: "Akshita",
   },
   {
     id: 3,
@@ -471,16 +476,16 @@ const orgcData = [
     imgSrc:Viraj,
     name: "Viraj Kapadia",
   },
-  {
-    id: 52,
-    imgSrc: missing,
-    name: "Vraj Shah",
-  },
-  {
-    id: 53,
-    imgSrc: Yash,
-    name: "Yash Parekh",
-  },
+  // {
+  //   id: 52,
+  //   imgSrc: missing,
+  //   name: "Vraj Shah",
+  // },
+  // {
+  //   id: 53,
+  //   imgSrc: Yash,
+  //   name: "Yash Parekh",
+  // },
   {
     id: 54,
     imgSrc: Yashvi,

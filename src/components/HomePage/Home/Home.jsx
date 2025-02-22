@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import mainHeader from "../../../assets/25header.png";
+import mainHeader from "../../../assets/Header25.png";
 import { useMousePosition } from "../../../CustomHooks/useMousePosition";
 
 function Home() {

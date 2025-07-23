@@ -31,10 +31,7 @@ npm run install
 
 Once the dependencies are installed, you can run the app:
 
-```sh
-cd MainWebFP-23
-yarn dev
-# or
+``sh
 npm run dev
 ```
 
